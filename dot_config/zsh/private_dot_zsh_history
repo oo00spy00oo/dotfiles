@@ -1,0 +1,36 @@
+: 1623215510:0;cp -r .zprezto .config/zsh/
+: 1623215532:0;nvim ~/.zpreztorc
+: 1623215569:0;nvim /Users/oo00spy00oo/.config/zsh/.zprezto/init.zsh
+: 1623216650:0;clear
+: 1623216697:0;zprezto-update
+: 1623216718:0;cd /Users/oo00spy00oo/.config/zsh/.zprezto
+: 1623216720:0;git pull
+: 1623216766:0;rm -rf /Users/oo00spy00oo/.config/zsh/.zprezto
+: 1623216769:0;git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+: 1623216836:0;ls /Users/oo00spy00oo/.config/zsh/.zprezto
+: 1623216841:0;ls /Users/oo00spy00oo/.config/zsh/.
+: 1623216843:0;ls /Users/oo00spy00oo/.config/zsh/
+: 1623216863:0;mkdir -p /Users/oo00spy00oo/.config/zsh/.zprezto
+: 1623216888:0;cd
+: 1623216890:0;git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-${XDG_CONFIG_HOME:-$HOME/.config}/zsh}/.zprezto"
+: 1623217055:0;mv ~/.zpreztorc ~/.config/zsh
+: 1623217085:0;code ~/.zshrc
+: 1623217299:0;code ~/.zshenv
+: 1623217513:0;code ~/.bash_profile
+: 1623217781:0;brew upgrade starship
+: 1623217808:0;brew update
+: 1623217869:0;brew install tfenv
+: 1623217875:0;brew link tfenv
+: 1623217884:0;brew uninstall terraform
+: 1623217895:0;brew uninstall --ignore-dependencies terraform
+: 1623218059:0;brew unlink tfenv
+: 1623218403:0;brew upgrade
+: 1623218619:0;cp -r ~/.zshenv .config/zsh/
+: 1623218626:0;cp -r ~/.zshenv ~/.config/zsh/
+: 1623218629:0;src
+: 1623218677:0;ls ~/.config/zsh
+: 1623218734:0;cd
+: 1623218747:0;exa -la .config/zsh
+: 1623218799:0;code ~/.zshenv
+: 1623218818:0;rm -rf .config/zsh/.zshenv
+: 1623218836:0;chezmoi add .config/zsh
