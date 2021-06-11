@@ -23,7 +23,6 @@
 : 1623218619:0;cp -r ~/.zshenv .config/zsh/
 : 1623218626:0;cp -r ~/.zshenv ~/.config/zsh/
 : 1623218677:0;ls ~/.config/zsh
-: 1623218734:0;cd
 : 1623218747:0;exa -la .config/zsh
 : 1623218799:0;code ~/.zshenv
 : 1623218818:0;rm -rf .config/zsh/.zshenv
@@ -33,89 +32,167 @@
 : 1623235481:0;echo $ZDOTDIR
 : 1623235757:0;chezmoi add ~/.config/zsh/completion.zsh
 : 1623235910:0;chezmoi add ~/.config/zsh/.zshrc
-: 1623238485:0;lg
 : 1623240455:0;zinit-update
-: 1623240457:0;zinit
-: 1623240477:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 : 1623240547:0;ansible-galaxy collection install community.general
 : 1623240675:0;ansible-playbook patch.yml
-: 1623240903:0;ls
 : 1623241173:0;ansible-playbook install.yml
 : 1623241191:0;ansible-playbook install.yml --ask-become
 : 1623241278:0;echo $(which zinit)
-: 1623241337:0;zinit self-update
 : 1623241349:0;which zinit
 : 1623241431:0;kubectl krew upgrade
 : 1623241473:0;zprezto-update
 : 1623241475:0;which zprezto-update
 : 1623241487:0;yarn global upgrade-interactive
 : 1623241661:0;ansible-playbook update.yml
-: 1623241988:0;which aws
 : 1623242244:0;ansible-playbook playbooks/version-manager.yml
-: 1623242309:0;sdk
 : 1623242536:0;ansible-playbook playbooks/update.yml
 : 1623242740:0;/bin/zsh
-: 1623242832:0;whoami
-: 1623242977:0;which zsh
-: 1623242981:0;/usr/local/bin/zsh
-: 1623243001:0;ansible-playbook playbooks/update.yml --ask-become
 : 1623243201:0;sdk update
 : 1623243207:0;sdk upgrade
 : 1623243264:0;nvm upgrade
-: 1623243339:0;clear
 : 1623247540:0;cd scripts/update
 : 1623247584:0;nvim --headless +PlugUpdate +qall
 : 1623247590:0;nvim --headless +PlugUpgrade +qall
-: 1623247780:0;go get -u github.com/alecthomas/chroma/cmd/chroma
 : 1623248043:0;cd ..
 : 1623248973:0;installer -pkg /tmp/AWSCLIV2.pkg -target /
 : 1623249097:0;sudo installer -pkg /tmp/AWSCLIV2.pkg -target /
 : 1623249305:0;rm -rf /tmp/AWSCLIV2.pkg
 : 1623249309:0;sudo rm -rf /tmp/AWSCLIV2.pkg
-: 1623249318:0;make install
-: 1623249456:0;aws --version
-: 1623249459:0;src
-: 1623249536:0;clear
-: 1623249658:0;pwd
-: 1623249947:0;make install
 : 1623250878:0;cd
 : 1623250882:0;git clone https://github.com/gpakosz/.tmux.git
-: 1623250902:0;make install
 : 1623251899:0;whoami
-: 1623251923:0;make install
 : 1623252582:0;rm -rf /Users/oo00spy00oo/.tmux.conf
-: 1623252587:0;make install
 : 1623252755:0;rm -rf /Users/oo00spy00oo/.tmux.conf.local
-: 1623252758:0;make install
 : 1623253306:0;ansible-playbook playbooks/update.yml --ask-become
 : 1623253442:0;go get -u github.com/alecthomas/chroma/cmd/chroma
-: 1623253867:0;make install
 : 1623254893:0;ansible-playbook main.yml
-: 1623254958:0;pwd
 : 1623255000:0;sdk
-: 1623255150:0;lg
 : 1623255155:0;git add .
-: 1623255158:0;lg
-: 1623255172:0;clear
-: 1623255237:0;make install
 : 1623255272:0;sdk install micronaut
-: 1623255317:0;make install
-: 1623255719:0;clear
 : 1623255720:0;make install
-: 1623255780:0;lg
-: 1623255798:0;clear
-: 1623255799:0;lg
-: 1623255932:0;pwd
-: 1623256006:0;clear
-: 1623256093:0;chezmoi cd
-: 1623256105:0;pwd
-: 1623256111:0;lg
 : 1623256115:0;l
-: 1623256119:0;ll
 : 1623256122:0;exa -la
-: 1623256137:0;chezmoi update
 : 1623256177:0;chezmoi add ~/.config/zsh/plugin.zsh
-: 1623256181:0;chezmoi update
-: 1623256184:0;lg
-: 1623256196:0;chezmoi update
 : 1623256272:0;chezmoi add ~/.config/zsh/.zsh_history
+: 1623256344:0;brew install tmuximator
+: 1623256372:0;brew install tmuxinator
+: 1623256414:0;pwd
+: 1623256422:0;cd /Users/oo00spy00oo/Development/GitHub/mac-playbook
+: 1623256449:0;ansible-playbook mac-dev-playbook/main.yml --ask-become
+: 1623256506:0;ansible-playbook mac-dev-playbook/main.yml -i localhost --ask-become
+: 1623256594:0;pip3 install --upgrade pip
+: 1623256608:0;ansible-playbook mac-dev-playbook/main.yml -i localhost --ask-becomexcode-select --install
+: 1623256611:0;xcode-select --install
+: 1623256673:0;cd mac
+: 1623256679:0;cd mac-dev-playbook
+: 1623256681:0;ansible-playbook main.yml --ask-become-pass
+: 1623257504:0;ls
+: 1623257506:0;ll
+: 1623257523:0;exa -la dot_SpaceVim.d
+: 1623257536:0;bat dot_SpaceVim.d/init.toml
+: 1623257550:0;nvim
+: 1623257765:0;brew install --cask double-commander
+: 1623258425:0;nvim ~/.config/doublecmd/doublecmd.xml
+: 1623259356:0;ls ~/.mozilla
+: 1623259426:0;defaults delete com.apple.textedit CGFontRenderingFontSmoothingDisabled
+: 1623259442:0;defaults write com.apple.universalaccess reduceTransparency -bool true
+: 1623299081:0;docker pull mcr.microsoft.com/dotnet/sdk
+: 1623310208:0;dig a2ef240dee7d841218c474a42c7a0aa5
+: 1623310217:0;dig a2ef240dee7d841218c474a42c7a0aa5-142844707.ap-southeast-1.elb.amazonaws.com
+: 1623310266:0;host a2ef240dee7d841218c474a42c7a0aa5-142844707.ap-southeast-1.elb.amazonaws.com
+: 1623311290:0;brew install --cask http-toolkit
+: 1623311744:0;brew install gource
+: 1623311778:0;gource
+: 1623311862:0;lg
+: 1623332003:0;brew restart service yabaai
+: 1623332013:0;brew service restart yabaai
+: 1623332027:0;brew services restart yabaai
+: 1623332032:0;brew services restart yabai
+: 1623383736:0;go get github.com/maaslalani/slides
+: 1623383837:0;brew install aws-iam-authenticator
+: 1623383858:0;brew reinstall aws-iam-authenticator
+: 1623383959:0;cd ~/Downloads
+: 1623383961:0;wget https://awscli.amazonaws.com/AWSCLIV2-2.0.30.pkg
+: 1623384069:0;python -v
+: 1623384100:0;which python
+: 1623384165:0;rm -rf /Users/oo00spy00oo/.pyenv/shims/aws
+: 1623384176:0;sudo installer -pkg ./AWSCLIV2.pkg -target /
+: 1623384335:0;ls -la /Users/oo00spy00oo/.pyenv/shims/aws
+: 1623384337:0;ls -la /Users/oo00spy00oo/.pyenv/shims/
+: 1623384411:0;curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+: 1623384423:0;sudo installer -pkg AWSCLIV2.pkg -target /
+: 1623384467:0;ls -la /Users/oo00spy00oo/.pyenv/shims/ | grep aws
+: 1623384476:0;rm -rf /Users/oo00spy00oo/.pyenv/shims/aws*
+: 1623384488:0;rm -rf AWSCLIV2-2.0.30.pkg
+: 1623384492:0;rm -rf AWSCLIV2.pkg
+: 1623384534:0;pip3 uninstall awscli
+: 1623384550:0;which aws
+: 1623384638:0;ls -la ~/.kube
+: 1623384761:0;brew reinstall kubectx
+: 1623384810:0;aws-iam-authenticator
+: 1623384813:0;aws-iam-authenticator version
+: 1623384827:0;aws --version
+: 1623384862:0;/usr/local/bin/kubectx
+: 1623384870:0;ls -la  /usr/local/bin/ | grep kube
+: 1623384892:0;kubectl get pods
+: 1623384927:0;brew uninstall kubectx
+: 1623384934:0;brew install kubectx
+: 1623384960:0;nvim ~/.kube/config
+: 1623385153:0;kubens
+: 1623385214:0;kubectl config current-context
+: 1623385299:0;code ~/.config/zsh
+: 1623385397:0;cat ~/.bash_profile
+: 1623385453:0;mv ~/.local_profile ~/.local_profile.bk
+: 1623385463:0;echo $KUBECONFIG
+: 1623385478:0;kubectx -h
+: 1623385507:0;kubectx vs@vs-prod
+: 1623385563:0;kubectx vs@vs-devops.ap-southeast-1.eksctl.io
+: 1623385602:0;kubectx vs@vs-service
+: 1623385603:0;kgpo
+: 1623385652:0;clear
+: 1623385678:0;nvim ~/.local_profile
+: 1623385730:0;cat ~/.zshenv
+: 1623385734:0;kubectx
+: 1623385780:0;echo $PATH | grep zinit
+: 1623385982:0;brew reinstall chezmoi
+: 1623386062:0;chezmoi -h
+: 1623386067:0;chezmoi completion
+: 1623386070:0;chezmoi completion zsh
+: 1623386662:0;/usr/local/bin/zsh
+: 1623386739:0;echo $PATH | grep self
+: 1623386809:0;zinit
+: 1623386827:0;zinit -h
+: 1623386834:0;zinit self-update
+: 1623386963:0;which pyenv
+: 1623387126:0;chezmoi edit ~/.zshenv
+: 1623387139:0;chezmoi update
+: 1623387143:0;nvim ~/.zshenv
+: 1623387184:0;chezmoi cd
+: 1623387206:0;echo $PATH
+: 1623387414:0;echo $PATH | grep cl
+: 1623387417:0;echo $PATH | grep cq
+: 1623387647:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+: 1623387679:0;pyenv init -h
+: 1623387751:0;pyenv init -hpyenv init -
+: 1623387763:0;pyenv list
+: 1623388340:0;zsh
+: 1623388519:0;neofetch
+: 1623388872:0;which zsh
+: 1623388936:0;zsh -v
+: 1623388960:0;zsh version
+: 1623388964:0;zsh --version
+: 1623388972:0;brew upgrade zsh
+: 1623389007:0;/usr/local/Cellar/neofetch/7.1.0/bin/neofetch ; exit;
+: 1623389102:0;chsh -s $(which zsh)
+: 1623389134:0;pyenv
+: 1623389161:0;cat /etc/shells
+: 1623389207:0;pyenv init -
+: 1623389253:0;eval $(pyenv init -)
+: 1623389264:0;pyenv init
+: 1623389270:0;eval "$(pyenv init -)"
+: 1623389320:0;brew upgrade pyenv
+: 1623389523:0;brew reinstall pyenv
+: 1623389749:0;echo $TEST
+: 1623389756:0;src
+: 1623389766:0;chezmoi cd
+: 1623389777:0;chezmoi add ~/.config/zsh/.zsh_history
