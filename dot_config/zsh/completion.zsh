@@ -36,3 +36,5 @@ if [ $commands[helm] ]; then source <(helm completion zsh); fi
 if [ $commands[eksctl] ]; then fpath=($fpath ~/.zsh/completion); fi
 # Chezmoi
 if [ $commands[chezmoi] ]; then source <(chezmoi completion zsh); fi
+# Github
+if [ $commands[gh] ]; then source <(gh completion -s zsh); fi
