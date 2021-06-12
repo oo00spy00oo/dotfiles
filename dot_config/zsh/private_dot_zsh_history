@@ -13,13 +13,11 @@
 : 1623217085:0;code ~/.zshrc
 : 1623217513:0;code ~/.bash_profile
 : 1623217781:0;brew upgrade starship
-: 1623217808:0;brew update
 : 1623217869:0;brew install tfenv
 : 1623217875:0;brew link tfenv
 : 1623217884:0;brew uninstall terraform
 : 1623217895:0;brew uninstall --ignore-dependencies terraform
 : 1623218059:0;brew unlink tfenv
-: 1623218403:0;brew upgrade
 : 1623218619:0;cp -r ~/.zshenv .config/zsh/
 : 1623218626:0;cp -r ~/.zshenv ~/.config/zsh/
 : 1623218677:0;ls ~/.config/zsh
@@ -30,8 +28,6 @@
 : 1623235306:0;git pull
 : 1623235326:0;code .
 : 1623235481:0;echo $ZDOTDIR
-: 1623235757:0;chezmoi add ~/.config/zsh/completion.zsh
-: 1623235910:0;chezmoi add ~/.config/zsh/.zshrc
 : 1623240455:0;zinit-update
 : 1623240547:0;ansible-galaxy collection install community.general
 : 1623240675:0;ansible-playbook patch.yml
@@ -58,7 +54,6 @@
 : 1623249097:0;sudo installer -pkg /tmp/AWSCLIV2.pkg -target /
 : 1623249305:0;rm -rf /tmp/AWSCLIV2.pkg
 : 1623249309:0;sudo rm -rf /tmp/AWSCLIV2.pkg
-: 1623250878:0;cd
 : 1623250882:0;git clone https://github.com/gpakosz/.tmux.git
 : 1623251899:0;whoami
 : 1623252582:0;rm -rf /Users/oo00spy00oo/.tmux.conf
@@ -73,10 +68,8 @@
 : 1623256115:0;l
 : 1623256122:0;exa -la
 : 1623256177:0;chezmoi add ~/.config/zsh/plugin.zsh
-: 1623256272:0;chezmoi add ~/.config/zsh/.zsh_history
 : 1623256344:0;brew install tmuximator
 : 1623256372:0;brew install tmuxinator
-: 1623256414:0;pwd
 : 1623256422:0;cd /Users/oo00spy00oo/Development/GitHub/mac-playbook
 : 1623256449:0;ansible-playbook mac-dev-playbook/main.yml --ask-become
 : 1623256506:0;ansible-playbook mac-dev-playbook/main.yml -i localhost --ask-become
@@ -86,7 +79,6 @@
 : 1623256673:0;cd mac
 : 1623256679:0;cd mac-dev-playbook
 : 1623256681:0;ansible-playbook main.yml --ask-become-pass
-: 1623257504:0;ls
 : 1623257506:0;ll
 : 1623257523:0;exa -la dot_SpaceVim.d
 : 1623257536:0;bat dot_SpaceVim.d/init.toml
@@ -103,7 +95,6 @@
 : 1623311290:0;brew install --cask http-toolkit
 : 1623311744:0;brew install gource
 : 1623311778:0;gource
-: 1623311862:0;lg
 : 1623332003:0;brew restart service yabaai
 : 1623332013:0;brew service restart yabaai
 : 1623332027:0;brew services restart yabaai
@@ -149,10 +140,8 @@
 : 1623385563:0;kubectx vs@vs-devops.ap-southeast-1.eksctl.io
 : 1623385602:0;kubectx vs@vs-service
 : 1623385603:0;kgpo
-: 1623385652:0;clear
 : 1623385678:0;nvim ~/.local_profile
 : 1623385730:0;cat ~/.zshenv
-: 1623385734:0;kubectx
 : 1623385780:0;echo $PATH | grep zinit
 : 1623385982:0;brew reinstall chezmoi
 : 1623386062:0;chezmoi -h
@@ -165,9 +154,6 @@
 : 1623386834:0;zinit self-update
 : 1623386963:0;which pyenv
 : 1623387126:0;chezmoi edit ~/.zshenv
-: 1623387139:0;chezmoi update
-: 1623387143:0;nvim ~/.zshenv
-: 1623387184:0;chezmoi cd
 : 1623387206:0;echo $PATH
 : 1623387414:0;echo $PATH | grep cl
 : 1623387417:0;echo $PATH | grep cq
@@ -193,6 +179,53 @@
 : 1623389320:0;brew upgrade pyenv
 : 1623389523:0;brew reinstall pyenv
 : 1623389749:0;echo $TEST
-: 1623389756:0;src
-: 1623389766:0;chezmoi cd
 : 1623389777:0;chezmoi add ~/.config/zsh/.zsh_history
+: 1623389845:0;kubectx
+: 1623389858:0;nvim ~/.zshenv
+: 1623389869:0;chezmoi add ~/.zshenv
+: 1623389937:0;pưd
+: 1623389939:0;pwd
+: 1623389943:0;git status
+: 1623390357:0;chezmoi add ~/.config/zsh/.zshrc
+: 1623390593:0;chezmoi add ~/.config/zsh/completion.zsh
+: 1623396925:0;chezmoi add ~/.config/zsh/integration.zsh
+: 1623396928:0;chezmoi update
+: 1623396962:0;chezmoi add ~/.config/zsh/.zprofile
+: 1623396969:0;chezmoi cd
+: 1623399372:0;helm repo update
+: 1623400811:0;curl https://example.com/slides.md | slides
+: 1623400878:0;curl https://raw.githubusercontent.com/maaslalani/slides/main/examples/slides.md 
+: 1623400884:0;curl https://raw.githubusercontent.com/maaslalani/slides/main/examples/slides.md | slides
+: 1623400996:0;ssh-add -k
+: 1623431267:0;~brew install hammerspoon --cask
+: 1623431269:0;brew install hammerspoon --cask
+: 1623431366:0;cat ~/.ssh/id_rsa.pub
+: 1623431415:0;lg
+: 1623431436:0;clear
+: 1623433528:0;brew update
+: 1623433543:0;brew upgrade
+: 1623471893:0;brew install --cask sourcetree
+: 1623472293:0;yarn global add tiktok-scraper
+: 1623472402:0;tiktok-scraper user sun.minor
+: 1623472427:0;ls
+: 1623472435:0;cd
+: 1623472444:0;src
+: 1623472471:0;tiktok-scraper user sun.minor
+: 1623472479:0;ls
+: 1623472510:0;tiktok-scraper user @sun.minor
+: 1623472515:0;tiktok-scraper user sun.minor
+: 1623472527:0;tiktok-scraper trend
+: 1623472537:0;tiktok-scraper history
+: 1623472590:0;tiktok-scraper history -r user:sun.minor
+: 1623472606:0;tiktok-scraper user sun.minor -d -n 100
+: 1623494573:0;npm i -g tiktok-scraper
+: 1623494598:0;yarn global add tiktok-scraper
+: 1623496059:0;cat ~/.kube/config
+: 1623496063:0;cat ~/.kube/config | pbcopy
+: 1623496266:0;chezmoi cd
+: 1623496279:0;lg
+: 1623496292:0;chezmoi update
+: 1623496319:0;code .
+: 1623496415:0;chezmoi add ~/.kube/config
+: 1623496480:0;chezmoi add ~.config/zsh/.zsh_history
+: 1623496487:0;chezmoi add ~/.config/zsh/.zsh_history
