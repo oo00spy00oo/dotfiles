@@ -29,7 +29,16 @@ eval "$(pyenv init -)"
 # mozjpeg
 export PATH="/usr/local/opt/mozjpeg/bin:$PATH"
 
+# Mcfly - ctrl + r replacement
+if [ $commands[mcfly] ]; then
+    eval "$(mcfly init zsh)"
+fi
+
+eval "$(zoxide init zsh)"
+
 # Starship theme
-eval "$(starship init zsh)"
+if [ $commands[starship] ]; then
+    eval "$(starship init zsh)"
+fi
 
 neofetch
