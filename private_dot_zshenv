@@ -10,6 +10,13 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
+#
+# Editors
+#
+export VISUAL="nvim"
+export EDITOR="$VISUAL"
+export PAGER="less"
+
 # XDG Base Directory
 # https://thevaluable.dev/zsh-install-configure-mouseless/
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:=$HOME/.config}"
