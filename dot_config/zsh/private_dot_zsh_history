@@ -15,8 +15,6 @@
 : 1623217781:0;brew upgrade starship
 : 1623217869:0;brew install tfenv
 : 1623217875:0;brew link tfenv
-: 1623217884:0;brew uninstall terraform
-: 1623217895:0;brew uninstall --ignore-dependencies terraform
 : 1623218059:0;brew unlink tfenv
 : 1623218619:0;cp -r ~/.zshenv .config/zsh/
 : 1623218626:0;cp -r ~/.zshenv ~/.config/zsh/
@@ -25,35 +23,39 @@
 : 1623218799:0;code ~/.zshenv
 : 1623218818:0;rm -rf .config/zsh/.zshenv
 : 1623218836:0;chezmoi add .config/zsh
-: 1623235306:0;git pull
-: 1623235326:0;code .
 : 1623235481:0;echo $ZDOTDIR
+: 1623235757:0;chezmoi add ~/.config/zsh/completion.zsh
 : 1623240455:0;zinit-update
+: 1623240457:0;zinit
 : 1623240547:0;ansible-galaxy collection install community.general
 : 1623240675:0;ansible-playbook patch.yml
 : 1623241173:0;ansible-playbook install.yml
 : 1623241191:0;ansible-playbook install.yml --ask-become
 : 1623241278:0;echo $(which zinit)
+: 1623241337:0;zinit self-update
 : 1623241349:0;which zinit
 : 1623241431:0;kubectl krew upgrade
 : 1623241473:0;zprezto-update
 : 1623241475:0;which zprezto-update
 : 1623241487:0;yarn global upgrade-interactive
 : 1623241661:0;ansible-playbook update.yml
+: 1623241988:0;which aws
 : 1623242244:0;ansible-playbook playbooks/version-manager.yml
 : 1623242536:0;ansible-playbook playbooks/update.yml
 : 1623242740:0;/bin/zsh
+: 1623242977:0;which zsh
+: 1623242981:0;/usr/local/bin/zsh
 : 1623243201:0;sdk update
 : 1623243207:0;sdk upgrade
 : 1623243264:0;nvm upgrade
 : 1623247540:0;cd scripts/update
 : 1623247584:0;nvim --headless +PlugUpdate +qall
 : 1623247590:0;nvim --headless +PlugUpgrade +qall
-: 1623248043:0;cd ..
 : 1623248973:0;installer -pkg /tmp/AWSCLIV2.pkg -target /
 : 1623249097:0;sudo installer -pkg /tmp/AWSCLIV2.pkg -target /
 : 1623249305:0;rm -rf /tmp/AWSCLIV2.pkg
 : 1623249309:0;sudo rm -rf /tmp/AWSCLIV2.pkg
+: 1623249456:0;aws --version
 : 1623250882:0;git clone https://github.com/gpakosz/.tmux.git
 : 1623251899:0;whoami
 : 1623252582:0;rm -rf /Users/oo00spy00oo/.tmux.conf
@@ -62,170 +64,348 @@
 : 1623253442:0;go get -u github.com/alecthomas/chroma/cmd/chroma
 : 1623254893:0;ansible-playbook main.yml
 : 1623255000:0;sdk
-: 1623255155:0;git add .
 : 1623255272:0;sdk install micronaut
 : 1623255720:0;make install
 : 1623256115:0;l
+: 1623256119:0;ll
 : 1623256122:0;exa -la
-: 1623256177:0;chezmoi add ~/.config/zsh/plugin.zsh
-: 1623256344:0;brew install tmuximator
-: 1623256372:0;brew install tmuxinator
-: 1623256422:0;cd /Users/oo00spy00oo/Development/GitHub/mac-playbook
-: 1623256449:0;ansible-playbook mac-dev-playbook/main.yml --ask-become
-: 1623256506:0;ansible-playbook mac-dev-playbook/main.yml -i localhost --ask-become
-: 1623256594:0;pip3 install --upgrade pip
-: 1623256608:0;ansible-playbook mac-dev-playbook/main.yml -i localhost --ask-becomexcode-select --install
-: 1623256611:0;xcode-select --install
-: 1623256673:0;cd mac
-: 1623256679:0;cd mac-dev-playbook
-: 1623256681:0;ansible-playbook main.yml --ask-become-pass
-: 1623257506:0;ll
-: 1623257523:0;exa -la dot_SpaceVim.d
-: 1623257536:0;bat dot_SpaceVim.d/init.toml
-: 1623257550:0;nvim
-: 1623257765:0;brew install --cask double-commander
-: 1623258425:0;nvim ~/.config/doublecmd/doublecmd.xml
-: 1623259356:0;ls ~/.mozilla
-: 1623259426:0;defaults delete com.apple.textedit CGFontRenderingFontSmoothingDisabled
-: 1623259442:0;defaults write com.apple.universalaccess reduceTransparency -bool true
-: 1623299081:0;docker pull mcr.microsoft.com/dotnet/sdk
-: 1623310208:0;dig a2ef240dee7d841218c474a42c7a0aa5
-: 1623310217:0;dig a2ef240dee7d841218c474a42c7a0aa5-142844707.ap-southeast-1.elb.amazonaws.com
-: 1623310266:0;host a2ef240dee7d841218c474a42c7a0aa5-142844707.ap-southeast-1.elb.amazonaws.com
-: 1623311290:0;brew install --cask http-toolkit
-: 1623311744:0;brew install gource
-: 1623311778:0;gource
-: 1623332003:0;brew restart service yabaai
-: 1623332013:0;brew service restart yabaai
-: 1623332027:0;brew services restart yabaai
-: 1623332032:0;brew services restart yabai
-: 1623383736:0;go get github.com/maaslalani/slides
-: 1623383837:0;brew install aws-iam-authenticator
-: 1623383858:0;brew reinstall aws-iam-authenticator
-: 1623383959:0;cd ~/Downloads
-: 1623383961:0;wget https://awscli.amazonaws.com/AWSCLIV2-2.0.30.pkg
-: 1623384069:0;python -v
-: 1623384100:0;which python
-: 1623384165:0;rm -rf /Users/oo00spy00oo/.pyenv/shims/aws
-: 1623384176:0;sudo installer -pkg ./AWSCLIV2.pkg -target /
-: 1623384335:0;ls -la /Users/oo00spy00oo/.pyenv/shims/aws
-: 1623384337:0;ls -la /Users/oo00spy00oo/.pyenv/shims/
-: 1623384411:0;curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
-: 1623384423:0;sudo installer -pkg AWSCLIV2.pkg -target /
-: 1623384467:0;ls -la /Users/oo00spy00oo/.pyenv/shims/ | grep aws
-: 1623384476:0;rm -rf /Users/oo00spy00oo/.pyenv/shims/aws*
-: 1623384488:0;rm -rf AWSCLIV2-2.0.30.pkg
-: 1623384492:0;rm -rf AWSCLIV2.pkg
-: 1623384534:0;pip3 uninstall awscli
-: 1623384550:0;which aws
-: 1623384638:0;ls -la ~/.kube
-: 1623384761:0;brew reinstall kubectx
-: 1623384810:0;aws-iam-authenticator
-: 1623384813:0;aws-iam-authenticator version
-: 1623384827:0;aws --version
-: 1623384862:0;/usr/local/bin/kubectx
-: 1623384870:0;ls -la  /usr/local/bin/ | grep kube
-: 1623384892:0;kubectl get pods
-: 1623384927:0;brew uninstall kubectx
-: 1623384934:0;brew install kubectx
-: 1623384960:0;nvim ~/.kube/config
-: 1623385153:0;kubens
-: 1623385214:0;kubectl config current-context
-: 1623385299:0;code ~/.config/zsh
-: 1623385397:0;cat ~/.bash_profile
-: 1623385453:0;mv ~/.local_profile ~/.local_profile.bk
-: 1623385463:0;echo $KUBECONFIG
-: 1623385478:0;kubectx -h
-: 1623385507:0;kubectx vs@vs-prod
-: 1623385563:0;kubectx vs@vs-devops.ap-southeast-1.eksctl.io
-: 1623385602:0;kubectx vs@vs-service
-: 1623385603:0;kgpo
-: 1623385678:0;nvim ~/.local_profile
-: 1623385730:0;cat ~/.zshenv
-: 1623385780:0;echo $PATH | grep zinit
-: 1623385982:0;brew reinstall chezmoi
-: 1623386062:0;chezmoi -h
-: 1623386067:0;chezmoi completion
-: 1623386070:0;chezmoi completion zsh
-: 1623386662:0;/usr/local/bin/zsh
-: 1623386739:0;echo $PATH | grep self
-: 1623386809:0;zinit
-: 1623386827:0;zinit -h
-: 1623386834:0;zinit self-update
-: 1623386963:0;which pyenv
-: 1623387126:0;chezmoi edit ~/.zshenv
-: 1623387206:0;echo $PATH
-: 1623387414:0;echo $PATH | grep cl
-: 1623387417:0;echo $PATH | grep cq
-: 1623387647:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
-: 1623387679:0;pyenv init -h
-: 1623387751:0;pyenv init -hpyenv init -
-: 1623387763:0;pyenv list
-: 1623388340:0;zsh
-: 1623388519:0;neofetch
-: 1623388872:0;which zsh
-: 1623388936:0;zsh -v
-: 1623388960:0;zsh version
-: 1623388964:0;zsh --version
-: 1623388972:0;brew upgrade zsh
-: 1623389007:0;/usr/local/Cellar/neofetch/7.1.0/bin/neofetch ; exit;
-: 1623389102:0;chsh -s $(which zsh)
-: 1623389134:0;pyenv
-: 1623389161:0;cat /etc/shells
-: 1623389207:0;pyenv init -
-: 1623389253:0;eval $(pyenv init -)
-: 1623389264:0;pyenv init
-: 1623389270:0;eval "$(pyenv init -)"
-: 1623389320:0;brew upgrade pyenv
-: 1623389523:0;brew reinstall pyenv
-: 1623389749:0;echo $TEST
-: 1623389777:0;chezmoi add ~/.config/zsh/.zsh_history
-: 1623389845:0;kubectx
-: 1623389858:0;nvim ~/.zshenv
-: 1623389869:0;chezmoi add ~/.zshenv
-: 1623389937:0;pưd
-: 1623389939:0;pwd
-: 1623389943:0;git status
-: 1623390357:0;chezmoi add ~/.config/zsh/.zshrc
-: 1623390593:0;chezmoi add ~/.config/zsh/completion.zsh
-: 1623396925:0;chezmoi add ~/.config/zsh/integration.zsh
-: 1623396928:0;chezmoi update
-: 1623396962:0;chezmoi add ~/.config/zsh/.zprofile
-: 1623396969:0;chezmoi cd
-: 1623399372:0;helm repo update
-: 1623400811:0;curl https://example.com/slides.md | slides
-: 1623400878:0;curl https://raw.githubusercontent.com/maaslalani/slides/main/examples/slides.md 
-: 1623400884:0;curl https://raw.githubusercontent.com/maaslalani/slides/main/examples/slides.md | slides
-: 1623400996:0;ssh-add -k
-: 1623431267:0;~brew install hammerspoon --cask
-: 1623431269:0;brew install hammerspoon --cask
-: 1623431366:0;cat ~/.ssh/id_rsa.pub
-: 1623431415:0;lg
-: 1623431436:0;clear
-: 1623433528:0;brew update
-: 1623433543:0;brew upgrade
-: 1623471893:0;brew install --cask sourcetree
-: 1623472293:0;yarn global add tiktok-scraper
-: 1623472402:0;tiktok-scraper user sun.minor
-: 1623472427:0;ls
-: 1623472435:0;cd
-: 1623472444:0;src
-: 1623472471:0;tiktok-scraper user sun.minor
-: 1623472479:0;ls
-: 1623472510:0;tiktok-scraper user @sun.minor
-: 1623472515:0;tiktok-scraper user sun.minor
-: 1623472527:0;tiktok-scraper trend
-: 1623472537:0;tiktok-scraper history
-: 1623472590:0;tiktok-scraper history -r user:sun.minor
-: 1623472606:0;tiktok-scraper user sun.minor -d -n 100
-: 1623494573:0;npm i -g tiktok-scraper
-: 1623494598:0;yarn global add tiktok-scraper
-: 1623496059:0;cat ~/.kube/config
-: 1623496063:0;cat ~/.kube/config | pbcopy
-: 1623496266:0;chezmoi cd
-: 1623496279:0;lg
-: 1623496292:0;chezmoi update
-: 1623496319:0;code .
-: 1623496415:0;chezmoi add ~/.kube/config
-: 1623496480:0;chezmoi add ~.config/zsh/.zsh_history
-: 1623496487:0;chezmoi add ~/.config/zsh/.zsh_history
+: 1623256272:0;chezmoi add ~/.config/zsh/.zsh_history
+: 1623341321:0;rm -rf /Applications/Vivaldi.app
+: 1623341326:0;rm -rf /usr/local/bin/emacs
+: 1623341335:0;rm -rf /Applications/Docker.app
+: 1623341346:0;rm -rf /Applications/Google\ Chrome.app
+: 1623341515:0;rm -rf /Applications/Firefox.app
+: 1623341527:0;rm -rf /Applications/Sublime\ Text.app
+: 1623341545:0;rm -rf /Applications/Discord.app
+: 1623341758:0;rm -rf /usr/local/etc/bash_completion.d/docker-compose
+: 1623341833:0;rm -rf /Applications/Slack.app
+: 1623341836:0;sudo rm -rf /Applications/Slack.app
+: 1623342028:0;rm -rf /usr/local/share/zsh/site-functions/_docker
+: 1623342144:0;rm -rf /Applications/Transmit.app
+: 1623342157:0;rm -rf /usr/local/bin/ebrowse
+: 1623342467:0;rm -rf /Applications/draw.io.app
+: 1623342473:0;rm -rf /Applications/Postman.app
+: 1623342486:0;rm -rf /Applications/OpenKey.app
+: 1623342640:0;brew install --cask openkey
+: 1623342819:0;rm -rf /usr/local/bin/emacsclient
+: 1623342860:0;rm -rf /usr/local/bin/etags
+: 1623343680:0;rm -rf /usr/local/share/man/man1/ebrowse.1.gz
+: 1623343707:0;rm -rf /usr/local/share/fish/vendor_completions.d/docker.fish
+: 1623343711:0;rm -rf /usr/local/share/man/man1/emacs.1.gz
+: 1623343761:0;rm -rf /usr/local/share/man/man1/emacsclient.1.gz
+: 1623343799:0;rm -rf /usr/local/share/man/man1/etags.1.gz
+: 1623343801:0;brew install --cask emacs
+: 1623343842:0;brew install --cask lens
+: 1623424859:0;chezmoi init https://github.com/oo00spy00oo\/dotfiles.git
+: 1623424863:0;chezmoi init https://github.com/oo00spy00oo/dotfiles.git
+: 1623424881:0;chezmoi chezmoi apply
+: 1623424916:0;tmuxinator
+: 1623424924:0;tmuxinator list
+: 1623424929:0;tmuxinator local
+: 1623424974:0;echo $EDITOR
+: 1623424989:0;tmux
+: 1623498245:0;cat dot_kube/private_config.tmpl
+: 1623498267:0;bw -h
+: 1623498271:0;bw -h update
+: 1623498419:0;bw get item
+: 1623498446:0;cat dot_kube/private_config-vs-prod.tmpl
+: 1623498465:0;bw get item sshkey
+: 1623509824:0;bw list
+: 1623509829:0;bw list items
+: 1623509842:0;bw list items | grep ssh
+: 1623509855:0;bw list items | jq .
+: 1623509933:0;bw list collections
+: 1623509947:0;bw list items -h
+: 1623510005:0;echo "{\"organizationId\":null,\"folderId\":null,\"type\":2,\"name\":\"sshkey\",\"notes\":\"$(sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/\\\\n/g' ~/.ssh/id_rsa)\",\"favorite\":false,\"fields\":[],\"login\":null,\"secureNote\":{\"type\":0},\"card\":null,\"identity\":null}"
+: 1623510076:0;bw
+: 1623510109:0;bw update
+: 1623510117:0;bw get item kubeconfig
+: 1623510138:0;bw get item kubeconfig_greenconnect-dev
+: 1623510163:0;bw get item -h
+: 1623510181:0;bw get item 4c14efbb-3708-47d7-bb25-ad4500b76c31
+: 1623510188:0;bw get item 4c14efbb-3708-47d7-bb25-ad4500b76c31 | jq
+: 1623510222:0;bw get item 4c14efbb-3708-47d7-bb25-ad4500b76c31 | jq .notes | jq .
+: 1623510232:0;bw get item 4c14efbb-3708-47d7-bb25-ad4500b76c31 | jq .notes
+: 1623510294:0;bw get item 95d3b575-aacc-4560-b116-ad4500be3efd | jq .notes
+: 1623510313:0;bw get item kubeconfig_vs-prod | jq .notes
+: 1623510319:0;bw get item kubeconfig_vs-prod | jq .
+: 1623510505:0;ssh-add -k
+: 1623510533:0;git remote -v
+: 1623510557:0;git remove remove origin
+: 1623510567:0;git remote remove origin
+: 1623510577:0;git remote add origin git@github.com:oo00spy00oo/dotfiles.git
+: 1623510586:0;git push --set-upstream origin main
+: 1623510611:0;bw sync
+: 1623510617:0;chezmoi apply
+: 1623516948:0;cd ~/development/Github/mac-playbook/
+: 1623516964:0;tmuxinator new local
+: 1623516996:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"\
+
+: 1623517219:0;git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"\
+
+: 1623517295:0;code .
+: 1623517331:0;cd $ZPREZTODIR && git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
+: 1623517444:0;ansible-playbook playbooks/install.yml --ask-become-pass
+: 1623517692:0;pick
+: 1623517709:0;gh 
+: 1623517725:0;brew upgrade gh
+: 1623517757:0;gh
+: 1623517766:0;gh auth
+: 1623517775:0;gh auth status
+: 1623517780:0;gh auth login
+: 1623517946:0;gh completion
+: 1623517953:0;gh completion -s zsh
+: 1623518000:0;chezmoi edit ~/.config/zsh/completion.zsh
+: 1623518133:0;chezmoi update
+: 1623518364:0;mas
+: 1623518371:0;mas upgrade
+: 1623518406:0;mas list
+: 1623520418:0;ansible-playbook playbooks/patch.yml --ask-become-pass
+: 1623520472:0;ansible-playbook playbooks/update.yml --ask-become-pass
+: 1623561620:0;ping mail.gotrust.vn
+: 1623566323:0;brew unlink terraform
+: 1623566374:0;brew uninstall --ignore-dependencies terraform
+: 1623817892:0;tmux new-session
+: 1623908480:0;make update
+: 1623908637:0;sudo rm -rf /Applications/GitKraken.app
+: 1623910776:0;brew uninstall terragrunt
+: 1623910794:0;brew uninstall terraform
+: 1623910852:0;cd mac-dev-playbook
+: 1623924731:0;cd ~/Downloads/promotion
+: 1623924873:0;git init
+: 1623924917:0;git init --initial-branch=main
+: 1623924932:0;rm -rf .git
+: 1623924938:0;git init --initial-branch=master
+: 1623924944:0;git remote add origin git@gitlab.com:globalcare/viet-saver/core/promotion.git
+: 1623924952:0;git commit -m "Initial commit"
+: 1623924960:0;git push -u origin master
+: 1623989362:0;export PATH=/usr/local/opt/go/libexec/bin:$PATH
+: 1623989466:0;clear\
+lg
+: 1623989482:0;rm -rf /Applications/Terminus.app
+: 1623989489:0;brew install --cask terminus
+: 1623990265:0;brew tap
+: 1623990270:0;brew tap -h
+: 1623990285:0;brew tap --repair
+: 1623992549:0;brew update
+: 1624075408:0;rm -rf 
+: 1624075414:0;rm -rf /usr/local/Cellar/python@3.9/3.9.0_2
+: 1624075427:0;sudo rm -rf /usr/local/Cellar/python@3.9/3.9.0_2
+: 1624075431:0;brew cleanup
+: 1624075576:0;cd mac-dev-playbook/
+: 1624075580:0;ansible-playbook main.yml --ask-become-pass
+: 1624080762:0;brew install git-delta
+: 1624080804:0;peco
+: 1624080899:0;brew upgrade
+: 1624080958:0;mv development Development
+: 1624081042:0;git delta show
+: 1624081103:0;chezmoi edit ~/.gitconfig
+: 1624081178:0;chezmoi add ~/.gitconfig
+: 1624081383:0;code ~/.gitconfig
+: 1624081416:0;git show
+: 1624081436:0;git reflog -p
+: 1624081472:0;delta
+: 1624081477:0;delta show
+: 1624081486:0;delta --color-only
+: 1624081510:0;delta --show-syntax-themes --light
+: 1624081522:0;delta --show-syntax-themes --dark
+: 1624081546:0;git -c delta.line-numbers=false show
+: 1624081707:0;brew install dust
+: 1624081750:0;git checkout master
+: 1624081880:0;dust
+: 1624081901:0;brew install duf
+: 1624081991:0;brew uninstall mcfly
+: 1624082021:0;brew tap cantino/mcfly
+: 1624082031:0;brew install mcfly
+: 1624082292:0;which starship
+: 1624082327:0;which pyenv
+: 1624082393:0;export MCFLY_FUZZY=true
+: 1624082420:0;brew --prefix
+: 1624082455:0;brew install choose-rust
+: 1624082552:0;brew install sd
+: 1624082571:0;softwareupdate --all --install --force
+: 1624082666:0;brew tap clementtsang/bottom
+: 1624082674:0;brew install bottom
+: 1624082748:0;btm
+: 1624082763:0;brew install hyperfine
+: 1624082802:0;brew install procs
+: 1624082836:0;which cd
+: 1624083003:0;zi
+: 1624083010:0;zi ~/d/g
+: 1624083015:0;zi ~/d/G
+: 1624083108:0;xh --offline httpbin.com/get
+: 1624083114:0;xh  httpbin.com/get
+: 1624083139:0;xh httpbin.ể�g/get
+: 1624083142:0;xh httpbin.org/get
+: 1624083289:0;brew install broot
+: 1624083467:0;ls | pêc
+: 1624083471:0;ls | peco
+: 1624100638:0;ssh-copy-id vinhvo@222.253.45.208
+: 1624102094:0;ssh vinhvo@222.253.45.208
+: 1624102170:0;pưd
+: 1624102174:0;cd
+: 1624102177:0;pwd
+: 1624102990:0;cd ~/Downloads/
+: 1624102992:0;git clone https://github.com/acidanthera/OpenCorePkg
+: 1624103102:0;cd OpenCorePkg
+: 1624103580:0;git submodule add https://github.com/corpnewt/OCConfigCompare.git Tools/OCConfigCompare
+: 1624103687:0;cd Tools/OC-Update
+: 1624103688:0;git status
+: 1624103776:0;make update-tools
+: 1624113737:0;make download-latest-kext-release
+: 1624113879:0;curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest \\
+| grep "RELEASE" \\
+| grep "browser_download_url.*zip"
+: 1624113903:0;curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest \\
+| grep "RELEASE" \\
+| grep "browser_download_url.*zip"\
+| cut -d : -f 2,3
+: 1624113911:0;curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest \\
+| grep "RELEASE" \\
+| grep "browser_download_url.*zip"\
+| cut -d -f 2,3
+: 1624113924:0;curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest \\
+| grep "RELEASE" \\
+| grep "browser_download_url.*zip" \\
+| cut -d : -f 2,3
+: 1624113945:0;curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest \\
+| grep "RELEASE" \\
+| grep "browser_download_url.*zip" \\
+| cut -d : -f 2,3 \\
+| tr -d \" \\
+| wget -qi -
+: 1624114124:0;cd OC-Update
+: 1624114134:0;./OC-Update.command
+: 1624114196:0;cd Tools
+: 1624114199:0;cd OC-tool
+: 1624114217:0;./OC-tool
+: 1624115221:0;wget https://raw.githubusercontent.com/AMD-OSX/AMD_Vanilla/opencore/17h_19h/patches.plist
+: 1624115925:0;cd Tools/OCConfigCompare
+: 1624116418:0;cd ~/Downloads/OpenCorePkg
+: 1624116478:0;cd Utilities
+: 1624116481:0;cd ocvalidate
+: 1624116482:0;make
+: 1624116643:0;òd
+: 1624116645:0;ofd
+: 1624116972:0;cd GenSMBIOS
+: 1624116975:0;./GenSMBIOS.command
+: 1624117178:0;cd OCConfigCompare
+: 1624117182:0;./OCConfigCompare.command
+: 1624119834:0;cd KextExtractor
+: 1624119837:0;./KextExtractor.command
+: 1624120239:0;cd ..
+: 1624120241:0;make download-latest-oc-release
+: 1624120333:0;git púh
+: 1624120345:0;git ppush
+: 1624128642:0;git add .
+: 1624199192:0;brew services restart yabai
+: 1624206948:0;brew install the_silver_searcher
+: 1624246492:0;rm -rf ~/.zinit
+: 1624246495:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+: 1624247258:0;code ~/development/Github/mac-playbook
+: 1624247297:0;git push
+: 1624247304:0;cd $ZPREZTODIR
+: 1624247305:0;git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
+: 1624247316:0;cd contrib
+: 1624247379:0;clear
+: 1624247664:0;ag the .
+: 1624248042:0;lg
+: 1624248707:0;code ~/.config/zsh
+: 1624248959:0;rm -rf lscolors.sh
+: 1624249087:0;brew install coreutils
+: 1624249121:0;brew reinstall coreutils
+: 1624249436:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+: 1624249517:0;ls | ls_color
+: 1624249629:0;$ mkdir /tmp/LS_COLORS && curl -L https://api.github.com/repos/trapd00r/LS_COLORS/tarball/master | tar xzf - --directory=/tmp/LS_COLORS --strip=1\
+$ ( cd /tmp/LS_COLORS && sh install.sh )\
+To enable the colors, add the following line to your shell's start-up script:\
+\
+For Bourne shell (e.g. ~/.bashrc or ~/.zshrc):\
+  . "~/.local/share/lscolors.sh"\
+\
+For C shell (e.g. ~/.cshrc):\
+  . "~/.local/share/lscolors.csh"\
+$\
+
+: 1624249655:0;mkdir /tmp/LS_COLORS && curl -L https://api.github.com/repos/trapd00r/LS_COLORS/tarball/master | tar xzf - --directory=/tmp/LS_COLORS --strip=1
+: 1624249666:0;cd /tmp/LS_COLORS && sh install.sh
+: 1624249855:0;bookmark src
+: 1624249862:0;bookmark
+: 1624249869:0;bookmark -h
+: 1624249885:0;showmarks
+: 1624249895:0;deletemark src
+: 1624249901:0;deletemark LS_COLORS
+: 1624249905:0;deletemark -h
+: 1624250063:0;cd -
+: 1624250074:0;git log
+: 1624250103:0;ga
+: 1624250111:0;gd
+: 1624250679:0;$(brew --prefix nvm)
+: 1624250938:0;lazyenv-enabled\
+\
+
+: 1624250960:0;lazyenv-enabled
+: 1624250992:0;lazyload -h
+: 1624250995:0;lazyload
+: 1624251036:0;fuck
+: 1624251177:0;ls
+: 1624251190:0;cd rc
+: 1624251467:0;brew tap homebrew/command-not-found
+: 1624251543:0;ac\
+
+: 1624251573:0;when
+: 1624251797:0;pip install Pygments
+: 1624251882:0;brew install autoenv
+: 1624252082:0;exit
+: 1624252293:0;tab
+: 1624252323:0;pfs
+: 1624252327:0;pfd
+: 1624252811:0;z
+: 1624252844:0;z Downloads
+: 1624252853:0;cd 
+: 1624252857:0;z Down
+: 1624252953:0;tldr zxodie
+: 1624252964:0;tldr --upgrade
+: 1624252969:0;tldr --update
+: 1624252995:0;zoxide query -ls
+: 1624253001:0;tldr zoxide 
+: 1624253094:0;chezmoi add ~/.config/zsh/integration.zsh
+: 1624253126:0;chezmoi add ~/.config/zsh/.zshrc
+: 1624253130:0;chezmoi add ~/.config/zsh/plugin.zsh
+: 1624253136:0;chezmoi cd
+: 1624253195:0;brew install zoxide
+: 1624253215:0;which zoxide
+: 1624253320:0;sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+: 1624253339:0;cd /Users/oo00spy00oo/.oh-my-zsh`
+: 1624253340:0;cd /Users/oo00spy00oo/.oh-my-zsh
+: 1624253342:0;git pull
+: 1624253378:0;zoxide query --interactive
+: 1624253792:0;sdk -h
+: 1624253869:0;sdk \
+
+: 1624254406:0;tig
+: 1624254412:0;glo
+: 1624254648:0;brew install cheat
+: 1624254673:0;src
+: 1624254684:0;cheat rsync
+: 1624254698:0;cheat tar
+: 1624254735:0;cheat
+: 1624254748:0;cheat tar
+: 1624254759:0;cheat tldr
+: 1624255143:0;lg
+: 1624255183:0;chezmoi cd
+: 1624255193:0;chezmoi add ~/.config/zsh/plugin.zsh
+: 1624255196:0;chezmoi add ~/.config/zsh/.zshrc
+: 1624255203:0;chezmoi add ~/.config/zsh/integration.zsh
+: 1624255219:0;lg
+: 1624255243:0;rm -rf lscolors.sh
+: 1624255249:0;lg
+: 1624255255:0;git push -u origin master
+: 1624255259:0;git push -u origin main
+: 1624255269:0;git pull
+: 1624255281:0;code .
+: 1624255331:0;git push -u origin main
+: 1624255343:0;chezmoi update
+: 1624255384:0;chezmoi edit ~/.gitconfig
+: 1624255390:0;chezmoi update
+: 1624255453:0;chezmoi add ~/.config/zsh/.zsh_history
