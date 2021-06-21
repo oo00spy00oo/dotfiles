@@ -26,15 +26,26 @@ eval "$(pyenv init -)"
 # Add Startify
 # zsh-startify
 
+# Homebrew Command Not Found
+HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f "$HB_CNF_HANDLER" ]; then
+    source "$HB_CNF_HANDLER";
+fi
+
 # mozjpeg
 export PATH="/usr/local/opt/mozjpeg/bin:$PATH"
+
+# colorize
+export ZSH_COLORIZE_STYLE="colorful"
 
 # Mcfly - ctrl + r replacement
 if [ $commands[mcfly] ]; then
     eval "$(mcfly init zsh)"
 fi
 
-eval "$(zoxide init zsh)"
+if [ $commands[zoxide] ]; then
+    eval "$(zoxide init zsh)"
+fi
 
 # Starship theme
 if [ $commands[starship] ]; then

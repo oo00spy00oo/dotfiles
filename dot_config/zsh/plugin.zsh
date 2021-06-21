@@ -34,7 +34,7 @@ zinit lucid for \
     zdharma/history-search-multi-word
 
 # Git section
-zinit light wfxr/forgit
+zinit load wfxr/forgit
 zinit light tj/git-extras
 zinit light bobthecow/git-flow-completion
 zinit as"null" wait"2" lucid for \
@@ -42,6 +42,8 @@ zinit as"null" wait"2" lucid for \
     sbin  paulirish/git-open \
     sbin  paulirish/git-recent \
     sbin  davidosomething/git-my
+
+zinit load psprint/zsh-navigation-tools
 
 zinit lucid light-mode for \
     zpm-zsh/ls \
@@ -67,7 +69,10 @@ zinit lucid light-mode for \
     b4b4r07/enhancd \
     zdharma/zbrowse \
     zpm-zsh/autoenv \
-    mbhynes/fzf-gcloud
+    mbhynes/fzf-gcloud \
+    hlissner/zsh-autopair \
+    changyuheng/zsh-interactive-cd \
+    denysdovhan/gitio-zsh
 
 # httpstat
 zinit ice as"program" cp"httpstat.sh -> httpstat" pick"httpstat"
@@ -81,14 +86,18 @@ zinit light joshskidmore/zsh-fzf-history-search
 zinit light g-plane/zsh-yarn-autocompletions
 zinit light Dabz/kafka-zsh-completions
 
-# zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
-#     atpull'%atclone' pick"clrs.zsh" nocompile'!' \
-#     atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
-zinit light trapd00r/LS_COLORS
+if [ !$commands[dircolors] ]; then
+    zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
+        atpull'%atclone' pick"clrs.zsh" nocompile'!' \
+        atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”';
+fi
+zinit light trapd00r/LS_COLORS;
 
 # Diff-So-Fancy
 zplugin ice as"program" pick"bin/git-dsf"
 zplugin light zdharma/zsh-diff-so-fancy
+
+# zplugin light matthieusb/zsh-sdkman
 
 # nvm
 export NVM_LAZY_LOAD=true

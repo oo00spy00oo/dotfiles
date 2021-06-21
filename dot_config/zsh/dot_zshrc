@@ -73,7 +73,7 @@ plugins=(
     autojump
     colored-man-pages
     git
-    # kubectl
+    kubectl
     docker
     git-flow-avh
     docker-compose
@@ -95,6 +95,14 @@ plugins=(
     z
     frontend-search
 	vi-mode
+    urltools
+    git-flow-avh
+    command-not-found
+    git-hubflow
+    httpie
+    zsh-navigation-tools
+    zoxide
+    brew
     )
 
 source $ZSH/oh-my-zsh.sh
