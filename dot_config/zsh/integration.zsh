@@ -52,4 +52,8 @@ if [ $commands[starship] ]; then
     eval "$(starship init zsh)"
 fi
 
+# Go version manager: g
+export GOPATH="$HOME/go"; export GOROOT="/usr/local/opt/go/libexec"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+alias ggovm="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+
 neofetch
