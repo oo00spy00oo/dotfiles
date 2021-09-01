@@ -75,10 +75,14 @@ export PGO_NAMESPACE=pgo
 # Linkerd
 export PATH=$PATH:$HOME/.linkerd2/bin
 
+# https://www.redhat.com/sysadmin/replace-docker-podman-macos
+export CONTAINER_HOST=ssh://vagrant@127.0.0.1:2222/run/podman/podman.sock
+export CONTAINER_SSHKEY=/Users/oo00spy00oo/tools/podman/.vagrant/machines/default/virtualbox/private_key
+
 # +---------+
 # | ALIASES |
 # +---------+
 # source $DOTFILES/aliases/aliases
 
 # Cargo
-source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
