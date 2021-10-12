@@ -91,7 +91,6 @@ plugins=(
     virtualenv
     zsh-navigation-tools
     zsh-interactive-cd
-    zsh_reload
     z
     frontend-search
 	vi-mode
