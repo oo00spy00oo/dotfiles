@@ -18,7 +18,6 @@
 : 1623218059:0;brew unlink tfenv
 : 1623218619:0;cp -r ~/.zshenv .config/zsh/
 : 1623218626:0;cp -r ~/.zshenv ~/.config/zsh/
-: 1623218677:0;ls ~/.config/zsh
 : 1623218747:0;exa -la .config/zsh
 : 1623218799:0;code ~/.zshenv
 : 1623218818:0;rm -rf .config/zsh/.zshenv
@@ -32,7 +31,6 @@
 : 1623241173:0;ansible-playbook install.yml
 : 1623241191:0;ansible-playbook install.yml --ask-become
 : 1623241278:0;echo $(which zinit)
-: 1623241337:0;zinit self-update
 : 1623241349:0;which zinit
 : 1623241431:0;kubectl krew upgrade
 : 1623241473:0;zprezto-update
@@ -45,8 +43,6 @@
 : 1623242740:0;/bin/zsh
 : 1623242977:0;which zsh
 : 1623242981:0;/usr/local/bin/zsh
-: 1623243201:0;sdk update
-: 1623243207:0;sdk upgrade
 : 1623243264:0;nvm upgrade
 : 1623247540:0;cd scripts/update
 : 1623247584:0;nvim --headless +PlugUpdate +qall
@@ -62,14 +58,9 @@
 : 1623252755:0;rm -rf /Users/oo00spy00oo/.tmux.conf.local
 : 1623253306:0;ansible-playbook playbooks/update.yml --ask-become
 : 1623253442:0;go get -u github.com/alecthomas/chroma/cmd/chroma
-: 1623254893:0;ansible-playbook main.yml
-: 1623255000:0;sdk
 : 1623255272:0;sdk install micronaut
-: 1623255720:0;make install
 : 1623256115:0;l
 : 1623256119:0;ll
-: 1623256122:0;exa -la
-: 1623256272:0;chezmoi add ~/.config/zsh/.zsh_history
 : 1623341321:0;rm -rf /Applications/Vivaldi.app
 : 1623341326:0;rm -rf /usr/local/bin/emacs
 : 1623341335:0;rm -rf /Applications/Docker.app
@@ -95,13 +86,10 @@
 : 1623343761:0;rm -rf /usr/local/share/man/man1/emacsclient.1.gz
 : 1623343799:0;rm -rf /usr/local/share/man/man1/etags.1.gz
 : 1623343801:0;brew install --cask emacs
-: 1623343842:0;brew install --cask lens
 : 1623424859:0;chezmoi init https://github.com/oo00spy00oo\/dotfiles.git
 : 1623424863:0;chezmoi init https://github.com/oo00spy00oo/dotfiles.git
 : 1623424881:0;chezmoi chezmoi apply
 : 1623424916:0;tmuxinator
-: 1623424924:0;tmuxinator list
-: 1623424929:0;tmuxinator local
 : 1623424974:0;echo $EDITOR
 : 1623424989:0;tmux
 : 1623498245:0;cat dot_kube/private_config.tmpl
@@ -129,21 +117,16 @@
 : 1623510294:0;bw get item 95d3b575-aacc-4560-b116-ad4500be3efd | jq .notes
 : 1623510313:0;bw get item kubeconfig_vs-prod | jq .notes
 : 1623510319:0;bw get item kubeconfig_vs-prod | jq .
-: 1623510505:0;ssh-add -k
-: 1623510533:0;git remote -v
 : 1623510557:0;git remove remove origin
 : 1623510567:0;git remote remove origin
 : 1623510577:0;git remote add origin git@github.com:oo00spy00oo/dotfiles.git
 : 1623510586:0;git push --set-upstream origin main
 : 1623510611:0;bw sync
 : 1623510617:0;chezmoi apply
-: 1623516948:0;cd ~/development/Github/mac-playbook/
-: 1623516964:0;tmuxinator new local
 : 1623516996:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"\
 
 : 1623517219:0;git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"\
 
-: 1623517295:0;code .
 : 1623517331:0;cd $ZPREZTODIR && git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
 : 1623517444:0;ansible-playbook playbooks/install.yml --ask-become-pass
 : 1623517692:0;pick
@@ -156,50 +139,32 @@
 : 1623517946:0;gh completion
 : 1623517953:0;gh completion -s zsh
 : 1623518000:0;chezmoi edit ~/.config/zsh/completion.zsh
-: 1623518133:0;chezmoi update
-: 1623518364:0;mas
-: 1623518371:0;mas upgrade
-: 1623518406:0;mas list
 : 1623520418:0;ansible-playbook playbooks/patch.yml --ask-become-pass
 : 1623520472:0;ansible-playbook playbooks/update.yml --ask-become-pass
 : 1623561620:0;ping mail.gotrust.vn
 : 1623566323:0;brew unlink terraform
 : 1623566374:0;brew uninstall --ignore-dependencies terraform
 : 1623817892:0;tmux new-session
-: 1623908480:0;make update
 : 1623908637:0;sudo rm -rf /Applications/GitKraken.app
 : 1623910776:0;brew uninstall terragrunt
 : 1623910794:0;brew uninstall terraform
 : 1623910852:0;cd mac-dev-playbook
 : 1623924731:0;cd ~/Downloads/promotion
-: 1623924873:0;git init
-: 1623924917:0;git init --initial-branch=main
-: 1623924932:0;rm -rf .git
 : 1623924938:0;git init --initial-branch=master
 : 1623924944:0;git remote add origin git@gitlab.com:globalcare/viet-saver/core/promotion.git
-: 1623924952:0;git commit -m "Initial commit"
-: 1623924960:0;git push -u origin master
-: 1623989362:0;export PATH=/usr/local/opt/go/libexec/bin:$PATH
-: 1623989466:0;clear\
-lg
 : 1623989482:0;rm -rf /Applications/Terminus.app
 : 1623989489:0;brew install --cask terminus
 : 1623990265:0;brew tap
 : 1623990270:0;brew tap -h
 : 1623990285:0;brew tap --repair
-: 1623992549:0;brew update
 : 1624075408:0;rm -rf 
 : 1624075414:0;rm -rf /usr/local/Cellar/python@3.9/3.9.0_2
 : 1624075427:0;sudo rm -rf /usr/local/Cellar/python@3.9/3.9.0_2
-: 1624075431:0;brew cleanup
 : 1624075576:0;cd mac-dev-playbook/
-: 1624075580:0;ansible-playbook main.yml --ask-become-pass
 : 1624080762:0;brew install git-delta
 : 1624080804:0;peco
-: 1624080899:0;brew upgrade
 : 1624080958:0;mv development Development
 : 1624081042:0;git delta show
-: 1624081103:0;chezmoi edit ~/.gitconfig
 : 1624081178:0;chezmoi add ~/.gitconfig
 : 1624081383:0;code ~/.gitconfig
 : 1624081416:0;git show
@@ -211,8 +176,6 @@ lg
 : 1624081522:0;delta --show-syntax-themes --dark
 : 1624081546:0;git -c delta.line-numbers=false show
 : 1624081707:0;brew install dust
-: 1624081750:0;git checkout master
-: 1624081880:0;dust
 : 1624081901:0;brew install duf
 : 1624081991:0;brew uninstall mcfly
 : 1624082021:0;brew tap cantino/mcfly
@@ -241,18 +204,11 @@ lg
 : 1624083467:0;ls | pêc
 : 1624083471:0;ls | peco
 : 1624100638:0;ssh-copy-id vinhvo@222.253.45.208
-: 1624102094:0;ssh vinhvo@222.253.45.208
 : 1624102170:0;pưd
-: 1624102174:0;cd
-: 1624102177:0;pwd
-: 1624102990:0;cd ~/Downloads/
 : 1624102992:0;git clone https://github.com/acidanthera/OpenCorePkg
 : 1624103102:0;cd OpenCorePkg
 : 1624103580:0;git submodule add https://github.com/corpnewt/OCConfigCompare.git Tools/OCConfigCompare
 : 1624103687:0;cd Tools/OC-Update
-: 1624103688:0;git status
-: 1624103776:0;make update-tools
-: 1624113737:0;make download-latest-kext-release
 : 1624113879:0;curl -s https://api.github.com/repos/acidanthera/OpenCorePkg/releases/latest \\
 | grep "RELEASE" \\
 | grep "browser_download_url.*zip"
@@ -275,8 +231,6 @@ lg
 | tr -d \" \\
 | wget -qi -
 : 1624114124:0;cd OC-Update
-: 1624114134:0;./OC-Update.command
-: 1624114196:0;cd Tools
 : 1624114199:0;cd OC-tool
 : 1624114217:0;./OC-tool
 : 1624115221:0;wget https://raw.githubusercontent.com/AMD-OSX/AMD_Vanilla/opencore/17h_19h/patches.plist
@@ -284,37 +238,23 @@ lg
 : 1624116418:0;cd ~/Downloads/OpenCorePkg
 : 1624116478:0;cd Utilities
 : 1624116481:0;cd ocvalidate
-: 1624116482:0;make
 : 1624116643:0;òd
-: 1624116645:0;ofd
 : 1624116972:0;cd GenSMBIOS
 : 1624116975:0;./GenSMBIOS.command
 : 1624117178:0;cd OCConfigCompare
-: 1624117182:0;./OCConfigCompare.command
 : 1624119834:0;cd KextExtractor
-: 1624119837:0;./KextExtractor.command
-: 1624120239:0;cd ..
-: 1624120241:0;make download-latest-oc-release
 : 1624120333:0;git púh
 : 1624120345:0;git ppush
-: 1624128642:0;git add .
-: 1624199192:0;brew services restart yabai
 : 1624206948:0;brew install the_silver_searcher
 : 1624246492:0;rm -rf ~/.zinit
 : 1624246495:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
 : 1624247258:0;code ~/development/Github/mac-playbook
-: 1624247297:0;git push
 : 1624247304:0;cd $ZPREZTODIR
 : 1624247305:0;git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
 : 1624247316:0;cd contrib
-: 1624247379:0;clear
 : 1624247664:0;ag the .
-: 1624248042:0;lg
-: 1624248707:0;code ~/.config/zsh
-: 1624248959:0;rm -rf lscolors.sh
 : 1624249087:0;brew install coreutils
 : 1624249121:0;brew reinstall coreutils
-: 1624249436:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 : 1624249517:0;ls | ls_color
 : 1624249629:0;$ mkdir /tmp/LS_COLORS && curl -L https://api.github.com/repos/trapd00r/LS_COLORS/tarball/master | tar xzf - --directory=/tmp/LS_COLORS --strip=1\
 $ ( cd /tmp/LS_COLORS && sh install.sh )\
@@ -338,7 +278,6 @@ $\
 : 1624249905:0;deletemark -h
 : 1624250063:0;cd -
 : 1624250074:0;git log
-: 1624250103:0;ga
 : 1624250111:0;gd
 : 1624250679:0;$(brew --prefix nvm)
 : 1624250938:0;lazyenv-enabled\
@@ -347,8 +286,6 @@ $\
 : 1624250960:0;lazyenv-enabled
 : 1624250992:0;lazyload -h
 : 1624250995:0;lazyload
-: 1624251036:0;fuck
-: 1624251177:0;ls
 : 1624251190:0;cd rc
 : 1624251467:0;brew tap homebrew/command-not-found
 : 1624251543:0;ac\
@@ -356,7 +293,6 @@ $\
 : 1624251573:0;when
 : 1624251797:0;pip install Pygments
 : 1624251882:0;brew install autoenv
-: 1624252082:0;exit
 : 1624252293:0;tab
 : 1624252323:0;pfs
 : 1624252327:0;pfd
@@ -369,43 +305,1966 @@ $\
 : 1624252969:0;tldr --update
 : 1624252995:0;zoxide query -ls
 : 1624253001:0;tldr zoxide 
-: 1624253094:0;chezmoi add ~/.config/zsh/integration.zsh
-: 1624253126:0;chezmoi add ~/.config/zsh/.zshrc
-: 1624253130:0;chezmoi add ~/.config/zsh/plugin.zsh
-: 1624253136:0;chezmoi cd
 : 1624253195:0;brew install zoxide
 : 1624253215:0;which zoxide
 : 1624253320:0;sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 : 1624253339:0;cd /Users/oo00spy00oo/.oh-my-zsh`
 : 1624253340:0;cd /Users/oo00spy00oo/.oh-my-zsh
-: 1624253342:0;git pull
 : 1624253378:0;zoxide query --interactive
-: 1624253792:0;sdk -h
 : 1624253869:0;sdk \
 
 : 1624254406:0;tig
 : 1624254412:0;glo
 : 1624254648:0;brew install cheat
-: 1624254673:0;src
 : 1624254684:0;cheat rsync
-: 1624254698:0;cheat tar
 : 1624254735:0;cheat
 : 1624254748:0;cheat tar
 : 1624254759:0;cheat tldr
-: 1624255143:0;lg
-: 1624255183:0;chezmoi cd
 : 1624255193:0;chezmoi add ~/.config/zsh/plugin.zsh
-: 1624255196:0;chezmoi add ~/.config/zsh/.zshrc
-: 1624255203:0;chezmoi add ~/.config/zsh/integration.zsh
-: 1624255219:0;lg
 : 1624255243:0;rm -rf lscolors.sh
-: 1624255249:0;lg
-: 1624255255:0;git push -u origin master
-: 1624255259:0;git push -u origin main
-: 1624255269:0;git pull
-: 1624255281:0;code .
-: 1624255331:0;git push -u origin main
-: 1624255343:0;chezmoi update
 : 1624255384:0;chezmoi edit ~/.gitconfig
-: 1624255390:0;chezmoi update
 : 1624255453:0;chezmoi add ~/.config/zsh/.zsh_history
+: 1624257637:0;yarn global add npx
+: 1624257778:0;mkdir portal
+: 1624257779:0;cd portal/
+: 1624257807:0;rm -rf portal
+: 1624248009:1948;brew install --cask shotcut
+: 1624258095:0;nvm install 14
+: 1624258155:0;yarn global add @backstage/cli
+: 1624258370:0;node -v
+: 1624258378:0;node -h
+: 1624258391:0;nvm -v
+: 1624258393:0;nvm -h
+: 1624258402:0;nvm current
+: 1624258408:0;nvm use node
+: 1624258515:0;cd ~/.nvm
+: 1624258548:0;git checkout master
+: 1624258593:0;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+: 1624258617:0;export NVM_DIR
+: 1624258621:0;echo $NVM_DIR
+: 1624258743:0;rm -rf developer-portal
+: 1624258756:0;npx @backstage/create-app
+: 1624259579:0;cd developer-portal/
+: 1624259650:0;git init --initial-branch=main
+: 1624260327:0;bat app-config.yaml
+: 1624260796:0;cd packages/
+: 1624260800:0;cd app/
+: 1624263131:0;git clone --depth 1 git@github.com:backstage/backstage.git
+: 1624263240:0;cd backstage/
+: 1624263881:0;cd packages/backend
+: 1624263890:0;yarn tsc
+: 1624264248:0;duf .
+: 1624264255:0;duf backstage
+: 1624264300:0;dust
+: 1624271120:0;duf
+: 1624375160:0;⃩�clear
+: 1624377579:0;mkdir ansible
+: 1624378599:0;brew upgrade ansible
+: 1624379021:0;ansible-galaxy collection install community.docker
+: 1624379608:0;ansible-galaxy collection install ansible.posix
+: 1624381581:0;git remote add origin git@github.com:gotrust-vn/ansible.git
+: 1624381603:0;git commit -m "first commit"
+: 1624426111:0;brew install cowsay
+: 1624426432:0;curl 222.253.45.208
+: 1624444506:0;ping concourse.gotrust.vn
+: 1624444547:0;host concourse.gotrust.com.vn
+: 1624444614:0;host backstage.gotrust.com.vn
+: 1624444621:0;host caprover.gotrust.com.vn
+: 1624444806:0;dig gotrust.vn
+: 1624613679:0;fly teams
+: 1624613865:0;git clone git@github.com:gotrust-vn/ci
+: 1624613879:0;mv ansible/docker-compose
+: 1624613892:0;mv ansible DevOps
+: 1624722516:0;fly -t gt login -c http://222.253.45.208:8888
+: 1624768918:0;wget https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/download/v2.0.0-RC1/IntelBluetoothFirmware-2.0.0-DEBUG.zip
+: 1624769611:0;cd Tools/KextExtractor/
+: 1624791065:0;fly -t gt set-team --team-name backend --local-user go-admin
+: 1624792117:0;brew install certstrap
+: 1624792327:0;cd docker-compose/concourse/
+: 1624792328:0;certstrap init --cn vault-ca
+: 1624792335:0;certstrap request-cert --domain vault --ip 127.0.0.1
+: 1624792344:0;certstrap sign vault --CA vault-ca
+: 1624792349:0;certstrap request-cert --cn concourse
+: 1624792356:0;certstrap sign concourse --CA vault-ca
+: 1624792359:0;mv out vault-certs
+: 1624792373:0;mkdir vault-config
+: 1624792383:0;nvim vault-config/config.hcl
+: 1624795250:0;fly -t gt login -n main
+: 1624868179:0;git clone git@github.com:gotrust-vn/auth.git
+: 1624868187:0;cd auth/
+: 1624873019:0;pbpaste | base64 | pbcopy
+: 1624873384:0;export REGISTRY_PASSWORD="eyJ0eXBlIjoic2VydmljZV9hY2NvdW50IiwicHJvamVjdF9pZCI6ImdvdHJ1c3QtaW5mcmEiLCJwcml2YXRlX2tleV9pZCI6IjQwOWQ5YzY4Yzk3OGYzMzhlMmY4ZWIyMWU0NTUyOTQ4YmE3YjY0ZWYiLCJwcml2YXRlX2tleSI6Ii0tLS0tQkVHSU4gUFJJVkFURSBLRVktLS0tLVxuTUlJRXZRSUJBREFOQmdrcWhraUc5dzBCQVFFRkFBU0NCS2N3Z2dTakFnRUFBb0lCQVFDUnRGWE1HQk1rbnJSbVxubEY3dU5KNm9OaFR4V0tGbzlTZW1BUHVpb3d6K2RlL0dhWTZsdU9OQ3pEUGhqOVV2Zjd6RkhPakxPcTlGWjExYVxuejdPR2N5RzBDeExWM2UvMWwzdS9OZ1gxRVFVV1RCVm5Lbk1IOHNkQ3FDQkdKZXl6bmFTdDN1NFQwb1oxYU0yMFxuODdhTzFYRCtPRm92emRiTFBqcW9aQlc4M256WFVYcjZEdzRSc3ZnSW1UR1FybWlVcmhaKytCMUdLUXFldTkxK1xuenFDRTQwd1ZiTmIrMVdZSkZtd1pXZ1dJSzBBWDZDbmJGenJOWGhFNkFONVZxaWhOR2lSa0owNHR2RGJkMnE2VVxuZ21oK1dleG9VdEorMU0xNzFwZ1B3UjVTekp2aUlyb1J6NTYzaXJjanRtMHFGWEc0T0RXc1NFTmU3Z0daTzQzelxuL0RBemZpa2ZBZ01CQUFFQ2dnRUFBanlRYkplYUE1L2tDUWNTQmZvTXpXdzNHaFZRTlBvK1o0L3dUT2pQMUVBZlxuTkI1K3NCQ01mSVFCNzk1eldVMU9xbi90R3VHRnV6MEE4OW5vV1pIKzNIS25FVjFjeDVwUnJmZTRVN0MxTVVodFxuczYyMUlsUVp0dTQ1d0pub2JrRm5PN3dHVDR1VndNdWhETHdJKzF4UFpiZWJ1c3dnRmZLWWwra2haRXJPQThnWVxuZVplR2lVN1FGNWJTNXNuMk1oYmpncHJRd0E5ZDc1c25yZVc2N2NZNTYyVDY0cFdxaTcxOXpYQUkrWEx0c2EyeVxueXVWbkNPejVXdFpQWWRLQWE3V1RzbGNLKzNZWnpYdU5vZ3ozTGpuZEN0ekdxRGJoVGl3M0V3TzArWGRDMi9SMFxuNHBJNjJjdTlZV05IRm1tRnVmUmN3LzdsT2tqSk50V1lhVG1qaWhnMGtRS0JnUURLWjAzUnpFbjBuZnVxcjJ1ZlxuU1lSUDNtQmU2YkVJcHV1U3FTWTg5dGsyOC96UU5aOW5BT2RtMlhmaHlVZTJOUUNzKzBNMWRMYlNOVzd2Y1pmSFxuaUVUcWt2TjBHTzd5bDh1UUlDRFcwNjNaazIzSUVuRUx3U0hoWFE3emVhaFNQMWE2OHRFalozMU1PK3h4YUx1MlxuV3VldVZSbEZFZjlPcXRkOFhpdGFYSHZ3ZXdLQmdRQzRTWGRuMUJTdVVmUHNRai85czdydGI2YXF6R2c3T3puVFxuZVM0SUVoSk51RjJpSUJtM2ErMTdtUDJFazZjeExOc25PRlhSMi9XTmNaSGdtMUp4Z3F1a3Q1RXBXVHZsTk9zMVxuZFQ4b0F2YVEzWmZObTFTY1R1NXFqVmdXTVNFbXQ5WjRmMmovb2RldHpLVzZMaHdkTng3NlJYVHFxUXhZYjNVT1xuVXA5RjREd1NyUUtCZ0Fpd0NISVIzN2JGTlRFdFdHUTg1cFg3Q0kzcVgvUHNIajVzVGp6ZHA1TXBROWU0QllDSlxuVkdWZ3ZqbU54eXMxK1RKemtuM3Y1WXorU0NXMDdYdmVDSDg5RVlBUk5laHB4WTRKSXYrMWxFZTdnVUhPTU5YOVxuVXpQMko1Y2h5S3pIRlRUdkNUVUkweUw3aTNtT3NrZndmUE5KcWMwQ0tjQTVxd2dtanB2UlRteVRBb0dCQUlGaVxuNjFmVm1qT056SUY3UGl4a3pRQTVYTDRjUjY0V2RoSVl5WTNYQ2t6US9jUi9YeTdkc3Q0Tld5bUM5V2JjUkgzelxuMnFVK0Z0Z1kvYi9CclkrT20rNUpCNzBOTHJWTmd6cUVPRFJpYURUcnI5SW1sYkFzNXMyZXNWTGJhWmdpaUkwUFxuZjJ2RGVJZEk0SzZvQXdzc0VTN01KenMrTnpHOEIyWm44ZldBYXd6OUFvR0FBbzJJdGV0b2U1eEhsZVdzbVlpaVxuR2Z0cFMyWTBRRUFOOVpXTk01NUxoSEdPak9Od2x4SjBieHJtTHM0VEx6V0dhSEdORWphcGpMKzFSUmo5VWVyRVxuT054MkpDbWlDbFVJL2daZmkvd2Q4WUF1dk9mOWlWVEdDd2NZTktpajNUN2FXVnhNZk1KMXZGRlovbGt4dWlNbVxuTTByQitwTDRacHNoQlBlVloyZGtmK0U9XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLCJjbGllbnRfZW1haWwiOiJjb25jb3Vyc2VAZ290cnVzdC1pbmZyYS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImNsaWVudF9pZCI6IjExMTY3NDk2ODc1ODc4Njk2NDM1OCIsImF1dGhfdXJpIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLCJ0b2tlbl91cmkiOiJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsImF1dGhfcHJvdmlkZXJfeDUwOV9jZXJ0X3VybCI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92MS9jZXJ0cyIsImNsaWVudF94NTA5X2NlcnRfdXJsIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9jb25jb3Vyc2UlNDBnb3RydXN0LWluZnJhLmlhbS5nc2VydmljZWFjY291bnQuY29tIn0="
+: 1624873412:0;export REGISTRY_PASSWORD='eyJ0eXBlIjoic2VydmljZV9hY2NvdW50IiwicHJvamVjdF9pZCI6ImdvdHJ1c3QtaW5mcmEiLCJwcml2YXRlX2tleV9pZCI6IjQwOWQ5YzY4Yzk3OGYzMzhlMmY4ZWIyMWU0NTUyOTQ4YmE3YjY0ZWYiLCJwcml2YXRlX2tleSI6Ii0tLS0tQkVHSU4gUFJJVkFURSBLRVktLS0tLVxuTUlJRXZRSUJBREFOQmdrcWhraUc5dzBCQVFFRkFBU0NCS2N3Z2dTakFnRUFBb0lCQVFDUnRGWE1HQk1rbnJSbVxubEY3dU5KNm9OaFR4V0tGbzlTZW1BUHVpb3d6K2RlL0dhWTZsdU9OQ3pEUGhqOVV2Zjd6RkhPakxPcTlGWjExYVxuejdPR2N5RzBDeExWM2UvMWwzdS9OZ1gxRVFVV1RCVm5Lbk1IOHNkQ3FDQkdKZXl6bmFTdDN1NFQwb1oxYU0yMFxuODdhTzFYRCtPRm92emRiTFBqcW9aQlc4M256WFVYcjZEdzRSc3ZnSW1UR1FybWlVcmhaKytCMUdLUXFldTkxK1xuenFDRTQwd1ZiTmIrMVdZSkZtd1pXZ1dJSzBBWDZDbmJGenJOWGhFNkFONVZxaWhOR2lSa0owNHR2RGJkMnE2VVxuZ21oK1dleG9VdEorMU0xNzFwZ1B3UjVTekp2aUlyb1J6NTYzaXJjanRtMHFGWEc0T0RXc1NFTmU3Z0daTzQzelxuL0RBemZpa2ZBZ01CQUFFQ2dnRUFBanlRYkplYUE1L2tDUWNTQmZvTXpXdzNHaFZRTlBvK1o0L3dUT2pQMUVBZlxuTkI1K3NCQ01mSVFCNzk1eldVMU9xbi90R3VHRnV6MEE4OW5vV1pIKzNIS25FVjFjeDVwUnJmZTRVN0MxTVVodFxuczYyMUlsUVp0dTQ1d0pub2JrRm5PN3dHVDR1VndNdWhETHdJKzF4UFpiZWJ1c3dnRmZLWWwra2haRXJPQThnWVxuZVplR2lVN1FGNWJTNXNuMk1oYmpncHJRd0E5ZDc1c25yZVc2N2NZNTYyVDY0cFdxaTcxOXpYQUkrWEx0c2EyeVxueXVWbkNPejVXdFpQWWRLQWE3V1RzbGNLKzNZWnpYdU5vZ3ozTGpuZEN0ekdxRGJoVGl3M0V3TzArWGRDMi9SMFxuNHBJNjJjdTlZV05IRm1tRnVmUmN3LzdsT2tqSk50V1lhVG1qaWhnMGtRS0JnUURLWjAzUnpFbjBuZnVxcjJ1ZlxuU1lSUDNtQmU2YkVJcHV1U3FTWTg5dGsyOC96UU5aOW5BT2RtMlhmaHlVZTJOUUNzKzBNMWRMYlNOVzd2Y1pmSFxuaUVUcWt2TjBHTzd5bDh1UUlDRFcwNjNaazIzSUVuRUx3U0hoWFE3emVhaFNQMWE2OHRFalozMU1PK3h4YUx1MlxuV3VldVZSbEZFZjlPcXRkOFhpdGFYSHZ3ZXdLQmdRQzRTWGRuMUJTdVVmUHNRai85czdydGI2YXF6R2c3T3puVFxuZVM0SUVoSk51RjJpSUJtM2ErMTdtUDJFazZjeExOc25PRlhSMi9XTmNaSGdtMUp4Z3F1a3Q1RXBXVHZsTk9zMVxuZFQ4b0F2YVEzWmZObTFTY1R1NXFqVmdXTVNFbXQ5WjRmMmovb2RldHpLVzZMaHdkTng3NlJYVHFxUXhZYjNVT1xuVXA5RjREd1NyUUtCZ0Fpd0NISVIzN2JGTlRFdFdHUTg1cFg3Q0kzcVgvUHNIajVzVGp6ZHA1TXBROWU0QllDSlxuVkdWZ3ZqbU54eXMxK1RKemtuM3Y1WXorU0NXMDdYdmVDSDg5RVlBUk5laHB4WTRKSXYrMWxFZTdnVUhPTU5YOVxuVXpQMko1Y2h5S3pIRlRUdkNUVUkweUw3aTNtT3NrZndmUE5KcWMwQ0tjQTVxd2dtanB2UlRteVRBb0dCQUlGaVxuNjFmVm1qT056SUY3UGl4a3pRQTVYTDRjUjY0V2RoSVl5WTNYQ2t6US9jUi9YeTdkc3Q0Tld5bUM5V2JjUkgzelxuMnFVK0Z0Z1kvYi9CclkrT20rNUpCNzBOTHJWTmd6cUVPRFJpYURUcnI5SW1sYkFzNXMyZXNWTGJhWmdpaUkwUFxuZjJ2RGVJZEk0SzZvQXdzc0VTN01KenMrTnpHOEIyWm44ZldBYXd6OUFvR0FBbzJJdGV0b2U1eEhsZVdzbVlpaVxuR2Z0cFMyWTBRRUFOOVpXTk01NUxoSEdPak9Od2x4SjBieHJtTHM0VEx6V0dhSEdORWphcGpMKzFSUmo5VWVyRVxuT054MkpDbWlDbFVJL2daZmkvd2Q4WUF1dk9mOWlWVEdDd2NZTktpajNUN2FXVnhNZk1KMXZGRlovbGt4dWlNbVxuTTByQitwTDRacHNoQlBlVloyZGtmK0U9XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLCJjbGllbnRfZW1haWwiOiJjb25jb3Vyc2VAZ290cnVzdC1pbmZyYS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImNsaWVudF9pZCI6IjExMTY3NDk2ODc1ODc4Njk2NDM1OCIsImF1dGhfdXJpIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLCJ0b2tlbl91cmkiOiJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsImF1dGhfcHJvdmlkZXJfeDUwOV9jZXJ0X3VybCI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92MS9jZXJ0cyIsImNsaWVudF94NTA5X2NlcnRfdXJsIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9jb25jb3Vyc2UlNDBnb3RydXN0LWluZnJhLmlhbS5nc2VydmljZWFjY291bnQuY29tIn0='
+: 1624873436:0;export REGISTRY_PASSWORD="$(base64 -d $REGISTRY_PASSWORD)"
+: 1624873493:0;export REGISTRY_PASSWORD='eyJ0eXBlIjoic2VydmljZV9hY2NvdW50IiwicHJvamVjdF9pZCI6ImdvdHJ1c3QtaW5mcmEiLCJwcml2YXRlX2tleV9pZCI6IjQwOWQ5YzY4Yzk3OGYzMzhlMmY4ZWIyMWU0NTUyOTQ4YmE3YjY0ZWYiLCJwcml2YXRlX2tleSI6Ii0tLS0tQkVHSU4gUFJJVkFURSBLRVktLS0tLVxuTUlJRXZRSUJBREFOQmdrcWhraUc5dzBCQVFFRkFBU0NCS2N3Z2dTakFnRUFBb0lCQVFDUnRGWE1HQk1rbnJSbVxubEY3dU5KNm9OaFR4V0tGbzlTZW1BUHVpb3d6K2RlL0dhWTZsdU9OQ3pEUGhqOVV2Zjd6RkhPakxPcTlGWjExYVxuejdPR2N5RzBDeExWM2UvMWwzdS9OZ1gxRVFVV1RCVm5Lbk1IOHNkQ3FDQkdKZXl6bmFTdDN1NFQwb1oxYU0yMFxuODdhTzFYRCtPRm92emRiTFBqcW9aQlc4M256WFVYcjZEdzRSc3ZnSW1UR1FybWlVcmhaKytCMUdLUXFldTkxK1xuenFDRTQwd1ZiTmIrMVdZSkZtd1pXZ1dJSzBBWDZDbmJGenJOWGhFNkFONVZxaWhOR2lSa0owNHR2RGJkMnE2VVxuZ21oK1dleG9VdEorMU0xNzFwZ1B3UjVTekp2aUlyb1J6NTYzaXJjanRtMHFGWEc0T0RXc1NFTmU3Z0daTzQzelxuL0RBemZpa2ZBZ01CQUFFQ2dnRUFBanlRYkplYUE1L2tDUWNTQmZvTXpXdzNHaFZRTlBvK1o0L3dUT2pQMUVBZlxuTkI1K3NCQ01mSVFCNzk1eldVMU9xbi90R3VHRnV6MEE4OW5vV1pIKzNIS25FVjFjeDVwUnJmZTRVN0MxTVVodFxuczYyMUlsUVp0dTQ1d0pub2JrRm5PN3dHVDR1VndNdWhETHdJKzF4UFpiZWJ1c3dnRmZLWWwra2haRXJPQThnWVxuZVplR2lVN1FGNWJTNXNuMk1oYmpncHJRd0E5ZDc1c25yZVc2N2NZNTYyVDY0cFdxaTcxOXpYQUkrWEx0c2EyeVxueXVWbkNPejVXdFpQWWRLQWE3V1RzbGNLKzNZWnpYdU5vZ3ozTGpuZEN0ekdxRGJoVGl3M0V3TzArWGRDMi9SMFxuNHBJNjJjdTlZV05IRm1tRnVmUmN3LzdsT2tqSk50V1lhVG1qaWhnMGtRS0JnUURLWjAzUnpFbjBuZnVxcjJ1ZlxuU1lSUDNtQmU2YkVJcHV1U3FTWTg5dGsyOC96UU5aOW5BT2RtMlhmaHlVZTJOUUNzKzBNMWRMYlNOVzd2Y1pmSFxuaUVUcWt2TjBHTzd5bDh1UUlDRFcwNjNaazIzSUVuRUx3U0hoWFE3emVhaFNQMWE2OHRFalozMU1PK3h4YUx1MlxuV3VldVZSbEZFZjlPcXRkOFhpdGFYSHZ3ZXdLQmdRQzRTWGRuMUJTdVVmUHNRai85czdydGI2YXF6R2c3T3puVFxuZVM0SUVoSk51RjJpSUJtM2ErMTdtUDJFazZjeExOc25PRlhSMi9XTmNaSGdtMUp4Z3F1a3Q1RXBXVHZsTk9zMVxuZFQ4b0F2YVEzWmZObTFTY1R1NXFqVmdXTVNFbXQ5WjRmMmovb2RldHpLVzZMaHdkTng3NlJYVHFxUXhZYjNVT1xuVXA5RjREd1NyUUtCZ0Fpd0NISVIzN2JGTlRFdFdHUTg1cFg3Q0kzcVgvUHNIajVzVGp6ZHA1TXBROWU0QllDSlxuVkdWZ3ZqbU54eXMxK1RKemtuM3Y1WXorU0NXMDdYdmVDSDg5RVlBUk5laHB4WTRKSXYrMWxFZTdnVUhPTU5YOVxuVXpQMko1Y2h5S3pIRlRUdkNUVUkweUw3aTNtT3NrZndmUE5KcWMwQ0tjQTVxd2dtanB2UlRteVRBb0dCQUlGaVxuNjFmVm1qT056SUY3UGl4a3pRQTVYTDRjUjY0V2RoSVl5WTNYQ2t6US9jUi9YeTdkc3Q0Tld5bUM5V2JjUkgzelxuMnFVK0Z0Z1kvYi9CclkrT20rNUpCNzBOTHJWTmd6cUVPRFJpYURUcnI5SW1sYkFzNXMyZXNWTGJhWmdpaUkwUFxuZjJ2RGVJZEk0SzZvQXdzc0VTN01KenMrTnpHOEIyWm44ZldBYXd6OUFvR0FBbzJJdGV0b2U1eEhsZVdzbVlpaVxuR2Z0cFMyWTBRRUFOOVpXTk01NUxoSEdPak9Od2x4SjBieHJtTHM0VEx6V0dhSEdORWphcGpMKzFSUmo5VWVyRVxuT054MkpDbWlDbFVJL2daZmkvd2Q4WUF1dk9mOWlWVEdDd2NZTktpajNUN2FXVnhNZk1KMXZGRlovbGt4dWlNbVxuTTByQitwTDRacHNoQlBlVloyZGtmK0U9XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLCJjbGllbnRfZW1haWwiOiJjb25jb3Vyc2VAZ290cnVzdC1pbmZyYS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImNsaWVudF9pZCI6IjExMTY3NDk2ODc1ODc4Njk2NDM1OCIsImF1dGhfdXJpIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLCJ0b2tlbl91cmkiOiJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsImF1dGhfcHJvdmlkZXJfeDUwOV9jZXJ0X3VybCI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92MS9jZXJ0cyIsImNsaWVudF94NTA5X2NlcnRfdXJsIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9jb25jb3Vyc2UlNDBnb3RydXN0LWluZnJhLmlhbS5nc2VydmljZWFjY291bnQuY29tIn0='export REGISTRY_PASSWORD='eyJ0eXBlIjoic2VydmljZV9hY2NvdW50IiwicHJvamVjdF9pZCI6ImdvdHJ1c3QtaW5mcmEiLCJwcml2YXRlX2tleV9pZCI6IjQwOWQ5YzY4Yzk3OGYzMzhlMmY4ZWIyMWU0NTUyOTQ4YmE3YjY0ZWYiLCJwcml2YXRlX2tleSI6Ii0tLS0tQkVHSU4gUFJJVkFURSBLRVktLS0tLVxuTUlJRXZRSUJBREFOQmdrcWhraUc5dzBCQVFFRkFBU0NCS2N3Z2dTakFnRUFBb0lCQVFDUnRGWE1HQk1rbnJSbVxubEY3dU5KNm9OaFR4V0tGbzlTZW1BUHVpb3d6K2RlL0dhWTZsdU9OQ3pEUGhqOVV2Zjd6RkhPakxPcTlGWjExYVxuejdPR2N5RzBDeExWM2UvMWwzdS9OZ1gxRVFVV1RCVm5Lbk1IOHNkQ3FDQkdKZXl6bmFTdDN1NFQwb1oxYU0yMFxuODdhTzFYRCtPRm92emRiTFBqcW9aQlc4M256WFVYcjZEdzRSc3ZnSW1UR1FybWlVcmhaKytCMUdLUXFldTkxK1xuenFDRTQwd1ZiTmIrMVdZSkZtd1pXZ1dJSzBBWDZDbmJGenJOWGhFNkFONVZxaWhOR2lSa0owNHR2RGJkMnE2VVxuZ21oK1dleG9VdEorMU0xNzFwZ1B3UjVTekp2aUlyb1J6NTYzaXJjanRtMHFGWEc0T0RXc1NFTmU3Z0daTzQzelxuL0RBemZpa2ZBZ01CQUFFQ2dnRUFBanlRYkplYUE1L2tDUWNTQmZvTXpXdzNHaFZRTlBvK1o0L3dUT2pQMUVBZlxuTkI1K3NCQ01mSVFCNzk1eldVMU9xbi90R3VHRnV6MEE4OW5vV1pIKzNIS25FVjFjeDVwUnJmZTRVN0MxTVVodFxuczYyMUlsUVp0dTQ1d0pub2JrRm5PN3dHVDR1VndNdWhETHdJKzF4UFpiZWJ1c3dnRmZLWWwra2haRXJPQThnWVxuZVplR2lVN1FGNWJTNXNuMk1oYmpncHJRd0E5ZDc1c25yZVc2N2NZNTYyVDY0cFdxaTcxOXpYQUkrWEx0c2EyeVxueXVWbkNPejVXdFpQWWRLQWE3V1RzbGNLKzNZWnpYdU5vZ3ozTGpuZEN0ekdxRGJoVGl3M0V3TzArWGRDMi9SMFxuNHBJNjJjdTlZV05IRm1tRnVmUmN3LzdsT2tqSk50V1lhVG1qaWhnMGtRS0JnUURLWjAzUnpFbjBuZnVxcjJ1ZlxuU1lSUDNtQmU2YkVJcHV1U3FTWTg5dGsyOC96UU5aOW5BT2RtMlhmaHlVZTJOUUNzKzBNMWRMYlNOVzd2Y1pmSFxuaUVUcWt2TjBHTzd5bDh1UUlDRFcwNjNaazIzSUVuRUx3U0hoWFE3emVhaFNQMWE2OHRFalozMU1PK3h4YUx1MlxuV3VldVZSbEZFZjlPcXRkOFhpdGFYSHZ3ZXdLQmdRQzRTWGRuMUJTdVVmUHNRai85czdydGI2YXF6R2c3T3puVFxuZVM0SUVoSk51RjJpSUJtM2ErMTdtUDJFazZjeExOc25PRlhSMi9XTmNaSGdtMUp4Z3F1a3Q1RXBXVHZsTk9zMVxuZFQ4b0F2YVEzWmZObTFTY1R1NXFqVmdXTVNFbXQ5WjRmMmovb2RldHpLVzZMaHdkTng3NlJYVHFxUXhZYjNVT1xuVXA5RjREd1NyUUtCZ0Fpd0NISVIzN2JGTlRFdFdHUTg1cFg3Q0kzcVgvUHNIajVzVGp6ZHA1TXBROWU0QllDSlxuVkdWZ3ZqbU54eXMxK1RKemtuM3Y1WXorU0NXMDdYdmVDSDg5RVlBUk5laHB4WTRKSXYrMWxFZTdnVUhPTU5YOVxuVXpQMko1Y2h5S3pIRlRUdkNUVUkweUw3aTNtT3NrZndmUE5KcWMwQ0tjQTVxd2dtanB2UlRteVRBb0dCQUlGaVxuNjFmVm1qT056SUY3UGl4a3pRQTVYTDRjUjY0V2RoSVl5WTNYQ2t6US9jUi9YeTdkc3Q0Tld5bUM5V2JjUkgzelxuMnFVK0Z0Z1kvYi9CclkrT20rNUpCNzBOTHJWTmd6cUVPRFJpYURUcnI5SW1sYkFzNXMyZXNWTGJhWmdpaUkwUFxuZjJ2RGVJZEk0SzZvQXdzc0VTN01KenMrTnpHOEIyWm44ZldBYXd6OUFvR0FBbzJJdGV0b2U1eEhsZVdzbVlpaVxuR2Z0cFMyWTBRRUFOOVpXTk01NUxoSEdPak9Od2x4SjBieHJtTHM0VEx6V0dhSEdORWphcGpMKzFSUmo5VWVyRVxuT054MkpDbWlDbFVJL2daZmkvd2Q4WUF1dk9mOWlWVEdDd2NZTktpajNUN2FXVnhNZk1KMXZGRlovbGt4dWlNbVxuTTByQitwTDRacHNoQlBlVloyZGtmK0U9XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLCJjbGllbnRfZW1haWwiOiJjb25jb3Vyc2VAZ290cnVzdC1pbmZyYS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImNsaWVudF9pZCI6IjExMTY3NDk2ODc1ODc4Njk2NDM1OCIsImF1dGhfdXJpIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLCJ0b2tlbl91cmkiOiJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsImF1dGhfcHJvdmlkZXJfeDUwOV9jZXJ0X3VybCI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL29hdXRoMi92MS9jZXJ0cyIsImNsaWVudF94NTA5X2NlcnRfdXJsIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9jb25jb3Vyc2UlNDBnb3RydXN0LWluZnJhLmlhbS5nc2VydmljZWFjY291bnQuY29tIn0='
+: 1624873553:0;echo "$(base64 -d $REGISTRY_PASSWORD)"
+: 1624873595:0;echo $REGISTRY_PASSWORD | base64 -d
+: 1624873677:0;export TEST_REGISTRY_PASSWORD=$(echo $REGISTRY_PASSWORD | base64 -d )"
+: 1624873683:0;export TEST_REGISTRY_PASSWORD="$(echo $REGISTRY_PASSWORD | base64 -d )"
+: 1624873689:0;echo $TEST_REGISTRY_PASSWORD=
+: 1624890840:0;dig concourse.gotrust.com.vn
+: 1624891234:0;curl https://www.spinnaker.io/downloads/kubernetes/service-account.yml
+: 1624891242:0;curl -sSL https://www.spinnaker.io/downloads/kubernetes/service-account.yml
+: 1624891256:0;wget https://spinnaker.io/downloads/kubernetes/service-account.yml
+: 1624893004:0;ls ~/.kube
+: 1624893091:0;cp config config-gt-dev
+: 1624893095:0;nvim config-gt-dev
+: 1624893158:0;code config-gt-dev
+: 1624893384:0;chezmoi add ~/.kube/config-gt-dev
+: 1624893536:0;rm -rf dot_kube/private_config-gt-dev
+: 1624893550:0;cat ~/.kube/config-gt-dev | pbcopy
+: 1624893932:0;cat ~/.local_profile
+: 1624894091:0;chezmoi add ~/.local_profile
+: 1624894123:0;rm -rf dot_local_profile
+: 1624895217:0;brew install fluxcd/tap/flux
+: 1624895518:0;cd ~/Data/GoTRUST/DevOps/
+: 1624896341:0;flux 0h
+: 1624896343:0;flux -h
+: 1624896349:0;flux reconcile -h
+: 1624896355:0;flux reconcile kustomization -h
+: 1624896831:0;kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.47.0/deploy/static/provider/cloud/deploy.yaml
+: 1624896927:0;krmf https://raw.githubusercontent.com/argoproj/argo-cd/v2.0.4/manifests/install.yaml
+: 1624898248:0;kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d | pbcopy'
+: 1624902262:0;kubectl port-forward svc/argocd-server -n argocd 8080:443
+: 1624902341:0;argocd login localhost:8080
+: 1624902871:0;helm create auth
+: 1624902955:0;helm create user
+: 1624903622:0;ytt
+: 1624904552:0;true > templates/test.yaml
+: 1624904571:0;: > templates/test.yaml
+: 1624904590:0;cat /dev/null > templates/test.yaml
+: 1624904666:0;truncate -s 0 templates/test.yaml
+: 1624904683:0;echo -n "" templates/test.yaml
+: 1624904694:0;echo -n "" > templates/test.yaml
+: 1624905429:0;ytt -f app.yaml -f values.yaml
+: 1624905464:0;ytt -f app.yaml -f values.yaml app=user
+: 1624905481:0;ytt -f app.yaml -f values.yaml --data-value-yaml app=user
+: 1624905598:0;rm -rf templates/test.yaml
+: 1624905710:0;ytt -f app.yaml -f values.yaml --data-value-yaml app=login tag=latest
+: 1624905723:0;ytt -f app.yaml -f values.yaml --data-value-yaml app=login --data-value-yaml tag=latest
+: 1624908869:0;brew tap starkandwayne/cf
+: 1624908886:0;brew install spruce
+: 1624909051:0;spruce merge tpl.yaml templates/auth.yaml
+: 1624909087:0;spruce merge templates/auth.yaml tpl.yaml
+: 1624910545:0;cp -r auth.yaml templates/auth.yaml
+: 1624910550:0;yes | cp -r auth.yaml templates/auth.yaml
+: 1624910575:0;yes | cp -r test.yaml templates/auth.yaml
+: 1624945911:0;wget -o https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.34.0/ytt-linux-amd64 ytt
+: 1624945919:0;wget https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.34.0/ytt-linux-amd64
+: 1624946025:0;wget https://github.com/vmware-tanzu/carvel-ytt/releases/download/v0.34.0/ytt-linux-amd64 -O ytt
+: 1624946055:0;chmod +x ytt
+: 1624946057:0;./ytt
+: 1624946066:0;./ytt -h
+: 1624958270:0;cd DEV/
+: 1624958271:0;ytt -f src/app.yaml -f src/values.yaml
+: 1624958294:0;ytt -f DEV/app.yaml -f DEV/values.yaml
+: 1624960484:0;ping dev.argocd.gotrust.com.vn
+: 1624960502:0;dig dev.argocd.gotrust.com.vn
+: 1625048200:0;cd ansible
+: 1625051071:0;curl http://concourse.gotrust.com.vn
+: 1625120698:0;brew uninstall sshfs-mac
+: 1625120816:0;brew install datawire/blackbird/telepresence --ignore-dependencies
+: 1625120848:0;brew install osxfuse
+: 1625120942:0;brew unlink telepresence-legacy
+: 1625120948:0;brew link --overwrite telepresence
+: 1625127875:0;kubectl apply -f https://raw.githubusercontent.com/skooner-k8s/skooner/master/kubernetes-skooner.yaml\
+
+: 1625127973:0;kgpo 
+: 1625127990:0;kgpo -n kube-system
+: 1625128042:0;kgsvc -n kube-system
+: 1625128232:0;kubectl create serviceaccount skooner-sa
+: 1625128237:0;kubectl create clusterrolebinding skooner-sa --clusterrole=cluster-admin --serviceaccount=default:skooner-sa
+: 1625128241:0;kubectl get secrets
+: 1625128248:0;kubectl describe secret skooner-sa-token-vt62g
+: 1625128735:0;kubectl describe secret gt-developer-token-4fc54
+: 1625133646:0;brew install --cask raindropio
+: 1625133679:0;cd ~/development/Github/mac-playbook/
+: 1625134110:0;cd FluxCD
+: 1625134382:0;kdsec skooner-sa-token-vt62g
+: 1625135328:0;http https://raw.githubusercontent.com/oam-dev/kubevela/master/docs/examples/vela-app.yaml
+: 1625411644:0;mv ~/.config/nvim ~/.config/nvim-backup
+: 1625411648:0;bash <(curl -s https://raw.githubusercontent.com/ChristianChiarulli/lunarvim/stable/utils/installer/install.sh)
+: 1625411872:0;mv ~/.config/nvim ~/.config/nvim-backup-lunar
+: 1625411892:0;curl -sLf https://spacevim.org/install.sh | bash -s -- -h
+: 1625411908:0;curl -sLf https://spacevim.org/install.sh | bash
+: 1625411927:0;nvim
+: 1625468921:0;cd ~/Data/GoTRUST/
+: 1625468932:0;cargo new notification
+: 1625468939:0;node notification
+: 1625468946:0;code notification
+: 1625473476:0;cargo build --bin server
+: 1625473625:0;telnet localhost 50051
+: 1625473859:0;curl http://127.0.0.1:50051/helloworld.Greeter/SayHello
+: 1625473864:0;curl http://127.0.0.1:50051
+: 1625474389:0;git clone https://github.com/hyperium/tonic.git
+: 1625474427:0;rustup component add rustfmt
+: 1625474511:0;cd tonic/
+: 1625474513:0;cd examples/
+: 1625474524:0;cargo run --bin helloworld-server
+: 1625474618:0;cargo run --bin server
+: 1625485498:0;curl concourse.gotrust.com.vn
+: 1625485568:0;xh http://concourse.gotrust.com.vn
+: 1625485586:0;http http://concourse.gotrust.com.vn
+: 1625502378:0;cargo clean run
+: 1625503397:0;cargo buld
+: 1625548758:0;git remote add origin git@github.com:gotrust-vn/notification.git
+: 1625586979:0;ifconfig
+: 1625632578:0;brew install goenv
+: 1625632663:0;goenv
+: 1625632672:0;goenv global
+: 1625632682:0;goenv install
+: 1625632690:0;goenv install -l
+: 1625632756:0;goenv install 1.16.5
+: 1625632793:0;goenv list-available-versions
+: 1625632799:0;goenv install --list
+: 1625632911:0;curl -sSL https://git.io/g-install | sh -s
+: 1625633118:0;cat /Users/oo00spy00oo/.zshrc
+: 1625633280:0;ls ~/.config
+: 1625633292:0;ls ~/.config/zsh
+: 1625633318:0;exa -la ~/.config/zsh
+: 1625633336:0;nvim ~/.config/zsh/.zshrc
+: 1625633355:0;nvim ~/.config/zsh/integration.zsh
+: 1625633394:0;chezmoi add ~/.config/zsh/integration.zsh
+: 1625633397:0;chezmoi update
+: 1625634970:0;./firebase-adapter
+: 1625635597:0;go build
+: 1625646525:0;helm create firebase-adapter
+: 1625648149:0;brew upograde
+: 1625648175:0;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+: 1625649257:0;cd FluxCD/
+: 1625649300:0;ping dev.auth.gotrust.vn
+: 1625652348:0;mitmdump
+: 1625670847:0;scp -rC build/ root@103.56.158.196:/root/
+: 1625721475:0;brew update && brew upgrade
+: 1625805175:0;ssh root@103.109.43.113
+: 1625807159:0;ssh root@13.250.100.79
+: 1625807299:0;xh https://raw.githubusercontent.com/bitnami/bitnami-docker-nats/master/docker-compose.yml
+: 1625807385:0;$ curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-nats/master/docker-compose.yml
+: 1625808851:0;telnet 3.0.165.79 6222
+: 1625810504:0;telnet 3.0.165.79 4222
+: 1625810635:0;telnet 13.229.248.14 4222
+: 1625892751:0;git add user
+: 1625892757:0;git add opt
+: 1625892760:0;git add otp
+: 1625893408:0;git add firebase-adapter
+: 1625894907:0;cd ~/Data/
+: 1625895254:0;ping spinnaker.greenconnect.tech
+: 1625897819:0;cd GreenPay/
+: 1625897836:0;git clone git@github.com:GreenConnect/FluxCD.git
+: 1625898823:0;git add infrastructure
+: 1625899137:0;git add cert-manager
+: 1625901501:0;xh https://raw.githubusercontent.com/OpsMx/enterprise-spinnaker/master/charts/oes/values.yaml
+: 1625912395:0;helm repo add spinnaker https://helmcharts.opsmx.com/
+: 1625914396:0;make install
+: 1625915488:0;helm repo add concourse https://concourse-charts.storage.googleapis.com/
+: 1625915590:0;ping concourse.dashbaord.greenconnect.vn
+: 1625937166:0;git add ingress
+: 1625937734:0;which helm
+: 1625937760:0;helm diff
+: 1625937845:0;helm plugin install https://github.com/databus23/helm-diff\
+
+: 1625938433:0;helmfile template
+: 1625938507:0;helmfile help
+: 1625938526:0;helmfile list
+: 1625979014:0;cd grpc
+: 1625979017:0;helm package
+: 1625979097:0;curl -uvinh.vo@greenconnect.vn:AP4QYXwQVqY3azxcQqYofwFAzHqteCvj6wV6ea -T grpc-1.0.0.tgz "https://greenconnect.jfrog.io/artifactory/dev-helm/grpc"
+: 1625979617:0;curl -uvinh.vo@greenconnect.vn:AP4QYXwQVqY3azxcQqYofwFAzHqteCvj6wV6ea -T grpc-1.0.0.tgz "https://greenconnect.jfrog.io/artifactory/dev-helm/"
+: 1625979940:0;cd angular/
+: 1625979967:0;curl -uvinh.vo@greenconnect.vn:AP4QYXwQVqY3azxcQqYofwFAzHqteCvj6wV6ea -T angular-1.0.0.tgz "https://greenconnect.jfrog.io/artifactory/dev-helm/"
+: 1625979979:0;cd app-api/
+: 1625979996:0;curl -uvinh.vo@greenconnect.vn:AP4QYXwQVqY3azxcQqYofwFAzHqteCvj6wV6ea -T app-api-1.0.0.tgz "https://greenconnect.jfrog.io/artifactory/dev-helm/"
+: 1625980103:0;cd micronaut-http/
+: 1625980105:0;helm package .
+: 1625980117:0;curl -uvinh.vo@greenconnect.vn:AP4QYXwQVqY3azxcQqYofwFAzHqteCvj6wV6ea -T micronaut-http-1.0.0.tgz "https://greenconnect.jfrog.io/artifactory/dev-helm/"
+: 1625980191:0;curl -uvinh.vo@greenconnect.vn:AP4QYXwQVqY3azxcQqYofwFAzHqteCvj6wV6ea -T micronaut-http-*.tgz "https://greenconnect.jfrog.io/artifactory/dev-helm/"
+: 1626000889:0;la
+: 1626001671:0;./login.sh backend
+: 1626001767:0;fly -t gc set-pipeline \\
+    -p pipelines-management \\
+    -c pipeline/pipelines-management.yml \\
+    -l vars/repositories.yml
+: 1626002026:0;fly -t gc trigger-job -j pipelines-management/reconfigure-pipelines -w
+: 1626002555:0;fly -t gc destroy-pipeline  pipelines-management
+: 1626003307:0;fly -t gc unpause-pipeline -p pipelines-management
+: 1626003437:0;fly -t gc destroy-pipeline -p pipelines-management
+: 1626015195:0;mitmweb
+: 1626017663:0;gl
+: 1626017677:0;gg
+: 1626021362:0;cd ~/Data/GoTRUST/Projects/data-gateway/
+: 1626060371:0;brew install --cask freeplane
+: 1626106746:0;fly login -t gt 
+: 1626106763:0;fly -t gt set-pipeline -p reconfigure-pipelines -c pipelines/reconfigure-pipelines.yaml
+: 1626106767:0;fly -t gt set-pipeline -p reconfigure-pipelines -c pipelines/reconfigure-pipelines.yml
+: 1626107271:0;cd ci
+: 1626109546:0;cargo clean build
+: 1626169967:0;helm create data-gateway
+: 1626170137:0;git add data-gateway
+: 1626171555:0;helm create id-generator
+: 1626171640:0;l;g
+: 1626177020:0;git add .
+: 1626187636:0;helmfile diff
+: 1626187801:0;kubectl port-forward --namespace queue svc/nats-monitoring 8222:8222
+: 1626187995:0;git add clusters
+: 1626187998:0;git add services
+: 1626189980:0;telnet google.com
+: 1626189990:0;telnet vnexpress.net
+: 1626190106:0;telnet 222.253.45.208 8888
+: 1626190387:0;telnet dev.kdx5c.mongodb.net 21017
+: 1626190453:0;telnet dev-shard-00-01.kdx5c.mongodb.net 21017
+: 1626190470:0;telnet dev-shard-00-01.kdx5c.mongodb.net 27017
+: 1626191311:0;ping 35.240.169.28
+: 1626191537:0;ping dev.kdx5c.mongodb.net
+: 1626191551:0;ping dev-shard-00-01.kdx5c.mongodb.net
+: 1626193903:0;brew install plantuml
+: 1626193952:0;brew install --cask squirrelsql
+: 1626195052:0;plantuml
+: 1626197846:0;./gradlew dependencyInsight --dependency asm
+: 1626197888:0;./gradlew dependencyInsight
+: 1626197905:0;./gradlew dependencies
+: 1626198535:0;gradle clean quarkusBuild
+: 1626199075:0;gradle quarkusBuild -Dquarkus.profile=dev
+: 1626199128:0;gradle quarkusBuild --warning-mode all
+: 1626234205:0;export GRPC_HEALTH_PROBE_VERSION=v0.4.4
+: 1626234214:0;wget -qO/bin/grpc_health_probe https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64
+: 1626234223:0;sudo wget -qO/bin/grpc_health_probe https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64
+: 1626234260:0;wget 'https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64'
+: 1626234295:0;wget -q 'https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64'
+: 1626235558:0;make build
+: 1626235955:0;brew upgrade gradle
+: 1626235991:0;gradle -version
+: 1626236011:0;brew uninstall gradle
+: 1626236019:0;gradle
+: 1626236094:0;sdk -h
+: 1626236099:0;sdk list
+: 1626236136:0;sdk current
+: 1626236151:0;sdk upgrade gradle
+: 1626236190:0;sdk upgrade micronaut
+: 1626236861:0;rm -rf javacore.20210714.1*
+: 1626250196:0;kubectl run -it --rm --restart=Never busybox --image=gcr.io/google-containers/busybox sh
+: 1626251081:0;code hdi-adapter
+: 1626324879:0;cd DEV
+: 1626324880:0;ytt -f app.yaml -f values.yaml --data-value-yaml app=test --data-value-yaml tag=abcd1234
+: 1626324984:0;ytt -f app.yaml -f values.yaml --data-value-yaml app=test --data-value-yaml tag"=abcd1234"
+: 1626325003:0;ytt -f app.yaml -f values.yaml --data-value-yaml app=test --data-value-yaml tag="111111"
+: 1626325190:0;ytt -f app.yaml -f values.yaml --data-value-yaml app=test --data-value tag="111111"
+: 1626357984:0;rustc --explain E0308
+: 1626406141:0;brew cask install oni
+: 1626406152:0;brew install --cask oni
+: 1626406868:0;brew install --cask staruml
+: 1626407008:0;brew install --cask mjml
+: 1626407442:0;brew install --cask diffmerge
+: 1626407539:0;brew install --cask switchhosts
+: 1626426195:0;./target/release/id-generator
+: 1626426242:0;cp /target/release/id-generator ../
+: 1626426253:0;cp /target/release/id-generator .
+: 1626426277:0;cp target/release/id-generator .
+: 1626426286:0;mv id-generator ~/Downloads
+: 1626426294:0;~/Downloads/id-generator
+: 1626525124:0;code helm-template/id-generator\ copy
+: 1626525138:0;code helm-template/notification
+: 1626525215:0;ga doctor-anywhere-adapter
+: 1626525223:0;ga notification
+: 1626528278:0;cargo build --release
+: 1626583995:0;mas -h
+: 1626583998:0;mas help
+: 1626584054:0;mas search Winds
+: 1626598253:0;gradle compile
+: 1626598684:0;gradle quarkusDev\
+: 1626598685:0;gradle quarkusDev
+: 1626617114:0;ga /
+: 1626619999:0;mkdir ~/.docker/cli-plugins
+: 1626620003:0;mkdir -p ~/.docker/cli-plugins
+: 1626620028:0;ls -la | grep build
+: 1626620032:0;wget https://github.com/docker/buildx/releases/download/v0.6.0/buildx-v0.6.0.darwin-amd64
+: 1626620137:0;mv buildx-v0.6.0.darwin-amd64 ~/.docker/cli-plugins
+: 1626620142:0;cd ~/.docker/cli-plugins
+: 1626620160:0;cd ~/.docker/
+: 1626620186:0;mv cli-plugins docker-buildx
+: 1626620189:0;mkdir cli-plugins
+: 1626620193:0;mv docker-buildx cli-plugins
+: 1626620304:0;docker-up
+: 1626620469:0;rm -rf /usr/local/Cellar/docker/./20.10.7/bin/docker:
+: 1626620471:0;rm -rf /usr/local/Cellar/docker/./20.10.7/bin/docker
+: 1626620473:0;brew reinstall docker
+: 1626620738:0;brew install bash-completion
+: 1626620749:0;brew install --cask docker
+: 1626621544:0;cd helm-template/
+: 1626621548:0;code support
+: 1626621587:0;code product
+: 1626621609:0;code customer
+: 1626674579:0;cd ci/
+: 1626675113:0;cd ../helm-template/
+: 1626698019:0;export PATH=/usr/local/Cellar/go/1.16.5/libexec/.versions/1.16.5/bin:$PATH
+: 1626794136:0;brew link --overwrite imath
+: 1626794149:0;brew link --overwrite openexr
+: 1626843066:0;mv ~/Downloads/installment-core ~/Data/Vi
+: 1626843083:0;mkdir ~/Data/VietSaver
+: 1626843098:0;mv ~/Downloads/installment-core ~/Data/VietSaver
+: 1626843121:0;mv -p ~/Downloads/installment-core ~/Data/VietSaver
+: 1626843125:0;mv -r ~/Downloads/installment-core ~/Data/VietSaver
+: 1626843129:0;mv -rf ~/Downloads/installment-core ~/Data/VietSaver
+: 1626843133:0;mv -f ~/Downloads/installment-core ~/Data/VietSaver
+: 1626843149:0;cd ~/Data/VietSaver/
+: 1626843464:0;mv ~/Downloads/installment-core .
+: 1626843469:0;mv ~/Downloads/installment-merchant .
+: 1626843473:0;cd installment-core/
+: 1626843546:0;git remote add origin git@gitlab.com:globalcare/viet-saver/core/installment-core.git
+: 1626843650:0;cd ../installment-merchant/
+: 1626843655:0;git checkout -b master
+: 1626843674:0;git remote add origin git@gitlab.com:globalcare/viet-saver/core/installment-merchant.git
+: 1626860088:0;locale -a
+: 1626860097:0;locale -a | grep en
+: 1626860146:0;echo "$LC_CTYPE"
+: 1626860871:0;ansible-playbook main.yml --ask-pass
+: 1626862231:0;brew install mosquitto
+: 1626880910:0;git push -u origin master
+: 1626882295:0;helm create image-optimizer
+: 1627059270:0;code repairing
+: 1627059306:0;code bluebolt-adapter\ \ 
+: 1627059317:0;code bluebolt-adapter
+: 1627059351:0;code merchant-gateway
+: 1627275084:0;code personal-accident-insurance
+: 1627275147:0;code health-insurance
+: 1627286160:0;mas update
+: 1627302165:0;code pti-adapter
+: 1627371210:0;helm template
+: 1627371214:0;helm template .
+: 1627376998:0;ping https://meet.google.com/orz-kowd-stk
+: 1627377009:0;ping https://wp-vietsaver-wordpress.caprover.vietsaver.com/
+: 1627377014:0;ping https://wp-vietsaver-wordpress.caprover.vietsaver.com
+: 1627530795:0;mas outdated
+: 1627531973:0;code wallet
+: 1627531992:0;code wealth-management
+: 1627534222:0;ping concourse.dashboard.greenconnect.vn
+: 1627534402:0;kd ns tekton-kaniko
+: 1627534410:0;k edit ns tekton-kaniko
+: 1627534833:0;kubectl get namespace tekton-kaniko -o json > tekton-kaniko.json
+: 1627534868:0;nvim tekton-kaniko.json
+: 1627534876:0;kubectl replace --raw "/api/v1/namespaces/tekton-kaniko/finalize" -f ./tekton-kaniko.json
+: 1627534902:0;kubectl get namespace tekton-pipelines -o json > tekton-pipelines.json
+: 1627534914:0;nvim tekton-pipelines.json
+: 1627534930:0;kubectl replace --raw "/api/v1/namespaces/tekton-pipelines/finalize" -f ./tekton-pipelines.json
+: 1627535035:0;ping dev.api.greenconnect.vn
+: 1627535040:0;curl dev.api.greenconnect.vn
+: 1627535052:0;curl dev.api.greenconnect.vn/graphql
+: 1627535060:0;curl -sSL dev.api.greenconnect.vn/graphql
+: 1627545657:0;ssh root@103.109.43.90
+: 1627551942:0;ssh root@45.124.94.208
+: 1627552123:0;ssh root@103.56.158.196
+: 1627552502:0;ssh root@14.225.27.80
+: 1627554237:0;telnet 103.109.43.206 9046
+: 1627556026:0;ssh root@root@103.56.158.179
+: 1627556028:0;ssh root@103.56.158.179
+: 1627556636:0;ssh root@45.124.94.216
+: 1627557295:0;cd Helm
+: 1627557298:0;make upgrade
+: 1627557541:0;fly -t gt login -n backend
+: 1627557641:0;fly -t gt set-team --team-name backend --local-user admin
+: 1627557673:0;cd pipeline/backend/
+: 1627557742:0;fly -t gc login backend
+: 1627557746:0;fly -t gc login
+: 1627557767:0;fly -t gc login -t backend
+: 1627557890:0;fly -t gc login -n main
+: 1627557909:0;fly -t gc set-team --team-name backend  --local-user admin
+: 1627571715:0;fly -t gc login -n backend
+: 1627571748:0;fly -t gc set-pipeline -p reconfigure-pipelines -c reconfigure-pipelines.yml
+: 1627571871:0;make backend
+: 1627578599:0;ping 103.109.43.206
+: 1627578606:0;telnet 103.109.43.206 22
+: 1627578698:0;telnet 103.109.43.206 80
+: 1627578705:0;telnet 103.109.43.206 8080
+: 1627579538:0;telnet 45.124.94.216 5432
+: 1627580106:0;gradle jibBuild
+: 1627618548:0;telnet 103.109.43.206 9042
+: 1627618568:0;ssh 103.109.43.206 9042
+: 1627618573:0;ssh root@103.109.43.206
+: 1627618617:0;telnet 45.124.94.204 9042
+: 1627619073:0;ssh root@103.107.182.221
+: 1627623605:0;telnet 103.107.182.221 9042
+: 1627626599:0;ssh root@45.124.94.204
+: 1627656419:0;gradle clean compileJava
+: 1627656789:0;code subscription
+: 1627662056:0;gradle uploadArchives
+: 1627664215:0;git pul
+: 1627664315:0;rm -rf .gradle
+: 1627664320:0;rm -rf build
+: 1627664403:0;git rm --cached
+: 1627664408:0;git rm --cached build
+: 1627664413:0;git rm --cached .gradle
+: 1627664428:0;git rm .gradle --cached
+: 1627664655:0;git rm .gradle
+: 1627664673:0;gradle clean build
+: 1627664915:0;gradle build --stacktrace
+: 1627665020:0;./gradlew build
+: 1627739112:0;./gradlew clean
+: 1627746005:0;mkdir grpc
+: 1627746009:0;cd grpc/
+: 1627746208:0;rm -rf grpc
+: 1627746232:0;cp grpc-error grpc-error-backup
+: 1627746236:0;cp -r grpc-error grpc-error-backup
+: 1627746253:0;rm -rf .
+: 1627746261:0;rm -rf *
+: 1627746308:0;code grpc-error-backup
+: 1627746334:0;cd grpc-error/
+: 1627746364:0;gradle init
+: 1627746806:0;./gradlew clean build
+: 1627747067:0;git remote add origin git@github.com:oo00spy00oo/grpc-error.git
+: 1627751384:0;./gradlew wrapper --gradle-version 6.9
+: 1627971028:0;brew install --cask vlc
+: 1628090423:0;ssh root@103.109.43.225
+: 1628091047:0;ssh root@103.56.157.166
+: 1628094921:0;helm package angular
+: 1628094936:0;curl -u helm:helm http://nexus.greenconnect.vn:8081/repository/helm/ --upload-file angular-1.0.0.tgz -v
+: 1628095201:0;helm package app-api/
+: 1628095207:0;helm package grpc
+: 1628095213:0;helm package kaniko
+: 1628095216:0;helm package micronaut-http
+: 1628095229:0;curl -u helm:helm http://nexus.greenconnect.vn:8081/repository/helm/ --upload-file app-api-1.0.0.tgz -v
+: 1628095239:0;curl -u helm:helm http://nexus.greenconnect.vn:8081/repository/helm/ --upload-file grpc-1.0.0.tgz -v
+: 1628095247:0;curl -u helm:helm http://nexus.greenconnect.vn:8081/repository/helm/ --upload-file kaniko-0.1.0.tgz -v
+: 1628095254:0;curl -u helm:helm http://nexus.greenconnect.vn:8081/repository/helm/ --upload-file micronaut-http-1.0.0.tgz -v
+: 1628095378:0;make uninstall
+: 1628244783:0;brew install --cask lark
+: 1628269403:0;brew install --cask cakebrew
+: 1628269439:0;open -a cakebrew
+: 1628269896:0;brew install --cask thunderbird
+: 1628269951:0;open -a thunderbird
+: 1628270373:0;brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
+: 1628270476:0;brew install --cask clipy
+: 1628343852:0;brew install webpquicklook quicklookapk provisionql quicklookase apparency betterzip 
+: 1628349989:0;brew tap homebrew/cask-versions
+: 1628350001:0;brew install --cask background-music-pre
+: 1628350586:0;mas list
+: 1628350653:0;mas upograde
+: 1628425249:0;code rescue-car
+: 1628425315:0;code rescue-moto
+: 1628425334:0;code rescue-core
+: 1628436246:0;brew install --cask beekeeper-studio
+: 1628436736:0;brew install --cask fastonosql
+: 1628436820:0;open -a fastonosql
+: 1628436974:0;brew install xxh
+: 1628436977:0;xxh 222.253.45.208
+: 1628436997:0;xxh vinhvo@VinhVo-Gt01
+: 1628437003:0;xxh vinhvo@222.253.45.208
+: 1628437095:0;xxh vinhvo@222.253.45.208 +s zsh +i
+: 1628437239:0;xxh root@103.107.182.46 +s ssh +i
+: 1628437244:0;xxh root@103.107.182.46 +s zsh +i
+: 1628437291:0;ssh root@103.107.182.46 +s zsh +i
+: 1628437347:0;xxh root@103.107.182.46
+: 1628437371:0;xxh root@103.107.182.46 ++pexpect-timeout 10
+: 1628437479:0;brew install ccat
+: 1628437521:0;brew install dark-mode
+: 1628437578:0;brew install fselect
+: 1628437645:0;brew install m-cli
+: 1628437669:0;m
+: 1628437678:0;m dir
+: 1628437699:0;m info\
+: 1628437701:0;m info
+: 1628437710:0;m trash
+: 1628437714:0;m trash clean
+: 1628437864:0;pip install rebound-cli
+: 1628437874:0;rebound
+: 1628438036:0;brew install textql
+: 1628438277:0;ag .
+: 1628438292:0;time ag .
+: 1628438311:0;ag -h
+: 1628438331:0;ag -i vir .
+: 1628439147:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
+: 1628515934:0;brew install --cask macfuse
+: 1628515945:0;brew install --cask osxfuse
+: 1628515959:0;brew reinstall osxfuse
+: 1628516006:0;brew reinstall macfuse
+: 1628516025:0;brew uninstall macfuse
+: 1628516033:0;brew install macfuse
+: 1628516065:0;brew reinstall sshfs
+: 1628516075:0;brew link --overwrite sshfs
+: 1628516093:0;brew uninstall sshfs
+: 1628516099:0;brew install sshfs
+: 1628516139:0;brew install gromgit/fuse/sshfs-mac
+: 1628516148:0;brew link --overwrite sshfs-mac
+: 1628527124:0;brew install --cask syncthing
+: 1628527184:0;open -a syncthing
+: 1628590787:0;cd templates/
+: 1628590790:0;ytt -f src/app.yaml -f src/values.yaml \\
+  --data-value-yaml app=abc
+: 1628590824:0;ytt -f app.yaml -f values.yaml \\
+  --data-value-yaml app=abc
+: 1628601059:0;code email-adapter
+: 1628668059:0;code message-gateway
+: 1628668741:0;brew install txn2/tap/kubefwd
+: 1628668818:0;kubefwd svc -n dev
+: 1628671693:0;code Library
+: 1628671870:0;ls core
+: 1628671879:0;ls Library
+: 1628678905:0;./gradlew publish --stacktrace
+: 1628678936:0;gradle publish
+: 1628678948:0;./gradlew publish
+: 1628694496:0;code crm-auth
+: 1628694515:0;code crm-user
+: 1628702400:0;gradle wrapper --gradle-version 6.9
+: 1628702849:0;./gradlew runclear
+: 1628762450:0;ssh root@13.212.152.226
+: 1628762481:0;ssh ubuntu@13.212.152.226
+: 1628829903:0;code pti-pdf
+: 1628843229:0;ssh vinhvo@222.253.45.208
+: 1628844694:0;fly -t gc sync
+: 1628846805:0;fly -t gt login -c http://concourse.gotrust.com.vn:8888
+: 1628846886:0;ansible-playbook main.yml --ask-become-pass
+: 1628847000:0;make set-pipeline
+: 1628931776:0;git clone https://github.com/heroku/ruby-getting-started
+: 1628931877:0;cd ruby-getting-started
+: 1628931881:0;git remote add dokku dokku@dokku.me:ruby-getting-started
+: 1628931955:0;git remote add dokku dokku@172.31.13.240:ruby-getting-started
+: 1628932030:0;ssh ubuntu@172.31.13.240
+: 1628932166:0;git remote add dokku dokku@18.142.162.69:ruby-getting-started
+: 1628933125:0;telnet vtmd.gotrust.vn 80
+: 1628933135:0;telnet vtmd.gotrust.vn 22
+: 1628933878:0;git clone git@github.com:gotrust-vn/pti-adapter-nodejs.git
+: 1628933888:0;cd pti-adapter-nodejs/
+: 1628933902:0;git remote add dokku dokku@18.142.162.69:pti-adapter-nodejs
+: 1628934328:0;ping http://pti-adapter-nodejs.ip-172-31-13-240.ap-southeast-1.compute.internal
+: 1628934794:0;ssh-keygen -t rsa -b 4096 -C "ooo000spy000ooo@gmail.com"
+: 1628934834:0;cat /Users/oo00spy00oo/.ssh/id_rsa_dokku.pub | pbcopy
+: 1628936351:0;ping pti-adapter-nodejs.ip-172-31-13-240.ap-southeast-1.compute.internal
+: 1628936563:0;cat /Users/oo00spy00oo/.ssh/id_rsa_dokku | pbcopy
+: 1628950192:0;brew reinstall lens
+: 1628951247:0;ssh root@222.253.45.208
+: 1628951259:0;ssh ubuntu@222.253.45.208
+: 1628951615:0;ssh ubuntu@52.221.216.129
+: 1628951952:0;ssh ubuntu@13.213.41.146
+: 1628952299:0;nat
+: 1628952333:0;brew tap nats-io/nats-tools
+: 1628952341:0;brew install nats-io/nats-tools/nats
+: 1628958525:0;ping pti-adapter.gotrust.vn
+: 1629019712:0;brew install --cash rustdesk
+: 1629019726:0;brew install --cask rustdesk
+: 1629040720:0;kgpo | grep Evicted | xargs krmpo -
+: 1629040750:0;kgpo | grep Evicted | xargs kubectl delete pods -
+: 1629040765:0;kgpo | grep Evicted
+: 1629040802:0;kgpo --no-headers -o custom-columns=":metadata.name"
+: 1629040844:0;kgpo | grep Evicted | awk "print $1"
+: 1629040877:0;kgpo | grep Evicted | awk '{print $1}'
+: 1629040893:0;kgpo | grep Evicted | awk '{print $1}' | xargs kubectl delete pods -
+: 1629040903:0;kgpo | grep Failed | awk '{print $1}' | xargs kubectl delete pods -
+: 1629041747:0;brew install --cask lens@5.1.2
+: 1629041846:0;brew install --cask lens@5.1.3-latest.20210722.1
+: 1629041901:0;wget https://api.k8slens.dev/binaries/Lens-5.1.3-latest.20210722.1.dmg
+: 1629042745:0;wget https://api.k8slens.dev/binaries/Lens-5.0.2-latest.20210705.2.dmg
+: 1629043777:0;brew uninstall lens
+: 1629043846:0;brew install --cask lens
+: 1629092364:0;git clone https://github.com/gotrust-vn/vungtaman-dotnet
+: 1629092406:0;scp -rC vungtaman-dotnet ubuntu@vtmd.gotrust.vn:/ubuntu/
+: 1629092423:0;scp -rC vungtaman-dotnet ubuntu@vtmd.gotrust.vn:/home/ubuntu/
+: 1629103453:0;git remote add dokku dokku@18.142.162.69:vungtaman-dotnet
+: 1629104157:0;git push dokku master:master
+: 1629104362:0;git push dokku master:main
+: 1629104408:0;cd ruby-getting-started/
+: 1629104414:0;git push dokku main:master
+: 1629104537:0;cd vungtaman-dotnet/
+: 1629104594:0;git remote remove dokku
+: 1629104802:0;git remote add dokku dokku@18.142.162.69:vungtam-dotnet
+: 1629104808:0;git push dokku
+: 1629122530:0;exa -la ~/.kube
+: 1629122745:0;echo $JAVA_HOME
+: 1629122893:0;./gradlew run
+: 1629123392:0;cat response.json | jq '.code'
+: 1629123570:0;Y
+: 1629123575:0;sdk update
+: 1629123586:0;sdk upgrade
+: 1629123720:0;sdk selfupdate
+: 1629123770:0;sdk install java 11.0.12.7.1-ms
+: 1629123945:0;sdk
+: 1629123952:0;sdk use java 11.0.12.7.1-ms
+: 1629124075:0;sdk install java 11.0.2-open
+: 1629124162:0;sdk use java 11.0.2-open
+: 1629124257:0;ls\
+ls
+: 1629124288:0;ls | grep font
+: 1629124399:0;sdk install java 11.0.12-zulu
+: 1629124512:0;sdk use java sdk use java 11.0.12-zulu
+: 1629124545:0;java -version
+: 1629124562:0;sdk use java 11.0.12-zulu
+: 1629124745:0;sdk install java 11.0.12.7.2-amzn
+: 1629124881:0;sdk java use 11.0.12.7.2-amzn
+: 1629124884:0;sdk use java 11.0.12.7.2-amzn
+: 1629124890:0;cd $JAVA_HOME
+: 1629124895:0;cd lib/
+: 1629127475:0;gradle quarkusBuild
+: 1629128015:0;ssh root@3.1.102.133
+: 1629128475:0;scp -rC build/ ubuntu@3.1.102.133:/home/ubuntu/
+: 1629128810:0;scp -rC src/main/docker/Dockerfile.jvm ubuntu@3.1.102.133:/home/ubuntu/
+: 1629129037:0;cat response.json | jq '.pdfBase64' | pbcopy
+: 1629132638:0;scp -rC src/ ubuntu@3.1.102.133:/home/ubuntu/
+: 1629172114:0;scp ~/Downloads/jdk-11.0.12_linux-x64_bin.tar ubuntu@3.1.102.133:/home/ubuntu
+: 1629172751:0;scp ~/Downloads/jdk-11.0.12_linux-x64_bin.tar.gz ubuntu@3.1.102.133:/home/ubuntu
+: 1629173078:0;scp -rC build/ ubuntu@3.1.102.133:/home/ubuntu
+: 1629173794:0;touch Dockerfile
+: 1629175177:0;git clone git@github.com:oo00spy00oo/oracle-java.git
+: 1629175186:0;code oracle-java
+: 1629175263:0;cp jdk-11.0.12_linux-x64_bin.tar.gz oracle-java
+: 1629175484:0;brew install git-lfs
+: 1629175531:0;git lfs install
+: 1629175554:0;git lfs tract "*.tar.gz"
+: 1629175559:0;git lfs track "*.tar.gz"
+: 1629175589:0;git add jdk-11.0.12_linux-x64_bin.tar.gz
+: 1629181738:0;scp -rC Dockerfile ubuntu@3.1.102.133:/home/ubuntu
+: 1629182483:0;cd pti-pdf/
+: 1629182680:0;gradle version
+: 1629182685:0;gradle --version
+: 1629182779:0;gradle wrapper --gradle-version 7.1
+: 1629183873:0;sdk list java
+: 1629183905:0;sdk install java 21.2.0.r11-grl
+: 1629184101:0;sdk java use 21.2.0.r11-grl
+: 1629184111:0;sdk use java 21.2.0.r11-grl
+: 1629184150:0;gu install native-image
+: 1629184159:0;gradle build -Dquarkus.package.type=native
+: 1629184265:0;./build/pti-pdf-1.0.0-SNAPSHOT-runner
+: 1629186848:0;gradle lbuild
+: 1629187412:0;ga
+: 1629188834:0;scp -rC pti-pdf ubuntu@3.1.102.133:/home/ubuntu
+: 1629193095:0;ping gotr.vn
+: 1629193374:0;brew upgrade octant
+: 1629193976:0;pbpaste | base64 -d | pbcopy
+: 1629194022:0;code ~/.kube/config
+: 1629194083:0;cp config config-gt-prod
+: 1629194097:0;code config-gt-prod
+: 1629194216:0;kgpo | grep Shutdown | awk '{print $1}' | xargs kubectl delete pods -
+: 1629197231:0;cat response.json | jq -r '.pdfBase64' | pbcopy
+: 1629197806:0;ga dev-cluster
+: 1629213046:0;kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+: 1629213057:0;kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d | pbcopy
+: 1629214094:0;kubens argocd
+: 1629214101:0;kg Application Application
+: 1629214108:0;kg Application service
+: 1629214111:0;kg Application
+: 1629214142:0;kg apiserver
+: 1629214153:0;kg
+: 1629214155:0;kg -h
+: 1629214166:0;kg api-resources
+: 1629214182:0;k api-resources
+: 1629214688:0;kubens service
+: 1629214692:0;kgsec
+: 1629214700:0;kdsec storage
+: 1629215265:0;ping dev.storage.gotrust.vn
+: 1629215460:0;flux reeconcile kustomization flux-system
+: 1629215478:0;kgs
+: 1629262921:0;ssh ubuntu@3.1.102.133
+: 1629263141:0;scp -rC vungtaman-2.docx ubuntu@3.1.102.133:/home/ubuntu/
+: 1629265005:0;scp -rC GCN_FInal.docx ubuntu@3.1.102.133:/home/ubuntu/
+: 1629265035:0;rm -rf result.pdf
+: 1629265081:0;scp -rC ubuntu@3.1.102.133:/home/ubuntu/result.pdf ./
+: 1629306223:0;code crm-graphql
+: 1629306316:0;git remote add origin git@github.com:gotrust-vn/crm-graphql.git
+: 1629306381:0;git pull origin main
+: 1629306563:0;git branch -m main master
+: 1629306573:0;git branch -u origin/master master
+: 1629306581:0;git remote set-head origin -a
+: 1629343080:0;ping dev.crm.api.gotrust.vn
+: 1629347875:0;ping dev.api.crm.gotrust.vn
+: 1629347893:0;ping api.gotrust.vn
+: 1629347919:0;kgsvcall
+: 1629348971:0;code gotrust-crm-api-core
+: 1629354542:0;kgpoall
+: 1629354560:0;kgpoall | egrep "Shutdown|Evicted" | awk '{print $1}' | xargs kubectl delete pods -
+: 1629355039:0;kgpo | egrep "Shutdown|Evicted" | awk '{print $1}' | xargs kubectl delete pods -
+: 1629355469:0;kgpo | egrep "Shutdown|Evicted|Error" | awk '{print $1}' | xargs kubectl delete pods -
+: 1629355484:0;kgpo | egrep "Shutdown|Evicted|Error" | awk '{print $1}' | xargs kubectl delete pods =
+: 1629356425:0;ping dev.api.gotrust.vn
+: 1629357363:0;go env
+: 1629357408:0;go mod download
+: 1629357534:0;go run
+: 1629357579:0;protoc --go_out=build --go_opt=paths=source_relative \\
+    --go-grpc_out=build --go-grpc_opt=paths=source_relative \\
+    pb/**/*.proto
+: 1629357587:0;go version
+: 1629358362:0;brew install --cask wombat
+: 1629363591:0;code owa-graphql
+: 1629385016:0;clear\
+git pull
+: 1629430744:0;brew install --cask sigmaos
+: 1629431065:0;ssh root@103.1.239.185
+: 1629434825:0;gradle clean
+: 1629436460:0;ps -ef | grep go
+: 1629436493:0;netstat -vanp tcp | grep 9000
+: 1629436592:0;kill -9 45576
+: 1629440767:0;scp -rC build ubuntu@18.141.200.142:/home/ubuntu/
+: 1629440817:0;scp -rC Dockerfile ubuntu@18.141.200.142:/home/ubuntu/
+: 1629440850:0;ssh ubuntu@18.141.200.142
+: 1629441555:0;cat /tmp/word_start1496679375.vbs
+: 1629441571:0;ls /tmp/ | grep word
+: 1629441582:0;java -jar build/quarkus-app/quarkus-run.jar
+: 1629442178:0;helm create pdf-converter
+: 1629442974:0;java -jar documents4j-server-standalone-1.1.7.jar htpp://localhost:9998
+: 1629443412:0;git clone https://github.com/documents4j/documents4j.git
+: 1629443420:0;cd documents4j/
+: 1629443430:0;cd documents4j-server-standalone/
+: 1629448385:0;brew install --cask gitdock
+: 1629448403:0;brew install --cask git-dock
+: 1629474727:0;brew install --cask atom
+: 1629474882:0;git clone https://github.com/pancakeswap/pancake-frontend.git
+: 1629476416:0;cd pancake-frontend/
+: 1629476430:0;bat package.json
+: 1629519214:0;export PATH=/usr/local/Cellar/go/1.16.6/libexec/bin:$PATH
+: 1629546303:0;curl -X 'GET' \\
+  'http://localhost:8181/api/vnpay/payment-notify?vnp_BankCode=ACB' \\
+  -H 'accept: application/json'\
+
+: 1629546315:0;curl -X 'GET' \\
+  'http://127.0.0.1:8181/api/vnpay/payment-notify?vnp_BankCode=ACB' \\
+  -H 'accept: application/json'\
+
+: 1629546327:0;curl -d -X 'GET' \\
+  'http://127.0.0.1:8181/api/vnpay/payment-notify?vnp_BankCode=ACB' \\
+  -H 'accept: application/json'\
+
+: 1629546348:0;curl http://localhost:8181/api/vnpay/payment-notify\?vnp_BankCode\=ACB
+: 1629546368:0;nvim /etc/hosts
+: 1629546379:0;sudo nvim
+: 1629546382:0;sudo nvim /etc/hosts
+: 1629546521:0;curl http://127.0.0.1:8181/api/vnpay/payment-notify\?vnp_BankCode\=ACB
+: 1629546524:0;curl -v http://127.0.0.1:8181/api/vnpay/payment-notify\?vnp_BankCode\=ACB
+: 1629546587:0;curl -v  https://localhost:8181/api/vnpay/payment-notify\?vnp_Amount\=1000000\&vnp_BankCode\=NCB\&vnp_CardType\=ATM\&vnp_OrderInfo\=THANH+TO%C3%81N+GOTRUST\&vnp_PayDate\=20210816223227\&vnp_ResponseCode\=00\&vnp_SecureHash\=29180248a007be5e7a4fb6281d0e756e25e1456e9d9b2be906a7bdbc02834978\&vnp_SecureHashType\=SHA256\&vnp_TmnCode\=GOTRUST1\&vnp_TransactionNo\=13566959\&vnp_TxnRef\=637647489703481560
+: 1629546600:0;curl -v  http://localhost:8181/api/vnpay/payment-notify\?vnp_Amount\=1000000\&vnp_BankCode\=NCB\&vnp_CardType\=ATM\&vnp_OrderInfo\=THANH+TO%C3%81N+GOTRUST\&vnp_PayDate\=20210816223227\&vnp_ResponseCode\=00\&vnp_SecureHash\=29180248a007be5e7a4fb6281d0e756e25e1456e9d9b2be906a7bdbc02834978\&vnp_SecureHashType\=SHA256\&vnp_TmnCode\=GOTRUST1\&vnp_TransactionNo\=13566959\&vnp_TxnRef\=637647489703481560
+: 1629546654:0;curl -v http://dev.merchant.gotrust.vn/api/vnpay/payment-notify\?vnp_Amount\=1000000\&vnp_BankCode\=NCB\&vnp_CardType\=ATM\&vnp_OrderInfo\=THANH+TO%C3%81N+GOTRUST\&vnp_PayDate\=20210816223227\&vnp_ResponseCode\=00\&vnp_SecureHash\=29180248a007be5e7a4fb6281d0e756e25e1456e9d9b2be906a7bdbc02834978\&vnp_SecureHashType\=SHA256\&vnp_TmnCode\=GOTRUST1\&vnp_TransactionNo\=13566959\&vnp_TxnRef\=637647489703481560
+: 1629546754:0;octant &
+: 1629553315:0;curl https://dev.merchant.gotrust.vn/api/vnpay/payment-notify\?vnp_Amount\=1000000\&vnp_BankCode\=NCB\&vnp_CardType\=ATM\&vnp_OrderInfo\=THANH+TO%C3%81N+GOTRUST\&vnp_PayDate\=20210816223227\&vnp_ResponseCode\=00\&vnp_SecureHash\=29180248a007be5e7a4fb6281d0e756e25e1456e9d9b2be906a7bdbc02834978\&vnp_SecureHashType\=SHA256\&vnp_TmnCode\=GOTRUST1\&vnp_TransactionNo\=13566959\&vnp_TxnRef\=637647489703481560
+: 1629555771:0;curl https://localhost:8081/api/vnpay/payment-notify\?vnp_Amount\=1000000\&vnp_BankCode\=NCB\&vnp_CardType\=ATM\&vnp_OrderInfo\=THANH+TO%C3%81N+GOTRUST\&vnp_PayDate\=20210816223227\&vnp_ResponseCode\=00\&vnp_SecureHash\=29180248a007be5e7a4fb6281d0e756e25e1456e9d9b2be906a7bdbc02834978\&vnp_SecureHashType\=SHA256\&vnp_TmnCode\=GOTRUST1\&vnp_TransactionNo\=13566959\&vnp_TxnRef\=637647489703481560
+: 1629555776:0;curl http://localhost:8081/api/vnpay/payment-notify\?vnp_Amount\=1000000\&vnp_BankCode\=NCB\&vnp_CardType\=ATM\&vnp_OrderInfo\=THANH+TO%C3%81N+GOTRUST\&vnp_PayDate\=20210816223227\&vnp_ResponseCode\=00\&vnp_SecureHash\=29180248a007be5e7a4fb6281d0e756e25e1456e9d9b2be906a7bdbc02834978\&vnp_SecureHashType\=SHA256\&vnp_TmnCode\=GOTRUST1\&vnp_TransactionNo\=13566959\&vnp_TxnRef\=637647489703481560
+: 1629633286:0;curl 18.141.200.142
+: 1629691594:0;cd Flux
+: 1629692001:0;brew cleanup
+: 1629692031:0;brew install aria2
+: 1629692055:0;brew reinstall aria2
+: 1629700483:0;kgpo | egrep "Shutdown|Evicted|Error" | awk '{print $1}' | xargs kubectl delete pods
+: 1629704970:0;mas search mqtt
+: 1629704975:0;mas search mqttx
+: 1629704993:0;mas
+: 1629705011:0;mas home
+: 1629705031:0;mas purchase
+: 1629705036:0;mas account
+: 1629705043:0;mas install 1514074565
+: 1629736260:0;rustup component add clippy --toolchain stable
+: 1629736271:0;rustup component add rustfmt --toolchain nightly
+: 1629736284:0;rustup
+: 1629792235:0;cat ~/.ssh/id_rsa
+: 1629872033:0;export GRPC_PORT=9001
+: 1629872286:0;export VNPAY_RETURNURL=test
+: 1629872297:0;export VNPAY_RETURN_URL=test
+: 1629872812:0;export vnpay_url=abc
+: 1629873353:0;export VNPAY_URL=
+: 1629873917:0;export VNPAY_URL=abc
+: 1629874756:0;export VNPAY_HASHSECRET=abc
+: 1629875245:0;ping dev.owa.gotrust.vn
+: 1629875250:0;ping owa.gotrust.vn
+: 1629876028:0;code payment-nextjs
+: 1629877455:0;yarn global add pm2
+: 1629878245:0;pm2-runtime yarn -- start
+: 1629878320:0;yarn start
+: 1629878333:0;pm2-runtime yarn start
+: 1629878347:0;pm2-runtime npm start
+: 1629878716:0;yarn install --frozen-lockfile
+: 1629879890:0;clear\
+lg
+: 1629883566:0;ssh ubuntu@vtmd.gotrust.vn
+: 1629883721:0;telnet api.vtmd.gotrust.vn 80
+: 1629884159:0;telnet owa.gotrust.vn 80
+: 1629896659:0;ping payment.gotrust.vn
+: 1629896676:0;telnet ubuntu@payment.gotrust.vn
+: 1629896685:0;ssh ubuntu@payment.gotrust.vn
+: 1629896746:0;ping gotrust.vn
+: 1629897860:0;ping api.vtmd.gotrust.vn
+: 1629905456:0;ping dev.pti-adapter.gotrust.vn
+: 1629988632:0;git branch -b development
+: 1629988755:0;git checkout -b development
+: 1629992985:0;yarn add --dev typescript @types/react
+: 1629993043:0;export NODE_ENV=development
+: 1629993129:0;yarn dev
+: 1629993150:0;yarn build --dev
+: 1629998003:0;code vtmd-insurance
+: 1629998704:0;a .
+: 1629999703:0;code ingress/dev-cluster/dev
+: 1630038543:0;ping 34.121.44.240
+: 1630050650:0;ssh ubuntu@18.142.162.69
+: 1630076952:0;ssh ubuntu@54.251.150.99
+: 1630126320:0;brew install step
+: 1630126549:0;step ssh hosts
+: 1630126646:0;ssh dev-webshop
+: 1630133915:0;ssh ubuntu@18.139.208.45
+: 1630134603:0;step -h
+: 1630134618:0;step -h ssh
+: 1630134620:0;step ssh
+: 1630134658:0;step ssh needs-renewal
+: 1630138851:0;ssh ubuntu@54.169.138.225
+: 1630139553:0;git clone git@github.com:gotrust-vn/log-center.git
+: 1630139579:0;cd log-center/
+: 1630139581:0;yarn install --pure-lockfile
+: 1630141092:0;yarn install --pure-lockfile --production
+: 1630141112:0;NODE_ENV=production yarn blitz prisma generate && yarn build
+: 1630141243:0;yarn build && yarn install --production --ignore-scripts --prefer-offline
+: 1630141384:0;pm2 ls
+: 1630141472:0;pm2-runtime npm run start:production
+: 1630141477:0;pm2-runtime npm -- start:production
+: 1630141588:0;openssl rand -hex 16
+: 1630141608:0;export SESSION_SECRET_KEY=b1ef7cec5cebc1d094d4f6bcce4b3705
+: 1630141614:0;pm2-runtime npm -- start
+: 1630147211:0;\
+
+: 1630159485:0;vi .github/workflows/main.yml
+: 1630173766:0;cat ~/.ssh/id_rsa_dokku.pub | pbcopy
+: 1630174791:0;cat ~/.ssh/id_rsa_dokku | pbcopy
+: 1630223812:0;yarn install --production --ignore-scripts --prefer-offline
+: 1630224151:0;npx browserslist@latest --update-db
+: 1630228320:0;npm install eslint-plugin-prettier@latest --save-dev
+: 1630236427:0;yarn install eslint-plugin-prettier --dev
+: 1630236430:0;yarn install eslint-plugin-prettier
+: 1630236440:0;yarn add --dev eslint-plugin-prettier
+: 1630238625:0;ping concourse.got
+: 1630238627:0;ping concourse.gotrust.com.vn
+: 1630256234:0;telnet 222.253.45.208:6443
+: 1630256352:0;nmap 
+: 1630256380:0;nmap -p0- -v -A -T4 222.253.45.208
+: 1630298882:0;exa
+: 1630298946:0;cp config config-gt-on-prem
+: 1630298969:0;nvim config-gt-on-prem
+: 1630299028:0;micro config-gt-on-prem
+: 1630299102:0;atom config-gt-on-prem
+: 1630299254:0;nvim ~/.local_profile
+: 1630299798:0;telnet 222.253.45.208 80
+: 1630310055:0;kubectl --insecure-skip-tls-verify get nodes
+: 1630342189:0;kgi
+: 1630343102:0;helmfile
+: 1630343333:0;kgpvc
+: 1630343340:0;kg pv
+: 1630343343:0;kg pvc
+: 1630343416:0;kg sc
+: 1630343446:0;kubectl patch storageclass local-path -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"false"}}}'
+: 1630384012:0;ssh ubuntu@54.255.208.97
+: 1630384547:0;helmfile destroy
+: 1630384605:0;ansible-playbook main.yml
+: 1630386885:0;helmfile deploy
+: 1630387907:0;kustomize build | krmf
+: 1630387910:0;kustomize build | krmf -
+: 1630388047:0;fly -t gt sync
+: 1630388087:0;fly 
+: 1630388100:0;fly | grep target
+: 1630388112:0;fly targets -h
+: 1630388120:0;fly targets
+: 1630388128:0;fly
+: 1630388175:0;fly -t gt edit-target --concourse-url http://concourse.gotrust.com.vn
+: 1630388182:0;fly -t gt login
+: 1630388212:0;fly -t gt unpause-pipeline -p reconfigure-pipelines
+: 1630388219:0;fuck
+: 1630388462:0;fly -t gt pipelines
+: 1630388895:0;d cr
+: 1630388901:0;kustomize build
+: 1630423650:0;code gotrust-crm-partner-api
+: 1630425471:0;yarn clean
+: 1630425490:0;yarn install && yarn build
+: 1630426184:0;yarn install --production && yarn build
+: 1630427566:0;git pull --rebase origin main
+: 1630427597:0;g
+: 1630427650:0;yarn install husky -dev
+: 1630427654:0;yarn install husky --dev
+: 1630427666:0;yarn add --dev husky
+: 1630427770:0;git commit -m "Initial commit"
+: 1630427789:0;git commit -m "Keep calm and commit"
+: 1630427806:0;npm install husky -D
+: 1630477040:0;brew install lima
+: 1630477202:0;lima nerdctl run -d -p 8080:80 --name nginx:alpine
+: 1630477505:0;lnav /Users/oo00spy00oo/.lima/default/ha.stderr.log
+: 1630477547:0;limactl 
+: 1630477635:0;qemu-system-aarch64
+: 1630477647:0;qemu-system-aarch64 -accel help
+: 1630477762:0;limactl ls
+: 1630477768:0;limactl rm default
+: 1630478518:0;brew upgrade virtualbox
+: 1630478533:0;brew install podman
+: 1630478550:0;cd
+: 1630478578:0;mkdir -p tools/podman
+: 1630478592:0;cd tools/podman/
+: 1630478611:0;micro Vagrantfile
+: 1630478626:0;nvim Vagrantfile
+: 1630479043:0;cd ~/.config/
+: 1630479062:0;ls zsh
+: 1630479068:0;ls zsh-config
+: 1630479149:0;echo $XDG_CONFIG_HOME
+: 1630479158:0;cd $XDG_CONFIG_HOME/zsh
+: 1630479207:0;cat integration.zsh
+: 1630479246:0;cat .zshenv
+: 1630479312:0;cat .zshrc
+: 1630479363:0;cd ~/.config/zsh
+: 1630479386:0;cat .zprofile
+: 1630479396:0;cat aliases.zsh
+: 1630479411:0;cat .bash_profile
+: 1630479441:0;cd ~
+: 1630479485:0;atom .bash_profile
+: 1630479576:0;chezmoi add ~/.bash_profile
+: 1630479628:0;echo $CONTAINER_HOST
+: 1630479781:0;touch pman
+: 1630479785:0;chmod +x pman
+: 1630479835:0;mv pman development/\
+
+: 1630479838:0;cd development/
+: 1630479846:0;atom pman
+: 1630479925:0;vagrant plugin repair
+: 1630479966:0;vagrant plugin expunge --reinstall
+: 1630479986:0;vagrant plugin update
+: 1630480047:0;cd ~/tools/podman/
+: 1630480050:0;cat Vagrantfile
+: 1630480052:0;bat Vagrantfile
+: 1630480113:0;vagrant new
+: 1630480147:0;atom Vagrantfile
+: 1630480291:0;~/development/pman up
+: 1630480343:0;mv ~/development/pman ~/tools/pman
+: 1630482515:0;atom ~/tools/pman up
+: 1630482575:0;atom ~/tools/podman/va
+: 1630482583:0;atom ~/tools/podman/Vagrantfile
+: 1630482601:0;~/tools/pman up
+: 1630483115:0;brew install syncthing
+: 1630483211:0;vagrant destroy
+: 1630483220:0;vagrant up
+: 1630483449:0;cd development
+: 1630483453:0;cd Github/
+: 1630483723:0;brew upgrade syncthing
+: 1630483860:0;ls Data
+: 1630483866:0;cd Data/
+: 1630483881:0;rm -rf eclipse-workspace
+: 1630483900:0;ls SourceTrail
+: 1630483908:0;ls Vi
+: 1630483918:0;rm -rf Vi
+: 1630483927:0;ls GreenPay
+: 1630484031:0;ls umldesignerws
+: 1630484036:0;ls umldesignerws/GreenPay
+: 1630484042:0;rm -rf umldesignerws/
+: 1630484047:0;rm -rf SourceTrail
+: 1630484060:0;ls Devlopment
+: 1630484507:0;cd ~/Sync/
+: 1630484535:0;mkdir -p VietSaver
+: 1630484537:0;cd VietSaver/
+: 1630484565:0;cd DevOps/
+: 1630484592:0;git clone git@gitlab.com:globalcare/viet-saver/devops/helm.git
+: 1630484621:0;git clone git@github.com:VietSaver/fluxcd.git
+: 1630484640:0;git clone git@github.com:VietSaver/airflow-dags.git
+: 1630484679:0;git clone git@gitlab.com:globalcare/viet-saver/devops/configuration/dev.git
+: 1630484691:0;git clone git@gitlab.com:globalcare/viet-saver/devops/configuration/prod.git
+: 1630484752:0;fd
+: 1630484903:0;podman run nginx
+: 1630484922:0;echo $PATH
+: 1630484944:0;echo $PATH | grep docker-credential-gcloud
+: 1630484960:0;podman run --rm nginx
+: 1630484966:0;podman -h
+: 1630484970:0;podman ls
+: 1630484983:0;podman run -h
+: 1630484986:0;podman run h
+: 1630485146:0;podman run docker.io/library/nginx
+: 1630485765:0;cd ~/Sync
+: 1630485768:0;mkdir GoTRUST
+: 1630485770:0;cd GoTRUST/
+: 1630485775:0;mkdir DevOps
+: 1630485806:0;git clone git@github.com:gotrust-vn/ci.git
+: 1630485829:0;git clone git@github.com:gotrust-vn/helm-template.git
+: 1630485882:0;git clone git@github.com:gotrust-vn/DEV.git
+: 1630485893:0;git clone git@github.com:gotrust-vn/PROD.git
+: 1630485918:0;git clone git@github.com:gotrust-vn/FluxCD.git
+: 1630485944:0;git clone git@github.com:gotrust-vn/ansible.git
+: 1630485979:0;cd ansible/
+: 1630507389:0;~/tools/pman down
+: 1630563686:0;cd creds/
+: 1630584647:0;brew install --cask ganache
+: 1630584688:0;yarn global add truffle
+: 1630606935:0;mkdir dev-token && cd dev-token
+: 1630606950:0;npm install truffle-assertions
+: 1630606956:0;npm install chai
+: 1630606967:0;truffle init
+: 1630607186:0;mv contracts/Migrations.sol contracts/DevToken.sol
+: 1630607524:0;// SPDX-License-Identifier: MIT\
+pragma solidity ^0.8.4;\
+\
+// Define our DevToken smart contract. \
+contract
+: 1630607623:0;truffle compile
+: 1630641445:0;git clone https://github.com/YOUR_GITHUB_USERNAME/autocomplete.git fig-autocomplete
+: 1630641563:0;git clone https://github.com/oo00spy00oo/autocomplete.git fig-autocomplete
+: 1630641568:0;cd fig-autocomplete
+: 1630641574:0;git remote add upstream https://github.com/withfig/autocomplete.git
+: 1630641581:0;git fetch
+: 1630641641:0;git pull remote upsream
+: 1630641652:0;git pull upstream
+: 1630641682:0;git pull upstream master
+: 1630642063:0;yarn run dev
+: 1630662533:0;npm run build
+: 1630662538:0;yarn run build
+: 1630665873:0;truffle develop
+: 1630684833:0;aws ecr create-repository 
+: 1630684836:0;aws ecr create-repository  help
+: 1630684869:0;aws ecr create-repositor --repository-name installment-core
+: 1630684892:0;aws ecr create-repository --repository-name installment-core 
+: 1630686312:0;brew tap ethereum/ethereum
+: 1630686335:0;brew install ethereum
+: 1630688569:0;// Make sure the DevToken contract is included by requireing it.
+: 1630688769:0;truffle console
+: 1630692498:0;truffle version
+: 1630737163:0;aws ecr create-repository --repository-name installment-merchant
+: 1630737321:0;yarn global add zx
+: 1630737351:0;export REGISTRY=installment-merchant
+: 1630737364:0;echo $REPOSITORY
+: 1630737376:0;export REPOSITORY=installment-merchant
+: 1630737385:0;export REPOSITORY=installment-core
+: 1630737387:0;make create
+: 1630739451:0;atom installment-core
+: 1630739498:0;atom installment-merchant
+: 1630740229:0;git stash
+: 1630746441:0;brew install dotnet
+: 1630761067:0;truffle test
+: 1630761144:0;truffle migrate
+: 1630761193:0;truffle migrate --reset
+: 1630835187:0;gradle build
+: 1630835308:0;gradle compileJava
+: 1630836599:0;gradle run
+: 1630836619:0;curl localhost:8080/health
+: 1630848735:0;ping nexus.greenconnect.vn
+: 1630848741:0;ssh root@103.107.182.46
+: 1630947781:0;export REPOSITORY=open-card
+: 1630947783:0;export TAG
+: 1630947785:0;export TAG=21f3ceb
+: 1630947898:0;export TAG=7117ed8
+: 1630947903:0;export REPOSITORY=api-graphql
+: 1630947927:0;curl -L https://github.com/boot2podman/machine/releases/download/v0.16/podman-machine.darwin-amd64 --output /usr/local/bin/podman-machine\
+chmod +x
+: 1630947983:0;sudo chmod +x /usr/local/bin/podman-machine
+: 1630947986:0;podman-machine create --virtualbox-boot2podman-url https://github.com/snowjet/boot2podman-fedora-iso/releases/download/d1bb19f/boot2podman-fedora.iso --virtualbox-memory="4096" --virtualbox-share-folder ~/Code:code fedbox
+: 1631005208:0;yarn run
+: 1631005465:0;yarn global add serve
+: 1631016462:0;clear\
+cler
+: 1631022231:0;yarn install --production
+: 1631030446:0;make dev
+: 1631030502:0;make prod
+: 1631065858:0;export REPOSITORY=user
+: 1631065873:0;export TAG=18ff4c1
+: 1631065918:0;export REPOSITORY=auth
+: 1631065921:0;export TAG=f1a8565
+: 1631065924:0;make sync
+: 1631068162:0;brew install --cash macvim
+: 1631068170:0;brew install --cask macvim
+: 1631070561:0;git checout master
+: 1631070569:0;git checout main
+: 1631070575:0;git branch main
+: 1631070583:0;git checkout main
+: 1631070591:0;git checkout development
+: 1631070700:0;git push origin development
+: 1631197450:0;make update-tools
+: 1631197555:0;zinit  solf-update
+: 1631197608:0;zinit  self-update
+: 1631197674:0;ping google.com.vn
+: 1631199552:0;make download-latest-kext-release
+: 1631202150:0;cd OC-tool/
+: 1631202176:0;cd OC-Update/
+: 1631202183:0;./OC-Update.command
+: 1631202480:0;make download-latest-oc-release
+: 1631203659:0;cd Config/
+: 1631203715:0;wget https://raw.githubusercontent.com/AMD-OSX/AMD_Vanilla/master/patches.plist
+: 1631205220:0;cd Tools
+: 1631205225:0;cd KextExtractor/
+: 1631205229:0;./KextExtractor.command
+: 1631205292:0;sudo ./KextExtractor.command
+: 1631206061:0;ag Tools
+: 1631206081:0;ga Tools
+: 1631283344:0;wget https://github.com/acidanthera/OpenCorePkg/releases/download/0.7.1/OpenCore-0.7.1-RELEASE.zip
+: 1631288420:0;cd Tools/
+: 1631289188:0;cd OCConfigCompare/
+: 1631291991:0;wget https://github.com/acidanthera/OpenCorePkg/releases/download/0.7.2/OpenCore-0.7.2-RELEASE.zip
+: 1631293227:0;cd Tools/OCConfigCompare/
+: 1631293229:0;./OCConfigCompare.command
+: 1631330564:0;yarn global add serve pm2
+: 1631348394:0;octant
+: 1631349429:0;ssh ubuntu@54.151.145.1
+: 1631354144:0;helm update
+: 1631354152:0;helm repo update
+: 1631354395:0;k create ns prometheus
+: 1631355229:0;yarn build
+: 1631355405:0;serve -s build
+: 1631355518:0;pm2-runtime serve -s build
+: 1631368635:0;git fetch --all
+: 1631368640:0;git pull --all
+: 1631368666:0;git remote update
+: 1631371296:0;brew install oniguruma
+: 1631371585:0;brew tap askgitdev/askgit
+: 1631371594:0;brew install askgit
+: 1631371785:0;askgit -h
+: 1631371792:0;askgit "SELECT * FROM commits"
+: 1631371829:0;askgit "SELECT * FROM stats"
+: 1631373240:0;askgit "SELECT * FROM files"
+: 1631376567:0;pip3 install labours
+: 1631376582:0;git clone https://github.com/src-d/hercules && cd hercules
+: 1631376588:0;make
+: 1631376663:0;pip3 install -e ./python
+: 1631376728:0;tar -xzf hercules.darwin_amd64.gz
+: 1631376804:0;rm -rf hercules
+: 1631376812:0;mv hercules.darwin_amd64 hercules
+: 1631376815:0;chmod +x hercules
+: 1631376817:0;./hercules
+: 1631376876:0;mv hercules /usr/bin
+: 1631376881:0;sudo mv hercules /usr/bin
+: 1631376922:0;sudo mv hercules /usr/local/bin
+: 1631376932:0;hercules 
+: 1631376979:0;hercules
+: 1631376994:0;hercules --burndown --burndown-people
+: 1631377053:0;hercules --commits .
+: 1631377066:0;hercules --burndown --burndown-files
+: 1631377097:0;hercules --burndown --burndown-people --couples --feature=uast --dry-run --dump-dag doc/dag.dot https://github.com/src-d/hercules
+: 1631377119:0;hercules --burndown --burndown-people --couples --feature=uast --dry-run --dump-dag doc/dag.dot
+: 1631377134:0;hercules --burndown --burndown-people --couples --feature=uast --dry-run doc/dag.dot
+: 1631377143:0;hercules --burndown doc/dag.dot
+: 1631377147:0;hercules --burndown
+: 1631377180:0;hercules --help
+: 1631377289:0;pip3 install repostat-app
+: 1631377297:0;brew install libgit2
+: 1631377313:0;repostat
+: 1631377318:0;repostat .
+: 1631377342:0;nvim config.json
+: 1631377371:0;repostat config.json
+: 1631377390:0;repostat --config-file config.json . ./test
+: 1631377810:0;gitinspector -h
+: 1631379063:0;mkdir git-analyze
+: 1631379972:0;pip install git-bars
+: 1631380408:0;gh repo clone ejwa/gitinspector
+: 1631380420:0;cd gitinspector/
+: 1631380461:0;./\gitinspector.py
+: 1631380464:0;./gitinspector.py
+: 1631380505:0;yarn global add gitinspector
+: 1631380524:0;gitinspector
+: 1631380551:0;pip install localization
+: 1631380567:0;pip install basedir
+: 1631380583:0;pip install scipy
+: 1631380613:0;pip install shapely
+: 1631380617:0;pip install gitinspector
+: 1631380668:0;python setup.py
+: 1631380698:0;python gitinspector.py
+: 1631380844:0;git-bars -p day
+: 1631381038:0;limactl
+: 1631381046:0;limactl remove default
+: 1631381051:0;lima start
+: 1631381056:0;limactl start
+: 1631381941:0;scp -rC NovaPassport ubuntu@13.213.59.233:/home/ubuntu/git-analytics-docker/repositories/
+: 1631382045:0;tar -xcf NovaPassport.tgz NovaPassport
+: 1631382063:0;tar -zcf NovaPassport.tgz NovaPassport
+: 1631382077:0;scp -rC NovaPassport.tgz ubuntu@13.213.59.233:/home/ubuntu/git-analytics-docker/repositories/
+: 1631382639:0;ssh ubuntu@13.213.59.233
+: 1631384183:0;ssh -f -N ubuntu@13.213.59.233 -R 80:localhost:8081
+: 1631384256:0;ssh -f -N ubuntu@13.213.59.233 -R 80:localhost:808
+: 1631384278:0;ssh -f -N ubuntu@13.213.59.233 -R 8080:localhost:80
+: 1631384315:0;ssh -f -N ubuntu@13.213.59.233 -R 8081:localhost:80
+: 1631384345:0;ssh -f -N ubuntu@13.213.59.233 -R 80:localhost:8080
+: 1631427402:0;ping vtmd.gotrust.vn
+: 1631427408:0;curl vtmd.gotrust.vn
+: 1631460415:0;exa -la
+: 1631463323:0;cd Helm/
+: 1631463474:0;helm uninstall kube-prometheus-stack-1631354897
+: 1631463711:0;helm status kube-prometheus-stack
+: 1631463751:0;helm uninstall kube-prometheus-stack
+: 1631463775:0;helm install kube-prometheus-stack -n prometheus prometheus-community/kube-prometheus-stack
+: 1631463983:0;kubectl port-forward $(kubectl get pods --selector "app.kubernetes.io/name=traefik" --output=name) 9000:9000
+: 1631470349:0;git shortlog -s -n 
+: 1631470534:0;pip install git-hammer
+: 1631470632:0;python -m githammer init-project baffle ~/Download/barfile
+: 1631470662:0;mkdir barfile
+: 1631470663:0;python -m githammer init-project baffle ./barfile
+: 1631470684:0;rm -rf barfile
+: 1631470705:0;python -m githammer init-project NovaPassport ./
+: 1631471008:0;brew install git-quick-stats
+: 1631471549:0;yarn global add git-stats
+: 1631471623:0;git-stats -l --authors
+: 1631471668:0;git stats -a
+: 1631471719:0;git stats -A "Cong Nguyen Thanh"
+: 1631471725:0;git stats -A 
+: 1631471819:0;git stats --author "--author"
+: 1631471831:0;git stats --author "Cong Nguyen Thanh"
+: 1631471835:0;git stats --author "Cong Nguyen Thanh 4"
+: 1631471858:0;git stats --author "cong.nguyenthanh"
+: 1631471983:0;git shortlog --summary --numbered --email
+: 1631472013:0;git stats --author 57513462+congnguyenthanhdhbk@users.noreply.github.com
+: 1631472025:0;git stats --author Cong Nguyen Thanh
+: 1631472233:0;git-stats -l
+: 1631472242:0;git-stats
+: 1631472295:0;git stats --authors "Cong Nguyen Thanh"
+: 1631472470:0;python -m githammer summary NovaPassport
+: 1631472722:0;pip install git-of-theseus
+: 1631472752:0;git-of-theseus-analyze
+: 1631472759:0;git-of-theseus-stack-plot
+: 1631472772:0;git-of-theseus-analyze --help
+: 1631506184:0;git stats -r
+: 1631506191:0;git stats -h
+: 1631506252:0;nvim ~/.git-stats-config.js
+: 1631506393:0;atom ~/.git-stats-config.js
+: 1631506412:0;git stats
+: 1631506899:0;git stats --authors
+: 1631506964:0;git stats --author
+: 1631506966:0;git stats --author Anh, Nguyen Quang Le (ATD)
+: 1631506971:0;git stats --author "Anh, Nguyen Quang Le (ATD)"
+: 1631506994:0;git stats --author 'Nguyen Duc Tai'
+: 1631507016:0;git stats -g
+: 1631520881:0;brew install sphinx-doc
+: 1631521371:0;brew install git-cola
+: 1631521510:0;git-cola
+: 1631521745:0;brew install --cask fork
+: 1631521875:0;brew install --cask aurees
+: 1631551312:0;aws ecr describe-repositories --region ap-southeast-1
+: 1631551544:0;echo $(aws ecr get-login-password --region ap-southeast-1)
+: 1631551584:0;gradle quarkusBuild \\
+          -Dquarkus.container-image.builder=jib \\
+          -Dquarkus.jib.jvm-arguments="-Xmx2g,-Djava.util.logging.manager=org.jboss.logmanager.LogManager" \\
+          -Dquarkus.container-image.push=true \\
+          -Dquarkus.container-image.group="" \\
+          -Dquarkus.container-image.additional-tags="$(params.TAG)" \\
+          -Dquarkus.container-image.registry=$ECR_REGISTRY \\
+          -Dquarkus.container-image.username=AWS \\
+          -Dquarkus.container-image.password=$REGISTRY_PASSWORD
+: 1631551648:0;export IMAGE_TAG=96c12af
+: 1631551751:0;export ECR_REGISTRY=684050714784.dkr.ecr.ap-southeast-1.amazonaws.com\
+export REGISTRY_PASSWORD=$(aws ecr get-login-password --region ap-southeast-1)
+: 1631551774:0;export IMAGE_TAG=d4beb53
+: 1631588401:0;brew ser
+: 1631603793:0;cd ~/Sync/NVL/NovaPassport/
+: 1631604449:0;cd Downloads/
+: 1631604455:0;cd git-analyze/
+: 1631604552:0;cat config.json
+: 1631604719:0;repostat --config-file ~/Sync/NVL/NovaPassport NovaPassport
+: 1631604745:0;repostat --config-file config.json  ~/Sync/NVL/NovaPassport NovaPassport
+: 1631604794:0;repostat --config-file config.json  ~/Sync/NVL/NovaPassportWebPortal NovaPassportWebPortal
+: 1631604815:0;cd ~/Sync/NVL/NovaPassportWebPortal
+: 1631605191:0;cat ~/.ssh/id_rsa | pbcopy
+: 1631606871:0;askgit "SELECT author_name FROM commits"
+: 1631606879:0;askgit "SELECT author_name, author_email, count(*) FROM commits GROUP BY author_email ORDER BY count(*) DESC"
+: 1631607010:0;nvim que
+: 1631607014:0;touch query.sql
+: 1631608777:0;nvim query.sql
+: 1631608787:0;cat query.sql | askgit
+: 1631609666:0;\cd ..
+: 1631609719:0;mv query.sql ~/Downloads/git-analyze/query_code_lines.sql
+: 1631610339:0;mv ~/Downloads/NovaPassportMobile ~/Sync/NVL
+: 1631610347:0;cd ../NovaPassportMobile/
+: 1631610376:0;rm -rf NovaPassportMobile
+: 1631610436:0;git clone nvlprod@vs-ssh.visualstudio.com:v3/nvlprod/NovaPassportMobile/NovaPassportMobile
+: 1631610609:0;git clone nvlprod@vs-ssh.visualstudio.com:v3/nvlprod/NovaID/Nova.ID
+: 1631611156:0;mkdir test
+: 1631611157:0;cd test/
+: 1631611160:0;git clone https://nvlprod.visualstudio.com/NovaPassportMobile/_git/NovaPassportMobile
+: 1631612429:0;mv NovaPassportMobile ../../
+: 1631612436:0;rm -rf test
+: 1631612440:0;ls NovaPassportMobile
+: 1631612456:0;git checkout develop
+: 1631612474:0;git branch
+: 1631612482:0;git fetch origin --all
+: 1631612484:0;git fetch origin
+: 1631612498:0;git checkout build_1.2.3P
+: 1631632128:0;kga
+: 1631632271:0;kgns
+: 1631632292:0;kgns longhorn-system -o ns.json
+: 1631632304:0;kgns longhorn-system -o json ns.json
+: 1631632887:0;df -h
+: 1631633015:0;kubectl top node
+: 1631633204:0;kubectl delete -f https://raw.githubusercontent.com/longhorn/longhorn/master/deploy/longhorn.yaml
+: 1631633242:0;rm -rf ns.json
+: 1631633246:0;kgns longhorn-system -o json > ns.json
+: 1631633265:0;nvim ns.json
+: 1631633270:0;kubectl replace --raw "/api/v1/namespaces/longhorn-system/finalize" -f ns.json
+: 1631637879:0;git checkout dev-lam
+: 1631640842:0;cat ~/Downloads/git-analyze/query_code_lines.sql | askgit
+: 1631643082:0;touch query_mr.sql
+: 1631643090:0;nvim query_mr.sql
+: 1631643194:0;askgit "SELECT DISTINCT author_email FROM commits"
+: 1631643226:0;askgit "SELECT author_email, count(*) FROM commits WHERE parents < 2 GROUP BY author_email ORDER BY count(*) DESC"
+: 1631678391:0;export PATH=/usr/local/Cellar/go/1.17/libexec/bin:$PATH
+: 1631678495:0;clear\
+clear
+: 1631679774:0;cd ~/Downloads/git-analyze/
+: 1631680305:0;touch query_by_week_day.sql
+: 1631680309:0;nvim query_by_week_day.sql
+: 1631680320:0;atom query_by_week_day.sql
+: 1631680461:0;cat ~/Downloads/git-analyze/query_by_week_day.sql | askgit
+: 1631680728:0;git-quick-stats
+: 1631680845:0;askgit "SELECT author_email, count(*) FROM commits GROUP BY author_email ORDER BY count(*) DESC"
+: 1631689468:0;cd NovaPassport/
+: 1631689514:0;touch ~/Downloads/git-analyze/query_by_month_by_author.sql
+: 1631689516:0;atom ~/Downloads/git-analyze/query_by_month_by_author.sql
+: 1631690811:0;askgit "select min(author_when), min(committer_when) from commits"
+: 1631690829:0;askgit "select summary, author_name, author_when, additions from commits order by additions desc limit 10"
+: 1631690846:0;askgit "select author_name, author_when, additions from commits order by additions desc limit 10"
+: 1631690882:0;askgit "select count(*) as count, author_name from commits group by author_name having count > 1 order by count desc"
+: 1631690971:0;touch ~/Downloads/git-analyze/query_by_month.sql
+: 1631690975:0;atom ~/Downloads/git-analyze/query_by_month.sql
+: 1631691016:0;cat ~/Downloads/git-analyze/query_by_month.sql | askgit
+: 1631691069:0;touch ~/Downloads/git-analyze/query_by_month_v1.sql
+: 1631691076:0;atom ~/Downloads/git-analyze/query_by_month_v1.sql
+: 1631691199:0;askgit "select name, commits.id, author_when from tags, commits where tags.target_type = commits.id order by author_when"
+: 1631691258:0;cat ~/Downloads/git-analyze/query_by_month_v1.sql | askgit
+: 1631692104:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > cong.csv
+: 1631692105:0;ofd
+: 1631692213:0;mv cong.csv ~/Downloads
+: 1631692784:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit -v
+: 1631693274:0;mv query_by_month_by_author.sql query_by_date_by_author.sql
+: 1631693294:0;mv query_by_month_v1.sql query_by_month_by_author.sql
+: 1631693369:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv
+: 1631693857:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit
+: 1631694016:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit
+: 1631694259:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv
+: 1631694385:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/congnguyenthanh.csv
+: 1631695848:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/duyhuynhcong.csv
+: 1631696024:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/anh.nguyenquangle.csv
+: 1631696167:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/duc.dauminh.csv
+: 1631696188:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/phong.phanthanh2.csv
+: 1631696302:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/hien.phan.csv
+: 1631696326:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/kiet.trantan.csv
+: 1631696356:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/ty.pham.csv
+: 1631696385:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/tan.nguyentan.csv
+: 1631696414:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/tai.nguyenduc.csv
+: 1631696915:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/duy.huynhcong.csv
+: 1631696991:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/phong.phanthanh2@novaland.com.vn.csv
+: 1631697010:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/hienhub@gmail.com.csv
+: 1631697024:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/kiet.trantan@novaland.com.vn
+: 1631697036:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/ty.pham@novaland.com.vn
+: 1631697064:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/cong.nguyenthanh4@novaland.com.vn.csv
+: 1631697088:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/tan.nguyentan@novaland.com.vn.csv
+: 1631698172:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/kiet.trantan@novaland.com.vn.csv
+: 1631698189:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/minhduc13041995@gmail.com.csv
+: 1631698212:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/leanhngq@gmail.com.csv
+: 1631698230:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/duy.huynhcong@novaland.com.vn.csv
+: 1631698272:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/anh.nguyenquangle@novaland.com.vn.csv
+: 1631698298:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/ty.pham@novaland.com.vn.csv
+: 1631698324:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/57513462+congnguyenthanhdhbk@users.noreply.github.com.csv
+: 1631698351:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/phu.phamngoc@novaland.com.vn.csv
+: 1631698365:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/duc.dauminh@novaland.com.vn.csv
+: 1631699244:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/kiet.trantan@novaland.com.vn.csv
+: 1631699266:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/minhduc13041995@gmail.com.csv
+: 1631699285:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/leanhngq@gmail.com.csv
+: 1631699297:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/duy.huynhcong@novaland.com.vn.csv
+: 1631699310:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/anh.nguyenquangle@novaland.com.vn.csv
+: 1631699323:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/ty.pham@novaland.com.vn.csv
+: 1631699341:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/57513462+congnguyenthanhdhbk@users.noreply.github.com.csv
+: 1631699370:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/phu.phamngoc@novaland.com.vn.csv
+: 1631699385:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/duc.dauminh@novaland.com.vn.csv
+: 1631699660:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/tai.nguyenduc@novaland.com.vn.csv
+: 1631699692:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/lam.trantan@novaland.com.vn.csv
+: 1631699708:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/tai.nguyenhuu2@novaland.com.vn.csv
+: 1631699724:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/quangnhat008@gmail.com.csv
+: 1631699741:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/doi.nguyenquang@novaland.com.vn.csv
+: 1631699752:0;cat ~/Downloads/git-analyze/query_by_month_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/huutaiit.net@gmail.com.csv
+: 1631700251:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/tai.nguyenduc@novaland.com.vn.csv
+: 1631700282:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/lam.trantan@novaland.com.vn.csv
+: 1631700293:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/tai.nguyenhuu2@novaland.com.vn.csv
+: 1631700306:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/quangnhat008@gmail.com.csv
+: 1631700317:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/doi.nguyenquang@novaland.com.vn.csv
+: 1631700329:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/huutaiit.net@gmail.com.csv
+: 1631716348:0;nvim ~/.kube/config-gt-on-prem
+: 1631716364:0;atom ~/.kube/config-gt-on-prem
+: 1631716660:0;telnet 222.253.45.208 6443
+: 1631718120:0;kubectl get nodes
+: 1631718814:0;kubectl get pods -A --insecure-skip-tls-verify
+: 1631719020:0;kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/master/deploy/longhorn.yaml\
+
+: 1631721250:0;helm ls
+: 1631723079:0;kubens concourse
+: 1631782110:0;brew link --overwrite cocoapods
+: 1631782905:0;cd ../NovaPassport/
+: 1631782925:0;cd ../NovaPassportWebPortal/
+: 1631782927:0;cat ~/Downloads/git-analyze/query_by_week_day.sql | askgit --format csv > ~/Downloads/git-analyze/reports/weekday.csv
+: 1631788097:0;telnet 103.109.43.123 4222
+: 1631788407:0;ssh root@103.109.43.123
+: 1631804346:0;export ECR_REGISTRY=684050714784.dkr.ecr.ap-southeast-1.amazonaws.com\
+export REGISTRY_PASSWORD=$(aws ecr get-login-password --region ap-southeast-1)\
+export IMAGE_TAG=c193ad1
+: 1631804352:0;export REGISTRY_PASSWORD
+: 1631804376:0;echo $REGISTRY_PASSWORD
+: 1631804380:0;export IMAGE_TAG=c193ad1
+: 1631805501:0;code gotrust-crm-callcenter-api
+: 1631805509:0;atom gotrust-crm-callcenter-api
+: 1631805552:0;lg 
+: 1631807447:0;git log --oneline
+: 1631807463:0;export IMAGE_TAG=f24d990
+: 1631808594:0;ssh ubuntu@18.141.208.86
+: 1631808889:0;cd ~/.ssh/
+: 1631808901:0;cp id_rsa id_rsa_vietsaver
+: 1631808912:0;cp id_rsa.pub id_rsa_vietsaver.pub
+: 1631808917:0;mvim id_rsa_vietsaver
+: 1631808949:0;mvim id_rsa_vietsaver.pub
+: 1631808984:0;ssh -i ~/.ssh/id_rsa_vietsaver ubuntu@18.141.208.86
+: 1631809079:0;cat id_rsa_vietsaver.pub
+: 1631809111:0;ssh ubuntu@122.248.222.191
+: 1631809128:0;ssh -i ~/.ssh/id_rsa_vietsaver ubuntu@122.248.222.191
+: 1631809293:0;cat ~/.ssh/id_rsa.pub | pbcopy
+: 1631809427:0;cp ~/.ssh/id_rsa.pub ~/Downloads
+: 1631809731:0;curl -sL run.linkerd.io/install | sh
+: 1631809760:0;linkerd check
+: 1631809798:0;cd ~/.kube/
+: 1631809819:0;nvim config
+: 1631809903:0;kubens
+: 1631810422:0;ssh ubuntu@54.254.164.180
+: 1631810990:0;k9s
+: 1631811133:0;telnet 54.254.164.180 4222
+: 1631811503:0;kgsvc baokim-adapter
+: 1631811508:0;kgsvc baokim-adapter -o yaml
+: 1631811514:0;kgsvc baokim-adapter -o yaml | k neat
+: 1631811544:0;kubectl krew install neat
+: 1631811562:0;kgsvc baokim-adapter -o yaml | kubectl neat
+: 1631811636:0;kgsvc baokim-adapter -o yaml | kubectl neat | linkerd inject -
+: 1631811659:0;kgsvc baokim-adapter -o yaml | kubectl neat | linkerd inject --skip-outbound-ports -
+: 1631811663:0;kgsvc baokim-adapter -o yaml | kubectl neat | linkerd inject --skip-outbound-ports
+: 1631811667:0;kgsvc baokim-adapter -o yaml | kubectl neat | linkerd inject - --skip-outbound-ports
+: 1631811681:0;kgsvc baokim-adapter -o yaml | kubectl neat > svc.yaml
+: 1631811690:0;linkerd inject --skip-outbound-ports svc.yaml
+: 1631811740:0;nvim svc.yaml
+: 1631811751:0;linkerd inject --skip-outbound-ports 4222  svc.yaml
+: 1631811781:0;kgdep baokim-adapter -o yaml | kubectl neat > dep.yaml
+: 1631811788:0;linkerd inject --skip-outbound-ports 4222 dep.yaml
+: 1631870473:0;cd NovaPassportMobile/
+: 1631870494:0;atom ~/Downloads/git-analyze/
+: 1631870588:0;rm -rf /Users/oo00spy00oo/Downloads/git-analyze/reports/commit_by_date.csv
+: 1631870590:0;cat ~/Downloads/git-analyze/query_by_week_day.sql | askgit --format csv > ~/Downloads/git-analyze/reports/commit_by_date.csv
+: 1631870652:0;rm -rf ~/Downloads/git-analyze/reports/commit_by_date.csv
+: 1631871359:0;cd NovaPassportWebPortal/
+: 1631871387:0;cat ~/Downloads/git-analyze/query_by_date_by_author.sql | askgit --format csv > ~/Downloads/git-analyze/reports/commit_by_date.csv
+: 1631886136:0;ping mail.passiontech.io
+: 1631941867:0;brew link --overwrite hyperkit
+: 1631941967:0;brew install docker-cli
+: 1631941997:0;which docker
+: 1631942001:0;brew uninstall docker
+: 1631942054:0;brew uninstall --cask docker
+: 1631942092:0;brew install docker
+: 1631942121:0;brew install minikube
+: 1631942176:0;minikube config set cpus 4
+: 1631942192:0;minikube config set memory 6g
+: 1631942215:0;brew install hyperkit
+: 1631942233:0;brew reinstall hyperkit
+: 1631942244:0;hyperkit
+: 1631942246:0;hyperkit -v
+: 1631942414:0;minikube start --container-runtime=docker
+: 1631942484:0;minikube delete
+: 1631942487:0;minikube start --driver=virtualbox
+: 1631942566:0;docker compose
+: 1631942574:0;brew install docker-compose
+: 1631942592:0;brew reinstall docker-compose
+: 1631942748:0;brew install docker-credential-helper
+: 1631942757:0;brew reinstall docker-credential-helper
+: 1631942820:0;minikube kubectl get node
+: 1631942864:0;brew install kubectl
+: 1631942871:0;brew reinstall kubernetes-cli
+: 1631942892:0;kgno
+: 1631942902:0;kgpo
+: 1631942915:0;docker info
+: 1631942969:0;minikube addons enable metallb
+: 1631942975:0;minikube addons
+: 1631942979:0;minikube addons list
+: 1631943059:0;minikube addons configure metallb
+: 1631943282:0;minikube addons enable ingress
+: 1631943380:0;curl 192.168.99.102
+: 1631943413:0;minikube addons enable ingress-dns
+: 1632059614:0;go run .
+: 1632059641:0;curl localhost:8080/healthz
+: 1632126353:0;mkdir Nova
+: 1632126357:0;cd Nova/
+: 1632126365:0;mkdir qrcode
+: 1632126366:0;cd qrcode/
+: 1632126372:0;yarn init -y
+: 1632126377:0;cat package.json
+: 1632126391:0;yarn install qrcode express body-parser ejs
+: 1632126399:0;yarn add qrcode express body-parser ejs
+: 1632132285:0;yarn add canvas
+: 1632133685:0;yarn add jspdf
+: 1632134579:0;yarn add nodemon
+: 1632135314:0;yarn add pdfkit
+: 1632135669:0;yarn add blob-stream
+: 1632140698:0;yarn add pdf-lib
+: 1632197459:0;git rev-parse --verify HEAD
+: 1632197464:0;git rev-parse HEAD
+: 1632197483:0;git log --pretty=format:"%h" -n 1
+: 1632197549:0;eval $(pbpaste)
+: 1632197609:0;$(pbpaste)
+: 1632197652:0;export ECR_REGISTRY=684050714784.dkr.ecr.ap-southeast-1.amazonaws.com
+: 1632197656:0;export REGISTRY_PASSWORD=$(aws ecr get-login-password --region ap-southeast-1)
+: 1632197673:0;gradle quarkusBuild \\
+          -Dquarkus.container-image.builder=jib \\
+          -Dquarkus.jib.jvm-arguments="-Xmx2g,-Djava.util.logging.manager=org.jboss.logmanager.LogManager" \\
+          -Dquarkus.container-image.push=true \\
+          -Dquarkus.container-image.group="" \\
+          -Dquarkus.container-image.additional-tags=$IMAGE_TAG \\
+          -Dquarkus.container-image.registry=$ECR_REGISTRY \\
+          -Dquarkus.container-image.username=AWS \\
+          -Dquarkus.container-image.password=$REGISTRY_PASSWORD
+: 1632197787:0;git log --pretty=format:'%h' -n 1
+: 1632198084:0;ssh ubuntu@18.141.45.245
+: 1632240526:0;flux get kustomization
+: 1632489417:0;wget https://github.com/docker/buildx/releases/download/v0.6.3/buildx-v0.6.3.darwin-amd64
+: 1632489440:0;mv buildx-v0.6.3.darwin-amd64 docker-buildx
+: 1632489450:0;mkdir -p ~/.docker/cli-plugins/
+: 1632489473:0;mv docker-buildx chmod a+x ~/.docker/cli-plugins/
+: 1632489540:0;export IMAGE_TAG=$(git log --pretty=format:'%h' -n 1)
+: 1632489544:0;echo $IMAGE_TAG
+: 1632489568:0;sudo chmod a+x ~/.docker/cli-plugins/docker-buildx
+: 1632489576:0;make build-production
+: 1632489933:0;aws ecr get-login-password --region ap-southeast-1
+: 1632490041:0;aws ecr get-login-password --region ap-southeast-1 | docker login --username=AWS --password-stdin
+: 1632490092:0;aws ecr get-login-password --region ap-southeast-1 | docker login --username=AWS 684050714784.dkr.ecr.ap-southeast-1.amazonaws.com/icredit --password-stdin
+: 1632490137:0;docker push 684050714784.dkr.ecr.ap-southeast-1.amazonaws.com/icredit:71d0418
+: 1632503751:0;kustomize build | ka -
+: 1632503926:0;kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/master/deploy/longhorn.yaml
+: 1632504835:0;helm uninstall concourse
+: 1632504905:0;helmfile apply
+: 1632669978:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+: 1632670115:0;mkdir LOTL
+: 1632670116:0;cd LOTL
+: 1632670145:0;cargo new lotl-marketplace-rust-service
+: 1632670156:0;cd lotl-marketplace-rust-service/
+: 1632673113:0;cargo install cargo-watch
+: 1632729086:0;htop
+: 1632729389:0;mas upgrade
+: 1632742120:0;rustup update
+: 1632762122:0;brew install sqlite
+: 1632762321:0;brew install --cask db-browser-for-sqlite
+: 1632762380:0;make update
+: 1632764253:0;lsof -i tcp:9000
+: 1632764260:0;lsof
+: 1632764312:0;lsof -i tcp:8080
+: 1632764330:0;lsof -i tcp:8000
+: 1632764336:0;kill -9 46205
+: 1632797990:0;cd ~/OneDrive/
+: 1632798006:0;cd Hacking\ \&\ Security/
+: 1632798110:0;cd ~/OneDrive/Hacking\ \&\ Security/
+: 1632798116:0;cd Github-Projects/
+: 1632798120:0;cd Athena/
+: 1632798137:0;ls -la
+: 1632798146:0;cd ATTACK-Tools/
+: 1632798168:0;cd Awesome-Hacking-Resources/
+: 1632798212:0;fd .git
+: 1632798308:0;find -d .git
+: 1632798339:0;fd . .git
+: 1632798346:0;fd . ".git"
+: 1632798366:0;rm -rf Awesome-Hacking-Resources/.git
+: 1632798386:0;rm -rf bypass-firewalls-by-DNS-history/.git
+: 1632798395:0;rm -rf CheatSheetSeries/.git
+: 1632798401:0;rm -rf CVE-2019-9730/.git
+: 1632798406:0;rm -rf exploits/.git
+: 1632798412:0;rm -rf ezXSS/.git
+: 1632798417:0;rm -rf fav-up/.git
+: 1632798423:0;rm -rf ipwndfu/.git
+: 1632798428:0;rm -rf pwn_jenkins/.git
+: 1632798433:0;rm -rf QRLJacking/.git
+: 1632798441:0;rm -rf SigPloit/.git
+: 1632798457:0;rm -rf sploits/.git
+: 1632798463:0;rm -rf uncaptcha2/.git
+: 1632798469:0;rm -rf Vulmap-Local-Vulnerability-Scanners/.git
+: 1632798609:0;brew install --cask google-drive
+: 1632831625:0;kubectl port-forward -n dev svc/vtmd-insurance 9001:9000
+: 1632843005:0;telnet 34.132.159.101 9000
+: 1632843082:0;telnet 34.132.159.101 80
+: 1632933118:0;cargo clean
+: 1632973206:0;minikube start --kubernetes-version=v1.22.2
+: 1632973501:0;minikube --help
+: 1632973535:0;eval $(minikube podman-env)
+: 1632973538:0;podman
+: 1632973541:0;podman --help
+: 1632973554:0;podman ps
+: 1633010816:0;cargo build
+: 1633011322:0;cargo run
+: 1633012284:0;atom ~/.cargo/config
+: 1633012303:0;xcode-select --install
+: 1633012305:0;cargo install diesel_cli
+: 1633013355:0;kubectx
+: 1633017104:0;curl 127.0.0.1:8080/healthz
+: 1633017111:0;curl 127.0.0.1:8000/healthz
+: 1633019678:0;ping vietsaver.com
+: 1633020612:0;cargo watch -x run
+: 1633256591:0;git remote add origin git@github.com:lotl-nft/lotl-marketplace-rust-service.git
+: 1633596249:0;cd /Volumes/Data/
+: 1633596263:0;mkdir NVL
+: 1633596294:0;mkdir Projects
+: 1633596299:0;git clone git@ssh.dev.azure.com:v3/NOVA-INSIGHT/InterationHub/InterationHub
+: 1633601613:0;flux reconcile kustomization flux-system
+: 1633700900:0;git clone https://github.com/eventeum/eventeum.git
+: 1633701088:0;brew install maven
+: 1633701486:0;yarn global add ganache-cli
+: 1633701942:0;mvn clean package
+: 1633702166:0;curl -X POST \\
+http://localhost:8060/api/rest/v1/event-filter \\
+-H 'Cache-Control: no-cache' \\
+-H 'Content-Type: application/json' \\
+-H 'Postman-Token: 616712a3-bf11-bbf5-b4ac-b82835779d51' \\
+-d '{}'
+: 1633702176:0;bash
+: 1633702296:0;docker-compose build
+: 1633702763:0;ping dev-argocd.gotrust.com.vn
+: 1633704189:0;docker run --name test mongodb:4
+: 1633707200:0;docker rm test
+: 1633707201:0;docker run --name test mongo:4
+: 1633707502:0;minikube docker-env
+: 1633707568:0;minikube ssh-host
+: 1634010556:0;"contractAddress": "CONTRACT_ADDRESS",
+: 1634010556:0;telnet localhost 8060
+: 1634010556:0;curl -X POST http://localhost:8060/api/rest/v1/event-filter -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 616712a3-bf11-bbf5-b4ac-b82835779d51' -d '{
+: 1634010556:0;"contractAddress": "0xCdf2AbA02B61851F07f4642cE0b16BE4399AE17A",
+: 1634010556:0;  "eventName": "CounterUpdated",
+: 1634010556:0;  "nonIndexedParameterDefinitions": [{"position": 0, "type": "UINT256"}]
+: 1633796087:0;export PATH=/usr/local/opt/go/libexec/bin:$PATH
+: 1633839809:0;cat docker-compose.yml
+: 1633840158:0;ls $HOME/parity/data
+: 1633840177:0;ls $HOME/mongodb
+: 1633840637:0;ganache-cli
+: 1633840704:0;docker-compose up -d
+: 1633840793:0;minikube
+: 1633840806:0;minikube ssh
+: 1633840951:0;cd ~/Downloads/
+: 1633840954:0;cd LOTL/
+: 1633840958:0;cd eventeum/
+: 1633840961:0;cd server/
+: 1633841514:0;telnet 192.168.99.102 9092
+: 1633841564:0;export DOCKER_HOST_IP=192.168.99.102
+: 1633841678:0;telnet 192.168.99.102 27017
+: 1633841763:0;docker ps
+: 1633841776:0;docker ps | grep event
+: 1633841783:0;docker ps -a
+: 1633841798:0;docker ps -a | grep event
+: 1633841870:0;bat docker-compose.yml
+: 1633841893:0;rm -rf $HOME/parity
+: 1633841901:0;rm -rf $HOME/mongodb
+: 1633842717:0;echo $DOCKER_HOST_IP
+: 1633842721:0;docker-compose donw
+: 1633842861:0;telnet 192.168.99.102 8545
+: 1633842956:0;atom docker-compose.yml
+: 1633843061:0;docker logs -f server-eventeum-1
+: 1633843251:0;telnet 192.168.99.102 8060
+: 1633843457:0;bash 
+: 1633878023:0;mkdir listener
+: 1633878025:0;cd listener/
+: 1633878042:0;atom .
+: 1633878066:0;yarn install
+: 1633878073:0;yarn add kafka-node
+: 1633878132:0;minikube ip
+: 1633878642:0;yarn global add nodemon
+: 1633880633:0;tmuxinator new
+: 1633880636:0;tmuxinator new local
+: 1633880650:0;tmuxinator 
+: 1633880655:0;tmuxinator  list
+: 1633880663:0;tmuxinator local
+: 1633880672:0;tmuxinator start local
+: 1633880684:0;cd /Users/oo00spy00oo
+: 1633880685:0;vim
+: 1633880685:0;bundle exec rails s
+: 1633880685:0;tail -f log/development.log
+: 1633880740:0;cd ~/Downloads/LOTL/eventeum/
+: 1633880744:0;cd server
+: 1633880758:0;cd /Users/oo00spy00oo/Downloads/LOTL/eventeum/server
+: 1633880713:0;cd ~/Downloads/LOTL/listener/
+: 1634010556:0;"id": "CounterUpdatedEvent",
+: 1634010556:0;      {"position": 1, "type": "UINT256"},
+: 1634010556:0;curl -X POST http://192.168.99.102:8060/api/rest/v1/event-filter -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -H 'Postman-Token: 616712a3-bf11-bbf5-b4ac-b82835779d51' -d '{
+: 1634010556:0;"id": "ListingEvent",
+: 1634010556:0;"contractAddress": "0xD88Be46717CA4a60f658aefba1CC4DC7979d4750",
+: 1634010556:0;"eventSpecification": {
+: 1634010556:0;  "eventName": "Listing",
+: 1634010556:0;  "indexedParameterDefinitions": [
+: 1634010556:0;    {"position": 0, "type": "ADDRESS"},
+: 1634010556:0;    {"position": 1, "type": "UINT256"}
+: 1634010556:0;  ],
+: 1634010556:0;  "nonIndexedParameterDefinitions": [
+: 1634010556:0;      {"position": 2, "type": "UINT256"}
+: 1634010556:0;    ]
+: 1634010556:0;  }
+: 1634010556:0;}'
+: 1633966744:0;ls 
+: 1633966746:0;ls /
+: 1633966759:0;ls /Volumes/Data/LOTL
+: 1633966785:0;cd /Volumes/Data/LOTL
+: 1633966787:0;cd Projects/
+: 1633966791:0;git clone git@github.com:lotl-nft/lotl-marketplace.git
+: 1633966857:0;code lotl-marketplace
+: 1633968084:0;nvim docker-compose.yml
+: 1633968174:0;code docker-compose.yml
+: 1633969394:0;minikube start
+: 1633969815:0;eval $(minikube docker-env)
+: 1633972679:0;docker-compose up
+: 1633972859:0;docker-compose down
+: 1634007264:0;curl $(pbpaste)
+: 1634010394:0;export PATH=/usr/local/Cellar/go/1.17.1/libexec/bin:$PATH
+: 1634010520:0;code ~/.config/zsh
+: 1634010556:0;src
+: 1634010604:0;omz update
+: 1634010647:0;chezmoi add ~/.config/zsh/.zshrc
+: 1634010657:0;chezmoi cd
+: 1634010720:0;omz
+: 1634010814:0;chezmoi
+: 1634010820:0;chezmoi upgrade
+: 1634011740:0;pwd
+: 1634011850:0;git pull
+: 1634011871:0;github
+: 1634011931:0;git remote -v
+: 1634011989:0;git clone git@github.com:oo00spy00oo/dotfiles.git
+: 1634024093:0;git push
+: 1634024100:0;exit
+: 1634024108:0;cd NVL/
+: 1634024108:0;ls
+: 1634024118:0;mkdir html-pdf
+: 1634024119:0;cd html-pdf/
+: 1634025555:0;yarn add html-pdf-node
+: 1634030773:0;yarn add puppeteer
+: 1634052536:0;pbpaste | base64 -d
+: 1634052853:0;mkdir Mana
+: 1634052856:0;cd Mana/
+: 1634052870:0;mkdir bot
+: 1634052877:0;yarn init
+: 1634052900:0;yarn add express
+: 1634052972:0;code .
+: 1634053027:0;yarn add ccxt
+: 1634053196:0;yarn add axios
+: 1634055956:0;git status
+: 1634057257:0;yarn add moment
+: 1634058080:0;yarn add dotenv
+: 1634090914:0;nvm
+: 1634098501:0;nodemon index.js
+: 1634201263:0;brew update
+: 1634201439:0;brew upgrade
+: 1634231946:0;gradle quarkusDev
+: 1634317276:0;yarn add ejs
+: 1634317770:0;yarn add node-cache
+: 1634392725:0;curl $(pbpaste) | jq
+: 1634393337:0;yarn add prettytable
+: 1634395760:0;yarn add numeral
+: 1634395762:0;yarn add numberal
+: 1634483821:0;cd ..
+: 1634483860:0;yarn global add nestjs
+: 1634484002:0;yarn global add @nestjs/cli
+: 1634484092:0;npm install -g npm
+: 1634484106:0;npm i -g @nestjs/cli
+: 1634484125:0;nest new trading-bot
+: 1634484181:0;yarn add sqlite3
+: 1634485087:0;yarn add typeorm
+: 1634485095:0;cd bot/
+: 1634485391:0;yarn add lodash
+: 1634490815:0;ssh-add -k
+: 1634492449:0;yarn add cli-table
+: 1634493205:0;yarn add table
+: 1634494196:0;rm -rf .git
+: 1634494199:0;git init
+: 1634494237:0;ga .
+: 1634494245:0;lg
+: 1634494263:0;git branch -M main
+: 1634494267:0;git remote add origin git@github.com:oo00spy00oo/trading-bot.git
+: 1634494270:0;git push -u origin main
+: 1634494338:0;clear
+: 1634529470:0;brew services restart yabai
+: 1634534909:0;export PATH=/usr/local/Cellar/go/1.17.2/libexec/bin:$PATH
+: 1634534949:0;clear\
+
+: 1634534950:0;node index.js
+: 1634535647:0;yarn global add zmp-cli
+: 1634535713:0;omz reload
+: 1634535728:0;zmp init
+: 1634536329:0;yarn start
+: 1634570527:0;gradle quarkusDev
+: 1634570647:0;minikube start
+: 1634570728:0;eval $(minikube docker-env)
+: 1634570733:0;gradle quarkusDev
+: 1634571747:0;gra
+: 1634571754:0;gradle compileJava
+: 1634571787:0;gradle quarkusDev
+: 1634573581:0;gradle clean
+: 1634630524:0;brew services restart yabai
+: 1634630546:0;clear
+: 1634640423:0;brew uninstall hyper
+: 1634657597:0;clear
+: 1634657764:0;brew install --cask hyper
+: 1634657862:0;clear
+: 1634657908:0;kubectx
+: 1634657915:0;kgpo
+: 1634660056:0;kubectx
+: 1634660060:0;make uninstall
+: 1634660071:0;cd Helm/
+: 1634660073:0;make uninstall
+: 1634660129:0;make install
+: 1634660169:0;make uninstall
+: 1634660200:0;make install
+: 1634660224:0;make deploy
+: 1634661147:0;lg
+: 1634661429:0;clear
+: 1634661474:0;gradle quarkusDev
+: 1634661507:0;minikube start
+: 1634662313:0;eval $(minikube docker-env)
+: 1634662317:0;gradle quarkusDev
+: 1634663400:0;telnet localhost 8080
+: 1634663408:0;minikube ip
+: 1634663414:0;telnet 192.168.99.102 8080
+: 1634663428:0;telnet localhost 8080
+: 1634663439:0;gradle quarkusDev
+: 1634663459:0;curl http://localhost:8000
+: 1634663461:0;telnet localhost 8080
+: 1634663529:0;curl http://localhost:8080/graphql/schema.graphql
+: 1634663543:0;curl http://localhost:8080/
+: 1634663552:0;gradle quarkusDev
+: 1634663561:0;curl http://localhost:8080/
+: 1634663576:0;curl http://localhost:8080
+: 1634663943:0;gradle quarkusDev
+: 1634664072:0;lg
+: 1634664074:0;ga .
+: 1634664075:0;lg
+: 1634728907:0;clear
+: 1634740445:0;export PATH=/usr/local/Cellar/go/1.17.2/libexec/bin:$PATH
+: 1634740608:0;clear\
+
+: 1634740609:0;node index.js
+: 1634744711:0;clear
+: 1634746355:0;brew services restart yabai
+: 1634747488:0;lg
+: 1634786623:0;brew services restart yabai
+: 1634831838:0;export PATH=/usr/local/Cellar/go/1.17.2/libexec/bin:$PATH
+: 1634832808:0;clear
+: 1634869893:0;brew services restart yabai
+: 1634894683:0;brew update
+: 1634894687:0;brew upgrade
+: 1634896023:0;mas upgrade
+: 1634905285:0;cd ~/Downloads/
+: 1634905287:0;cd shop-main/
+: 1634905290:0;git remote -v
+: 1634905292:0;git init
+: 1634905314:0;git remote add origin git@gitlab.com:shopxnetwork/shopx.vn/mini-apps/zma/shopx-zmp.git
+: 1634905316:0;code .
+: 1634905376:0;ga .
+: 1634905392:0;cd ..
+: 1634905401:0;git pull
+: 1634905405:0;cd shop-main/
+: 1634905406:0;git pull
+: 1634905416:0;git pull origin main
+: 1634905435:0;lg
+: 1634905457:0;git pull origin main
+: 1634905480:0;git push -u origin main
+: 1634905495:0;git pull
+: 1634905503:0;git pull origin main
+: 1634905517:0;git pull origin main -ff
+: 1634905535:0;lg
+: 1634905572:0;rm -rf .git
+: 1634905574:0;git init
+: 1634905577:0;git remote add origin git@gitlab.com:shopxnetwork/shopx.vn/mini-apps/zma/shopx-zmp.git
+: 1634905587:0;git pull origin main -ff
+: 1634905612:0;ga .
+: 1634905614:0;lg
+: 1634906235:0;clear
+: 1634915929:0;minikube destroyou
+: 1634915932:0;minikube destroy
+: 1634915935:0;minikube delete
+: 1634915944:0;minikube start
+: 1634915957:0;minikube delete
+: 1634915975:0;minikube start --driver=virtualbox
+: 1634915988:0;minikube delete
+: 1634916113:0;minikube start --driver=virtualbox --disk-size=50GB
+: 1635008803:0;brew services restart yabai
+: 1635008901:0;clear
+: 1635047606:0;brew services restart yabai
+: 1635048927:0;clear
+: 1635051842:0;minikube delete
+: 1635051849:0;minikube start --driver=virtualbox --disk-size=50GB
+: 1635090542:0;chezmoi cd
+: 1635090552:0;code .
+: 1635091349:0;chezmoi update
+: 1635091397:0;chezmoi add ~/.zshenv
+: 1635091419:0;chezmoi add ~/.bashrc
+: 1635091425:0;chezmoi add .config/zsh/.zsh_history
+: 1635091433:0;chezmoi add ~/.config/zsh/.zsh_history
