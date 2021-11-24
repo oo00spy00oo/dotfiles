@@ -81,7 +81,7 @@ plugins=(
     colorize
     aws
     ansible
-    osx
+    macos
     web-search
     sdk
     tmux
