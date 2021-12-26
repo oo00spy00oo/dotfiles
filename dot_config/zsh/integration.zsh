@@ -17,6 +17,9 @@ if [ $commands[kubectl] ]; then
     function kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }
 fi
 
+# Web3j
+[ -f ~/.web3j/source.sh ] && source ~/.web3j/source.sh
+
 # asdf
 [ -f /usr/local/opt/asdf/asdf.sh ] && . /usr/local/opt/asdf/asdf.sh
 
