@@ -1,10 +1,11 @@
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
 zinit light-mode for \
-    zinit-zsh/z-a-rust \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-bin-gem-node
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+### End of Zinit's installer chunk
 
 # THEME
 # zinit light denysdovhan/spaceship-prompt
@@ -16,7 +17,7 @@ zinit wait lucid for \
     hlissner/zsh-autopair \
     urbainvaes/fzf-marks \
     atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
-        zdharma/fast-syntax-highlighting \
+        zdharma-continuum/fast-syntax-highlighting \
     blockf \
         zsh-users/zsh-completions \
     atload"!_zsh_autosuggest_start" \
@@ -26,24 +27,24 @@ zinit lucid for \
     zsh-users/zsh-syntax-highlighting \
     zsh-users/zsh-history-substring-search \
     marzocchi/zsh-notify \
-    zdharma/zshelldoc \
-    zdharma/zui \
-    zdharma/zplugin-crasis \
-    zdharma/zzcomplete \
-    zdharma/zconvey \
-    zdharma/history-search-multi-word
+    zdharma-continuum/zshelldoc \
+    zdharma-continuum/zui \
+    zdharma-continuum/zplugin-crasis \
+    zdharma-continuum/zzcomplete \
+    zdharma-continuum/zconvey \
+    zdharma-continuum/history-search-multi-word
 
 # Git section
 zinit load wfxr/forgit
 zinit light tj/git-extras
 zinit light bobthecow/git-flow-completion
 zinit as"null" wait"2" lucid for \
-    sbin  Fakerr/git-recall \
-    sbin  paulirish/git-open \
-    sbin  paulirish/git-recent \
-    sbin  davidosomething/git-my
+    Fakerr/git-recall \
+    paulirish/git-open \
+    paulirish/git-recent \
+    davidosomething/git-my
 
-zinit load psprint/zsh-navigation-tools
+zinit load zdharma-continuum/zsh-navigation-tools
 
 zinit lucid light-mode for \
     zpm-zsh/ls \
@@ -58,16 +59,16 @@ zinit lucid light-mode for \
     zpm-zsh/material-colors \
     zpm-zsh/pr-zcalc \
     zpm-zsh/zshmarks \
-    psprint/zsh-cmd-architect \
-    psprint/zsh-editing-workbench \
+    zdharma-continuum/zsh-cmd-architect \
+    zdharma-continuum/zsh-editing-workbench \
     supercrabtree/k \
-    zdharma/zsh-tig-plugin \
-    zdharma/declare-zsh \
+    zdharma-continuum/zsh-tig-plugin \
+    zdharma-continuum/declare-zsh \
     zpm-zsh/colorize \
     ChrisPenner/copy-pasta \
     leophys/zsh-plugin-fzf-finder \
     b4b4r07/enhancd \
-    zdharma/zbrowse \
+    zdharma-continuum/zbrowse \
     zpm-zsh/autoenv \
     mbhynes/fzf-gcloud \
     hlissner/zsh-autopair \
@@ -95,7 +96,7 @@ zinit light trapd00r/LS_COLORS;
 
 # Diff-So-Fancy
 zplugin ice as"program" pick"bin/git-dsf"
-zplugin light zdharma/zsh-diff-so-fancy
+zplugin light zdharma-continuum/zsh-diff-so-fancy
 
 # zplugin light matthieusb/zsh-sdkman
 
@@ -104,7 +105,7 @@ export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 zinit light lukechilds/zsh-nvm
 
-# For fzf: https://zdharma.org/zinit/wiki/Zinit-Packages/
+# For fzf: https://zdharma-continuum.org/zinit/wiki/Zinit-Packages/
 zinit pack for fzf
 zinit pack for dircolors-material
 zinit pack for ls_colors
@@ -119,5 +120,5 @@ zplugin pack for doctoc
 # zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
 # zinit light marlonrichert/zsh-autocomplete
 # zinit light Dbz/kube-aliases
-# zinit light zdharma/zsh-startify
+# zinit light zdharma-continuum/zsh-startify
 # zinit light jeffreytse/zsh-vi-mode
