@@ -7,6 +7,11 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 ### End of Zinit's installer chunk
 
+# A Zinit-Zsh annex that allows to install plugins without specifying the GitHub user name.
+zinit light-mode for zdharma-continuum/zinit-annex-unscope
+
+zinit light-mode for zdharma-continuum/null
+
 # THEME
 # zinit light denysdovhan/spaceship-prompt
 
@@ -28,11 +33,17 @@ zinit lucid for \
     zsh-users/zsh-history-substring-search \
     marzocchi/zsh-notify \
     zdharma-continuum/zshelldoc \
-    zdharma-continuum/zui \
-    zdharma-continuum/zplugin-crasis \
     zdharma-continuum/zzcomplete \
     zdharma-continuum/zconvey \
     zdharma-continuum/history-search-multi-word
+
+zinit light zdharma-continuum/zui
+zinit light zdharma-continuum/zinit-crasis
+
+zinit light zdharma-continuum/zsh-tig-plugin
+zinit light zdharma-continuum/zsh-lint
+
+zinit wait lucid for zdharma-continuum/zinit-console
 
 # Git section
 zinit load wfxr/forgit
@@ -79,6 +90,9 @@ zinit lucid light-mode for \
 zinit ice as"program" cp"httpstat.sh -> httpstat" pick"httpstat"
 zinit light b4b4r07/httpstat
 
+# Auto-close and delete matching delimiters in zsh
+zinit light hlissner/zsh-autopair
+
 # zsh-fzf-history-search
 zinit ice lucid wait'0'
 zinit light joshskidmore/zsh-fzf-history-search
@@ -104,6 +118,7 @@ zplugin light zdharma-continuum/zsh-diff-so-fancy
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 zinit light lukechilds/zsh-nvm
+zinit light zdharma-continuum/zsh-select
 
 # For fzf: https://zdharma-continuum.org/zinit/wiki/Zinit-Packages/
 zinit pack for fzf
