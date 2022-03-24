@@ -91,7 +91,7 @@ plugins=(
     virtualenv
     zsh-navigation-tools
     zsh-interactive-cd
-    z
+    # z -> Failed to read /dev/tty zoxide: fzf returned an error
     frontend-search
 	vi-mode
     urltools
