@@ -111,6 +111,10 @@ zinit light trapd00r/LS_COLORS
 # atuin
 zinit load ellie/atuin
 
+# PZT Shorthand Syntax
+zi snippet PZT::modules/environment
+zi snippet PZT::modules/terminal
+
 # Diff-So-Fancy
 zplugin ice as"program" pick"bin/git-dsf"
 zplugin light zdharma-continuum/zsh-diff-so-fancy

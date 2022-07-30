@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/zshrc.pre.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -150,6 +150,7 @@ setopt EXTENDED_GLOB        # Use extended globbing syntax.
 
 autoload -U +X bashcompinit && bashcompinit
 autoload -U compinit && compinit
+autoload -U add-zsh-hook
 
 # fzf (auto install via homebrew)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -195,5 +196,7 @@ source "${ZDOTDIR:-$HOME}/integration.zsh"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+source /Users/oo00spy00oo/.config/broot/launcher/bash/br
+
 # Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/zshrc.post.zsh"
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
