@@ -106,7 +106,10 @@ if [ !$commands[dircolors] ]; then
         atpull'%atclone' pick"clrs.zsh" nocompile'!' \
         atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”';
 fi
-zinit light trapd00r/LS_COLORS;
+zinit light trapd00r/LS_COLORS
+
+# atuin
+zinit load ellie/atuin
 
 # Diff-So-Fancy
 zplugin ice as"program" pick"bin/git-dsf"
