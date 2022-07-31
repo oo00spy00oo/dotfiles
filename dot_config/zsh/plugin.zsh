@@ -78,7 +78,6 @@ zinit lucid light-mode for \
     zpm-zsh/colorize \
     ChrisPenner/copy-pasta \
     leophys/zsh-plugin-fzf-finder \
-    b4b4r07/enhancd \
     zdharma-continuum/zbrowse \
     zpm-zsh/autoenv \
     mbhynes/fzf-gcloud \
