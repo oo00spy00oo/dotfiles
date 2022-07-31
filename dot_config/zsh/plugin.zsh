@@ -46,7 +46,7 @@ zinit light zdharma-continuum/zsh-lint
 zinit wait lucid for zdharma-continuum/zinit-console
 
 # Git section
-zinit load wfxr/forgit
+# zinit load wfxr/forgit
 zinit light tj/git-extras
 zinit light bobthecow/git-flow-completion
 zinit as"null" wait"2" lucid for \
@@ -79,7 +79,6 @@ zinit lucid light-mode for \
     ChrisPenner/copy-pasta \
     leophys/zsh-plugin-fzf-finder \
     zdharma-continuum/zbrowse \
-    zpm-zsh/autoenv \
     mbhynes/fzf-gcloud \
     hlissner/zsh-autopair \
     changyuheng/zsh-interactive-cd \
