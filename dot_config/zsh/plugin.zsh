@@ -12,9 +12,6 @@ zinit light-mode for zdharma-continuum/zinit-annex-unscope
 
 zinit light-mode for zdharma-continuum/null
 
-# THEME
-# zinit light denysdovhan/spaceship-prompt
-
 # Add fzf-tab first
 zinit light Aloxaf/fzf-tab
 
@@ -79,6 +76,7 @@ zinit lucid light-mode for \
     ChrisPenner/copy-pasta \
     leophys/zsh-plugin-fzf-finder \
     zdharma-continuum/zbrowse \
+    zpm-zsh/autoenv \
     mbhynes/fzf-gcloud \
     hlissner/zsh-autopair \
     changyuheng/zsh-interactive-cd \
