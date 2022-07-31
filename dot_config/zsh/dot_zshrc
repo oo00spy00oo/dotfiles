@@ -165,8 +165,8 @@ source "${ZDOTDIR:-$HOME}/completion.zsh"
 # +----------+
 source "${ZDOTDIR:-$HOME}/aliases.zsh"
 
-# Prezto
-source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+# # Prezto
+# source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.config/local/share/zinit/zinit.git/zinit.zsh ]]; then
