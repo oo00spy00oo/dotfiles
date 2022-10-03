@@ -97,12 +97,12 @@ zinit light joshskidmore/zsh-fzf-history-search
 zinit light g-plane/zsh-yarn-autocompletions
 zinit light Dabz/kafka-zsh-completions
 
-if [ !$commands[dircolors] ]; then
-    zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
-        atpull'%atclone' pick"clrs.zsh" nocompile'!' \
-        atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”';
-fi
-zinit light trapd00r/LS_COLORS
+# zinit light trapd00r/LS_COLORS
+# if [ !$commands[dircolors] ]; then
+#     zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
+#         atpull'%atclone' pick"clrs.zsh" nocompile'!' \
+#         atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”';
+# fi
 
 # atuin
 zinit load ellie/atuin
@@ -125,7 +125,7 @@ zinit light zdharma-continuum/zsh-select
 
 # For fzf: https://zdharma-continuum.org/zinit/wiki/Zinit-Packages/
 zinit pack for fzf
-zinit pack for dircolors-material
+# zinit pack for dircolors-material
 zinit pack for ls_colors
 
 zplugin pack for @asciidoctor
