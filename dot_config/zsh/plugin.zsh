@@ -96,8 +96,6 @@ zinit light joshskidmore/zsh-fzf-history-search
 zinit light g-plane/zsh-yarn-autocompletions
 zinit light Dabz/kafka-zsh-completions
 
-
-
 # PZT Shorthand Syntax
 zi snippet PZT::modules/environment
 zi snippet PZT::modules/terminal
