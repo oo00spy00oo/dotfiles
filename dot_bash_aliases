@@ -1,5 +1,5 @@
 alias diff="diff-so-fancy"
-alias l="exa -lahF"
+# alias l="exa -lahF"
 
 # Lazygit
 alias lg='lazygit'

@@ -105,7 +105,7 @@ zinit light Dabz/kafka-zsh-completions
 # fi
 
 # atuin
-zinit load ellie/atuin
+# zinit load ellie/atuin
 
 # PZT Shorthand Syntax
 zi snippet PZT::modules/environment
@@ -129,7 +129,7 @@ zinit pack for fzf
 zinit pack for ls_colors
 
 zplugin pack for @asciidoctor
-zplugin pack for ecs-cli
+# zplugin pack for ecs-cli
 zplugin pack for doctoc
 
 # Tmux

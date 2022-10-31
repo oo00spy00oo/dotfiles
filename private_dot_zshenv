@@ -36,4 +36,3 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # X11
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
-. "$HOME/.cargo/env"

@@ -23,12 +23,6 @@ fi
 # asdf
 [ -f /usr/local/opt/asdf/asdf.sh ] && . /usr/local/opt/asdf/asdf.sh
 
-# pyenv
-eval "$(pyenv init -)"
-
-# Add Startify
-# zsh-startify
-
 # Homebrew Command Not Found
 HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
 if [ -f "$HB_CNF_HANDLER" ]; then
@@ -64,5 +58,15 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# Cargo
+if [ $commands[cargo] ]; then
+    . "$HOME/.cargo/env"
+fi
 
 neofetch
