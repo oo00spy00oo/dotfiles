@@ -39,26 +39,22 @@ export ZSH_COLORIZE_STYLE="colorful"
 if [ $commands[mcfly] ]; then
     eval "$(mcfly init zsh)"
 fi
-
+# zoxide
 if [ $commands[zoxide] ]; then
     eval "$(zoxide init zsh)"
 fi
-
 # Starship theme
 if [ $commands[starship] ]; then
     eval "$(starship init zsh)"
 fi
-
 # Go version manager: g
 export GOPATH="$HOME/go"; export GOROOT="/usr/local/opt/go/libexec"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
 alias ggovm="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
-
 # Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
 # pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
@@ -67,6 +63,10 @@ fi
 # Cargo
 if [ $commands[cargo] ]; then
     . "$HOME/.cargo/env"
+fi
+# Thefuck
+if [ $commands[thefuck] ]; then
+    eval $(thefuck --alias)
 fi
 
 neofetch

@@ -86,8 +86,6 @@ plugins=(
     macos
     web-search
     sdk
-    tmux
-    thefuck
     virtualenv
     zsh-navigation-tools
     zsh-interactive-cd
@@ -100,7 +98,6 @@ plugins=(
     git-hubflow
     httpie
     zsh-navigation-tools
-    zoxide
     brew
     )
 
