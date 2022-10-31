@@ -55,7 +55,6 @@ zinit as"null" wait"2" lucid for \
 zinit load zdharma-continuum/zsh-navigation-tools
 
 zinit lucid light-mode for \
-    zpm-zsh/ls \
     chrissicool/zsh-bash \
     arzzen/calc.plugin.zsh \
     b4b4r07/emoji-cli \
@@ -97,15 +96,7 @@ zinit light joshskidmore/zsh-fzf-history-search
 zinit light g-plane/zsh-yarn-autocompletions
 zinit light Dabz/kafka-zsh-completions
 
-# zinit light trapd00r/LS_COLORS
-# if [ !$commands[dircolors] ]; then
-#     zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
-#         atpull'%atclone' pick"clrs.zsh" nocompile'!' \
-#         atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”';
-# fi
 
-# atuin
-# zinit load ellie/atuin
 
 # PZT Shorthand Syntax
 zi snippet PZT::modules/environment
@@ -125,12 +116,15 @@ zinit light zdharma-continuum/zsh-select
 
 # For fzf: https://zdharma-continuum.org/zinit/wiki/Zinit-Packages/
 zinit pack for fzf
-# zinit pack for dircolors-material
-zinit pack for ls_colors
 
-zplugin pack for @asciidoctor
-# zplugin pack for ecs-cli
 zplugin pack for doctoc
+zplugin pack for @asciidoctor
+
+##########
+# DISABLED
+##########
+# zpm-zsh/ls
+# zplugin pack for ecs-cli
 
 # Tmux
 # zinit light zpm-zsh/tmux
@@ -140,3 +134,16 @@ zplugin pack for doctoc
 # zinit light Dbz/kube-aliases
 # zinit light zdharma-continuum/zsh-startify
 # zinit light jeffreytse/zsh-vi-mode
+
+# zinit light trapd00r/LS_COLORS
+# if [ !$commands[dircolors] ]; then
+#     zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
+#         atpull'%atclone' pick"clrs.zsh" nocompile'!' \
+#         atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”';
+# fi
+
+# atuin
+# zinit load ellie/atuin
+
+# zinit pack for dircolors-material
+# zinit pack for ls_colors

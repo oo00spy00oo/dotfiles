@@ -2,8 +2,10 @@
 # eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
 # kube-ps1
-[ -f /usr/local/opt/kube-ps1/share/kube-ps1.sh ] && source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1)'$PS1
+if [ -f /usr/local/opt/kube-ps1/share/kube-ps1.sh ]; then
+    source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+    PS1='$(kube_ps1)'$PS1
+fi
 
 # Add iterm2 shell integration
 # https://iterm2.com/documentation-shell-integration.html
