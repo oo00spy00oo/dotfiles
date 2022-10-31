@@ -88,8 +88,6 @@ plugins=(
     sdk
     tmux
     thefuck
-    terraform
-    vagrant
     virtualenv
     zsh-navigation-tools
     zsh-interactive-cd
@@ -196,7 +194,7 @@ source "${ZDOTDIR:-$HOME}/integration.zsh"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-source /Users/oo00spy00oo/.config/broot/launcher/bash/br
+# source "$HOME/.config/broot/launcher/bash/br"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
