@@ -22,20 +22,23 @@ export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
 # Linkerd
 [ -d "$HOME/.linkerd2" ] && export PATH="$PATH:$HOME/.linkerd2/bin"
 # gvm
-# [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+[ -s "$HOME/.gvm/scripts/gvm" ] && source "$HOME/.gvm/scripts/gvm"
 # Golang
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOBIN}:${GOROOT}/bin"
-
 # Flutter
 [ -d "$HOME/development/flutter" ] && export PATH="$PATH:$HOME/development/flutter/bin"
 # Pub: https://dart.dev/tools/pub/cmd/pub-global
 [ -d "$HOME/.pub_cache/bin" ] && export PATH="$PATH:$HOME/.pub_cache/bin"
-
 # nvm plugin
 export NVM_LAZY=1
+# Other
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/ncurses/lib"
+export CPPFLAGS="-I/usr/local/opt/ncurses/include"
+
 ### Fixing install python with pyenv
 ### Package: YouCompleteMe
 # You must use a Python compiled with the --enable-framework flag. If using pyenv, you need to run the command:
@@ -51,11 +54,6 @@ export CONTAINER_SSHKEY="$HOME/tools/podman/.vagrant/machines/default/virtualbox
 # | ALIASES |
 # +---------+
 # source $DOTFILES/aliases/aliases
-
-# Other
-export PATH="/usr/local/opt/ncurses/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/ncurses/lib"
-export CPPFLAGS="-I/usr/local/opt/ncurses/include"
 
 # PGO
 # export PGO_OPERATOR_NAMESPACE=pgo
