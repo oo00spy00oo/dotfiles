@@ -15,9 +15,9 @@ fi
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Kube-alias: Print the full command before running it
-if [ $commands[kubectl] ]; then
-    function kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }
-fi
+# if [ $commands[kubectl] ]; then
+#     function kubectl() { echo "+ kubectl $@">&2; command kubectl $@; }
+# fi
 
 # Web3j
 [ -f ~/.web3j/source.sh ] && source ~/.web3j/source.sh
